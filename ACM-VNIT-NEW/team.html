@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACM-VNIT — Team</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-[--color-ink]">
+  <!-- Header -->
+  <header id="site-header" style="font-family: var(--font-display)" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+    <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
+        <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
+        <div class="flex flex-col text-left">
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing Machinery</span>
+          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT Student Chapter</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="about.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
+        <a href="domains.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+        <a href="impact.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+        <a href="events.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+        <a href="projects.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+        <a href="team.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-blue]">Team</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <button class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[--color-blue] border border-[--color-blue] px-4 py-2 hover:bg-[--color-blue] hover:text-white transition-colors duration-200">
+          Contact →
+        </button>
+      </div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+    <div class="flex flex-col justify-center h-full px-8 gap-8">
+      <a href="about.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
+      <a href="domains.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
+      <a href="impact.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Impact</a>
+      <a href="events.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Events</a>
+      <a href="projects.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Projects</a>
+      <a href="team.html" class="text-4xl font-bold text-[--color-blue] transition-colors">Team</a>
+      <button class="contact-trigger text-4xl font-bold text-[--color-blue] hover:opacity-70 transition-opacity text-left">
+        Contact →
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="pt-32 pb-16 bg-[--color-ground]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-8">
+          06 / Team
+        </p>
+        <div class="grid lg:grid-cols-2 gap-12 items-end animate-fade-up">
+          <h1 class="font-black text-[--color-ink] leading-[0.9] tracking-tight" style="font-size: clamp(3rem, 8vw, 8rem);">
+            The people behind it.
+          </h1>
+          <p class="text-lg text-[--color-ink-muted] leading-relaxed lg:pb-4">
+            Students who give their time to make ACM-VNIT exceptional. Leaders, builders, and community architects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-t border-[--color-border]"></div>
+
+    <!-- EXECUTIVE BOARD -->
+    <section class="py-20 bg-[--color-ground]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-ink-muted] mb-16">
+            Executive Board
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-0">
+          
+          <!-- Member 1: Aarav Mehta (Even) -->
+          <div class="reveal">
+            <div class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground-alt]">
+              <!-- Photo -->
+              <div class="lg:col-span-4 lg:col-start-1 overflow-hidden">
+                <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&auto=format" alt="Aarav Mehta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-[--color-blue]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+                </div>
+              </div>
+              <!-- Info -->
+              <div class="lg:col-span-7 flex flex-col justify-center p-8 lg:p-14 lg:col-start-6">
+                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">President</p>
+                <h2 class="font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
+                  Aarav Mehta
+                </h2>
+                <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
+                  Final year CSE student with a research focus on distributed systems. Previously interned at Google and contributed to several open-source projects.
+                </p>
+                <div class="flex gap-4">
+                  <a href="#" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+                  <a href="#" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2: Ishita Rao (Odd) -->
+          <div class="reveal" style="transition-delay: 0.1s;">
+            <div class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground-alt]">
+              <!-- Photo (Placed second on desktop, first on mobile, using row-start configuration) -->
+              <div class="lg:col-span-4 lg:col-start-9 overflow-hidden">
+                <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=400&h=500&fit=crop&auto=format" alt="Ishita Rao" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-[--color-blue]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+                </div>
+              </div>
+              <!-- Info -->
+              <div class="lg:col-span-7 flex flex-col justify-center p-8 lg:p-14 lg:col-start-1 lg:row-start-1">
+                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Vice President</p>
+                <h2 class="font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
+                  Ishita Rao
+                </h2>
+                <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
+                  Third year CSE with a passion for AI/ML and competitive programming. ICPC Asia Regionals qualifier. Google Summer of Code 2024 participant.
+                </p>
+                <div class="flex gap-4">
+                  <a href="#" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+                  <a href="#" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3: Karan Singhania (Even) -->
+          <div class="reveal" style="transition-delay: 0.2s;">
+            <div class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground-alt]">
+              <!-- Photo -->
+              <div class="lg:col-span-4 lg:col-start-1 overflow-hidden">
+                <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&auto=format" alt="Karan Singhania" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-[--color-blue]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+                </div>
+              </div>
+              <!-- Info -->
+              <div class="lg:col-span-7 flex flex-col justify-center p-8 lg:p-14 lg:col-start-6">
+                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Technical Lead</p>
+                <h2 class="font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
+                  Karan Singhania
+                </h2>
+                <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
+                  Full-stack engineer and open-source enthusiast. Maintains three public projects with combined 800+ stars. Final year ECE.
+                </p>
+                <div class="flex gap-4">
+                  <a href="#" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+                  <a href="#" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE TEAM -->
+    <section class="py-20 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-ink-muted] mb-16">
+            Core Team
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-0 border border-[--color-border]">
+          <!-- Core Member 1: Priya Nair -->
+          <div class="reveal border-b lg:border-b-0 lg:border-r border-[--color-border] overflow-hidden group">
+            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&auto=format" alt="Priya Nair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-6">
+                <p class="text-white font-black text-xl leading-tight">Priya Nair</p>
+                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Events Head</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
+                Organized 12+ technical events and workshops. Third year CSE passionate about building community and making computing accessible.
+              </p>
+              <div class="flex gap-3">
+                <a href="#" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
+                <a href="#" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Member 2: Rohan Desai -->
+          <div class="reveal border-b lg:border-b-0 lg:border-r border-[--color-border] overflow-hidden group" style="transition-delay: 0.08s;">
+            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&auto=format" alt="Rohan Desai" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-6">
+                <p class="text-white font-black text-xl leading-tight">Rohan Desai</p>
+                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Webmaster</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
+                Third year CSE. React and TypeScript developer building tools that scale. Core contributor to CampusConnect.
+              </p>
+              <div class="flex gap-3">
+                <a href="#" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
+                <a href="#" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Member 3: Sneha Gupta -->
+          <div class="reveal overflow-hidden group" style="transition-delay: 0.16s;">
+            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=500&fit=crop&auto=format" alt="Sneha Gupta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-6">
+                <p class="text-white font-black text-xl leading-tight">Sneha Gupta</p>
+                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Design Lead</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
+                Interface designer and front-end developer. Believes great software starts with great design. Internships at two design-forward startups.
+              </p>
+              <div class="flex gap-3">
+                <a href="#" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
+                <a href="#" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section class="py-20 border-t border-[--color-border]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <div>
+          <p class="text-xs font-mono tracking-[0.15em] uppercase text-[--color-ink-muted] mb-3">Open positions</p>
+          <h2 class="text-3xl font-black text-[--color-ink]">Join the team for 2025–26.</h2>
+        </div>
+        <a href="mailto:acm@vnit.ac.in" class="shrink-0 bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+          Express interest →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[--color-border] bg-[--color-ground]" style="font-family: var(--font-display)">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
+        <div>
+          <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">ACM·VNIT</p>
+          <p class="text-sm text-[--color-ink-muted] leading-relaxed max-w-xs">
+            The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Navigate</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="about.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">About</a></li>
+              <li><a href="domains.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Domains</a></li>
+              <li><a href="impact.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Impact</a></li>
+              <li><a href="events.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Events</a></li>
+              <li><a href="projects.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Projects</a></li>
+              <li><a href="team.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Connect</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">LinkedIn</a></li>
+              <li><a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">GitHub</a></li>
+              <li><a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Instagram</a></li>
+              <li><a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Twitter/X</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
+          <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+            Visvesvaraya National Institute<br>of Technology, Nagpur<br>Maharashtra 440010, India
+          </p>
+          <a href="mailto:acm@vnit.ac.in" class="inline-block mt-4 text-sm font-medium text-[--color-blue] hover:underline">
+            acm@vnit.ac.in
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <p class="text-xs font-mono text-[--color-ink-muted]">
+          © 2026 ACM Student Chapter — VNIT Nagpur
+        </p>
+        <p class="text-xs font-mono text-[--color-ink-muted]">
+          Association for Computing Machinery
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Drawer Backdrop -->
+  <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- Contact Drawer Panel -->
+  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+    <!-- Header -->
+    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
+      <div>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">
+          ACM·VNIT
+        </p>
+        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+      </div>
+      <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">
+        ✕
+      </button>
+    </div>
+
+    <!-- Body / Form -->
+    <div class="flex-1 overflow-y-auto px-8 py-8">
+      <div id="contact-success-state" class="hidden flex flex-col items-center justify-center h-full gap-4 text-center">
+        <div class="w-16 h-16 bg-[--color-blue-dim] flex items-center justify-center text-[--color-blue] text-2xl">
+          ✓
+        </div>
+        <p class="text-xl font-bold">Message received.</p>
+        <p class="text-sm text-[--color-ink-muted] max-w-xs">
+          We'll get back to you within 48 hours. Thanks for reaching out to ACM-VNIT.
+        </p>
+        <button class="contact-close mt-4 text-xs uppercase tracking-widest text-[--color-blue] font-medium hover:underline">
+          Close panel
+        </button>
+      </div>
+
+      <div id="contact-form-state">
+        <form class="contact-form flex flex-col gap-5 mb-10">
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
+            <input type="text" required placeholder="Your full name" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
+            <input type="email" required placeholder="you@example.com" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
+            <input type="text" required placeholder="What's this about?" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
+            <textarea required rows="5" placeholder="Your message..." class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent resize-none"></textarea>
+          </div>
+          <button type="submit" class="bg-[--color-blue] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+            Send Message →
+          </button>
+        </form>
+
+        <!-- Details -->
+        <div class="border-t border-[--color-border] pt-8 flex flex-col gap-6">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</p>
+            <a href="mailto:acm@vnit.ac.in" class="text-sm font-medium text-[--color-ink] hover:text-[--color-blue] transition-colors">acm@vnit.ac.in</a>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+              <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+              <a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Instagram</a>
+              <a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Twitter/X</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Address</p>
+            <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+              Visvesvaraya National Institute of Technology<br>South Ambazari Road, Nagpur<br>Maharashtra 440010, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
