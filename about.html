@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACM-VNIT — About</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-[--color-ink]">
+  <!-- Header -->
+  <header id="site-header" style="font-family: var(--font-display)" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+    <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
+        <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
+        <div class="flex flex-col text-left">
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing Machinery</span>
+          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT Student Chapter</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="about.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-blue]">About</a>
+        <a href="domains.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+        <a href="impact.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+        <a href="events.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+        <a href="projects.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+        <a href="team.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Team</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <button class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[--color-blue] border border-[--color-blue] px-4 py-2 hover:bg-[--color-blue] hover:text-white transition-colors duration-200">
+          Contact →
+        </button>
+      </div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+    <div class="flex flex-col justify-center h-full px-8 gap-8">
+      <a href="about.html" class="text-4xl font-bold text-[--color-blue] transition-colors">About</a>
+      <a href="domains.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
+      <a href="impact.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Impact</a>
+      <a href="events.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Events</a>
+      <a href="projects.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Projects</a>
+      <a href="team.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Team</a>
+      <button class="contact-trigger text-4xl font-bold text-[--color-blue] hover:opacity-70 transition-opacity text-left">
+        Contact →
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="pt-32 pb-24 bg-[--color-ground]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-8 animate-fade-up">
+            <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-8">
+              01 / About
+            </p>
+            <h1 class="font-black text-[--color-ink] leading-[0.9] tracking-tight" style="font-size: clamp(3rem, 8vw, 9rem);">
+              Who we are.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-t border-[--color-border]"></div>
+
+    <!-- WHO WE ARE -->
+    <section class="py-28 bg-[--color-ground]">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-20 items-start">
+          <div class="reveal">
+            <h2 class="font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 4vw, 4rem);">
+              A community of builders, thinkers, and problem-solvers.
+            </h2>
+          </div>
+          <div class="reveal" style="transition-delay: 0.15s;">
+            <p class="text-lg text-[--color-ink-soft] leading-relaxed mb-6">
+              ACM-VNIT is the student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur. We are one of India's most active computing student communities.
+            </p>
+            <p class="text-base text-[--color-ink-muted] leading-relaxed mb-6">
+              Since our founding in 2016, we've built a culture where serious technical work meets genuine community. Our members go on to work at leading technology companies, pursue research at top institutions, and start their own ventures.
+            </p>
+            <p class="text-base text-[--color-ink-muted] leading-relaxed">
+              We believe computing is one of the most powerful tools available to humanity. Our goal is to make sure VNIT students are equipped to use it well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="py-28 bg-[--color-ground-alt]">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-16">
+            What we do
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-0 border border-[--color-border]">
+          <!-- Learn -->
+          <div class="reveal p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[--color-border]">
+            <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-ink-muted] mb-4">01</p>
+            <h3 class="text-3xl font-black text-[--color-ink] mb-4">Learn</h3>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">
+              Workshops, reading groups, bootcamps, and one-on-one mentorship across six technical domains. Learning here is hands-on, peer-driven, and connected to real practice.
+            </p>
+          </div>
+
+          <!-- Build -->
+          <div class="reveal p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-[--color-border]" style="transition-delay: 0.1s;">
+            <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-ink-muted] mb-4">02</p>
+            <h3 class="text-3xl font-black text-[--color-ink] mb-4">Build</h3>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">
+              We ship real software used by the VNIT community. From web platforms to competitive programming tools, our projects have impact beyond demos.
+            </p>
+          </div>
+
+          <!-- Compete -->
+          <div class="reveal p-10 lg:p-12 border-[--color-border]" style="transition-delay: 0.2s;">
+            <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-ink-muted] mb-4">03</p>
+            <h3 class="text-3xl font-black text-[--color-ink] mb-4">Compete</h3>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">
+              From ICPC regionals to national hackathons, our members compete at the highest levels. We prepare together and celebrate each other's wins.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="py-28 bg-[--color-ink]">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-white/40 mb-10">Our vision</p>
+          <p class="font-black text-white leading-tight max-w-4xl" style="font-size: clamp(2rem, 5vw, 5rem);">
+            "To be the most impactful computing community in Indian technical education."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ACM-VNIT -->
+    <section class="py-28 bg-[--color-ground]">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-16">Why ACM-VNIT</p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-16">
+          <div class="lg:col-span-5">
+            <div class="reveal">
+              <h2 class="font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+                We take computing seriously. So should you.
+              </h2>
+            </div>
+          </div>
+          <div class="lg:col-span-6 lg:col-start-7">
+            <!-- Row 1 -->
+            <div class="reveal flex gap-6 py-6 border-b border-[--color-border]">
+              <span class="text-xs font-mono text-[--color-ink-muted] pt-1 w-8 shrink-0">01</span>
+              <div>
+                <p class="font-bold text-[--color-ink] mb-1">Peer-driven learning</p>
+                <p class="text-sm text-[--color-ink-muted] leading-relaxed">Our best sessions are student-led. No gatekeeping, just shared curiosity.</p>
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="reveal flex gap-6 py-6 border-b border-[--color-border]" style="transition-delay: 0.07s;">
+              <span class="text-xs font-mono text-[--color-ink-muted] pt-1 w-8 shrink-0">02</span>
+              <div>
+                <p class="font-bold text-[--color-ink] mb-1">Real projects</p>
+                <p class="text-sm text-[--color-ink-muted] leading-relaxed">Build things that run in production and are used by real people.</p>
+              </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="reveal flex gap-6 py-6 border-b border-[--color-border]" style="transition-delay: 0.14s;">
+              <span class="text-xs font-mono text-[--color-ink-muted] pt-1 w-8 shrink-0">03</span>
+              <div>
+                <p class="font-bold text-[--color-ink] mb-1">Industry connections</p>
+                <p class="text-sm text-[--color-ink-muted] leading-relaxed">Alumni at Google, Microsoft, Meta, and leading Indian tech companies.</p>
+              </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="reveal flex gap-6 py-6 border-b border-[--color-border]" style="transition-delay: 0.21s;">
+              <span class="text-xs font-mono text-[--color-ink-muted] pt-1 w-8 shrink-0">04</span>
+              <div>
+                <p class="font-bold text-[--color-ink] mb-1">Competitive culture</p>
+                <p class="text-sm text-[--color-ink-muted] leading-relaxed">We push each other to compete at national and international levels.</p>
+              </div>
+            </div>
+            <!-- Row 5 -->
+            <div class="reveal flex gap-6 py-6 border-b border-[--color-border] last:border-0" style="transition-delay: 0.28s;">
+              <span class="text-xs font-mono text-[--color-ink-muted] pt-1 w-8 shrink-0">05</span>
+              <div>
+                <p class="font-bold text-[--color-ink] mb-1">Open community</p>
+                <p class="text-sm text-[--color-ink-muted] leading-relaxed">All engineering branches welcome. Computing is for everyone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 border-t border-[--color-border]">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <p class="text-xl font-bold text-[--color-ink]">See what we're building.</p>
+        <div class="flex gap-4">
+          <a href="projects.html" class="bg-[--color-blue] text-white px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+            Projects →
+          </a>
+          <a href="team.html" class="border border-[--color-border] text-[--color-ink] px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase hover:border-[--color-ink] transition-colors">
+            Team
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[--color-border] bg-[--color-ground]" style="font-family: var(--font-display)">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
+        <div>
+          <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">ACM·VNIT</p>
+          <p class="text-sm text-[--color-ink-muted] leading-relaxed max-w-xs">
+            The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Navigate</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="about.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">About</a></li>
+              <li><a href="domains.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Domains</a></li>
+              <li><a href="impact.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Impact</a></li>
+              <li><a href="events.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Events</a></li>
+              <li><a href="projects.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Projects</a></li>
+              <li><a href="team.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Connect</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">LinkedIn</a></li>
+              <li><a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">GitHub</a></li>
+              <li><a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Instagram</a></li>
+              <li><a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Twitter/X</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
+          <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+            Visvesvaraya National Institute<br>of Technology, Nagpur<br>Maharashtra 440010, India
+          </p>
+          <a href="mailto:acm@vnit.ac.in" class="inline-block mt-4 text-sm font-medium text-[--color-blue] hover:underline">
+            acm@vnit.ac.in
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <p class="text-xs font-mono text-[--color-ink-muted]">
+          © 2026 ACM Student Chapter — VNIT Nagpur
+        </p>
+        <p class="text-xs font-mono text-[--color-ink-muted]">
+          Association for Computing Machinery
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Drawer Backdrop -->
+  <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- Contact Drawer Panel -->
+  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+    <!-- Header -->
+    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
+      <div>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">
+          ACM·VNIT
+        </p>
+        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+      </div>
+      <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">
+        ✕
+      </button>
+    </div>
+
+    <!-- Body / Form -->
+    <div class="flex-1 overflow-y-auto px-8 py-8">
+      <div id="contact-success-state" class="hidden flex flex-col items-center justify-center h-full gap-4 text-center">
+        <div class="w-16 h-16 bg-[--color-blue-dim] flex items-center justify-center text-[--color-blue] text-2xl">
+          ✓
+        </div>
+        <p class="text-xl font-bold">Message received.</p>
+        <p class="text-sm text-[--color-ink-muted] max-w-xs">
+          We'll get back to you within 48 hours. Thanks for reaching out to ACM-VNIT.
+        </p>
+        <button class="contact-close mt-4 text-xs uppercase tracking-widest text-[--color-blue] font-medium hover:underline">
+          Close panel
+        </button>
+      </div>
+
+      <div id="contact-form-state">
+        <form class="contact-form flex flex-col gap-5 mb-10">
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
+            <input type="text" required placeholder="Your full name" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
+            <input type="email" required placeholder="you@example.com" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
+            <input type="text" required placeholder="What's this about?" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
+            <textarea required rows="5" placeholder="Your message..." class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent resize-none"></textarea>
+          </div>
+          <button type="submit" class="bg-[--color-blue] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+            Send Message →
+          </button>
+        </form>
+
+        <!-- Details -->
+        <div class="border-t border-[--color-border] pt-8 flex flex-col gap-6">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</p>
+            <a href="mailto:acm@vnit.ac.in" class="text-sm font-medium text-[--color-ink] hover:text-[--color-blue] transition-colors">acm@vnit.ac.in</a>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+              <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+              <a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Instagram</a>
+              <a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Twitter/X</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Address</p>
+            <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+              Visvesvaraya National Institute of Technology<br>South Ambazari Road, Nagpur<br>Maharashtra 440010, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
