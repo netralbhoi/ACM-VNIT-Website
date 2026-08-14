@@ -87,15 +87,15 @@
 
   <main>
     <!-- HERO SECTION -->
-    <section class="relative min-h-screen flex flex-col justify-end pb-20 overflow-hidden bg-white"
+    <section class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-white"
       style="font-family: var(--font-display)">
       <!-- Building background image (right-aligned) -->
       <div class="absolute inset-0 pointer-events-none"
-        style="background-image: url('Home_hero_backGd.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; opacity: 0.55;">
+        style="background-image: url('Home_hero_backGd.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; opacity: 0.45;">
       </div>
       <!-- Fade overlay: white on the left, transparent on the right -->
       <div class="absolute inset-0 pointer-events-none"
-        style="background: linear-gradient(to right, #ffffff 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 75%);">
+        style="background: linear-gradient(to right, #ffffff 35%, rgba(255,255,255,0.92) 55%, rgba(255,255,255,0.1) 85%);">
       </div>
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none"
@@ -113,49 +113,107 @@
         <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">Est. 2009</p>
       </div>
 
-      <!-- Main heading -->
-      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10">
-        <div class="mb-2 animate-fade-up">
-          <h1 class="font-black leading-[0.9] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-            <span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]"
-              style="color: #636363;">E </span><span class="text-[--color-ink]">A</span><span class="text-[--color-ink]"
-              style="color: #636363;">RE </span><span class="text-[--color-ink]">T</span><span
-              class="text-[--color-ink]" style="color: #636363;">HE</span>
-          </h1>
-          <h1 class="font-black leading-[0.9] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-            <span style="color: #0a0a0a; font-size: 1.13em;">A</span><span class="text-[--color-ink]"
-              style="color: #636363;">SSOCIATION </span><span class="text-[--color-ink]">F</span><span
-              class="text-[--color-ink]" style="color: #636363;">OR</span>
-          </h1>
-          <h1 class="font-black leading-[0.9] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-            <span style="color: #0a0a0a; font-size: 1.13em;">C</span><span class="text-[--color-ink]"
-              style="color: #636363;">OMPUTING </span><br><span style="color: #0a0a0a; font-size: 1.13em;">M</span><span
-              class="text-[--color-ink]" style="color: #636363;">ACHINERY</span>
-          </h1>
-        </div>
+      <!-- Main content container (middle of screen) -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center w-full mt-8 lg:mt-0">
+          
+          <!-- Left side content (heading, description, buttons) -->
+          <div class="lg:col-span-7 flex flex-col justify-center text-left">
+            <div class="mb-6 animate-fade-up">
+              <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
+                <span class="block">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]"
+                    style="color: #636363;">E </span><span class="text-[--color-ink]">A</span><span class="text-[--color-ink]"
+                    style="color: #636363;">RE </span><span class="text-[--color-ink]">T</span><span
+                    class="text-[--color-ink]" style="color: #636363;">HE</span>
+                </span>
+                <span class="block mt-1">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">A</span><span class="text-[--color-ink]"
+                    style="color: #636363;">SSOCIATION </span><span class="text-[--color-ink]">F</span><span
+                    class="text-[--color-ink]" style="color: #636363;">OR</span>
+                </span>
+                <span class="block mt-1">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">C</span><span class="text-[--color-ink]"
+                    style="color: #636363;">OMPUTING </span><br><span style="color: #0a0a0a; font-size: 1.13em;">M</span><span
+                    class="text-[--color-ink]" style="color: #636363;">ACHINERY</span>
+                </span>
+              </h1>
+            </div>
 
-        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mt-10 gap-8 animate-fade-up"
-          style="animation-delay: 0.25s;">
-          <div class="max-w-md">
-            <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium">
-              The computing community at Visvesvaraya National Institute of Technology. Advancing technology through
-              research, collaboration, and community.
-            </p>
+            <div class="animate-fade-up" style="animation-delay: 0.2s;">
+              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-8 max-w-xl">
+                The computing community at Visvesvaraya National Institute of Technology. Advancing technology through
+                research, collaboration, and community since 2009.
+              </p>
+              
+              <div class="flex flex-wrap gap-4">
+                <a href="domains.html"
+                  class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+                  Explore Domains →
+                </a>
+                <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+                  Get in Touch
+                </button>
+              </div>
+            </div>
           </div>
 
-
-        </div>
-
-        <!-- Bottom bar -->
-        <div class="bot-bar">
-          <div class="mt-16 pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16 animate-fade-up"
-            style="animation-delay: 0.45s;">
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Computing</span>
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Innovation</span>
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Community</span>
+          <!-- Right side content (terminal mockup) -->
+          <div class="lg:col-span-5 hidden lg:block animate-fade-up" style="animation-delay: 0.35s;">
+            <div class="bg-[#0d1117] border border-[--color-border-strong]/10 shadow-2xl flex flex-col font-mono text-xs">
+              <!-- Window controls -->
+              <div class="flex items-center justify-between px-4 py-3 border-b border-white/5 bg-white/5">
+                <div class="flex gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></span>
+                </div>
+                <span class="text-[10px] text-white/30 tracking-wider">acm-vnit // core_v1.0</span>
+              </div>
+              <!-- Code container -->
+              <div class="p-6 space-y-4 text-left leading-relaxed">
+                <div>
+                  <p class="text-white/40">// Initializing local VNIT student chapter...</p>
+                  <p class="text-[--color-blue-light] font-semibold">ACM Student Chapter Online</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-white/60"><span class="text-emerald-400">➜</span> <span class="text-white">acm</span> --info</p>
+                  <p class="text-white/40 pl-4">Name: ACM Student Chapter VNIT Nagpur</p>
+                  <p class="text-white/40 pl-4">Established: 2009</p>
+                  <p class="text-white/40 pl-4">Status: Active &amp; Recruiting</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-white/60"><span class="text-emerald-400">➜</span> <span class="text-white">acm</span> --metrics</p>
+                  <p class="text-white/40 pl-4">Members: <span class="text-white">500+ across all branches</span></p>
+                  <p class="text-white/40 pl-4">Domains: <span class="text-white">8 active verticals</span></p>
+                  <p class="text-white/40 pl-4">Impact: <span class="text-white">5K+ students reached</span></p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-white/60"><span class="text-emerald-400">➜</span> <span class="text-white">acm</span> --flagship</p>
+                  <p class="text-[--color-blue-light] pl-4 font-bold">INSOMNIA Hackathon 2026</p>
+                  <p class="text-white/40 pl-4">Description: Central India's Largest Hackathon</p>
+                </div>
+                <div class="pt-2 border-t border-white/5 flex justify-between text-[10px] text-white/20">
+                  <span>Session: Active</span>
+                  <span>Port: 8080</span>
+                </div>
+              </div>
+            </div>
           </div>
+          
         </div>
       </div>
+
+      <!-- Bottom bar -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
+        <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16 animate-fade-up"
+          style="animation-delay: 0.5s;">
+          <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Computing</span>
+          <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Innovation</span>
+          <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Community</span>
+        </div>
+      </div>
+      
     </section>
 
     <!-- MARQUEE -->
