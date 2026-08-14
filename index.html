@@ -214,206 +214,414 @@
     </div>
 
     <!-- 01 / ABOUT -->
-    <section class="border-t border-[--color-border] py-14 bg-[--color-ground-alt]">
+    <section class="border-t border-[--color-border] py-14 bg-theme-tint-blue">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="reveal">
-            <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-8">
-              01 / About
-            </p>
+            <span class="domain-badge domain-badge-blue mb-6">01 / About</span>
             <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(2.4rem, 5vw, 5rem);">
               COMPUTING<br>IS A CRAFT.<br>WE TAKE IT<br>SERIOUSLY.
             </h2>
+            <p class="text-base text-[--color-ink-muted] leading-relaxed mt-8">
+              From research and open-source contributions to large-scale technical events, we turn ideas into real-world
+              impact — with 5,000+ students reached and 15+ years of uninterrupted activity.
+            </p>
           </div>
 
-          <div class="reveal lg:pt-20" style="transition-delay: 0.15s;">
-            <p class="text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium">
+          <div class="reveal" style="transition-delay: 0.15s;">
+            <!-- Campus image above the text, fades seamlessly under paragraph text -->
+            <div class="relative overflow-hidden rounded-t-xl border-t border-x border-b-0 border-[--color-border]">
+              <img
+                src="images/vnit-campus.jpg"
+                alt="VNIT Nagpur Campus"
+                class="w-full object-cover block"
+                style="aspect-ratio: 16/9; object-position: center;"
+              >
+              <!-- Fade overlay: transparent until 65% → section background at bottom -->
+              <div class="absolute inset-0 pointer-events-none"
+                style="background: linear-gradient(to bottom, transparent 65%, #f8fafc 98%);"></div>
+            </div>
+            <p class="relative z-10 -mt-6 text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium text-center px-4">
               ACM-VNIT is the official student chapter of the Association for Computing Machinery at VNIT Nagpur — one
               of India's premier engineering institutions. We've been pushing boundaries and challenging conventions
               since 2009.
             </p>
-            <p class="text-base text-[--color-ink-muted] leading-relaxed mb-10">
-              From research and open-source contributions to large-scale technical events, we turn ideas into real-world
-              impact — with 5,000+ students reached and 15+ years of uninterrupted activity.
-            </p>
-            <a href="about.html"
-              class="text-xs font-bold tracking-[0.15em] uppercase text-[--color-blue] hover:underline">
-              Our full story →
-            </a>
+            <div class="text-center relative z-10">
+              <a href="about.html"
+                class="btn-gradient-primary inline-block px-7 py-3 rounded-lg text-xs font-bold tracking-[0.15em] uppercase transition-all">
+                Our full story →
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 02 / IMPACT -->
-    <section class="border-t border-[--color-border] py-14 bg-[--color-ground]">
+    <section class="border-t border-[--color-border] py-14 bg-gradient-to-br from-white via-indigo-50/20 to-slate-50">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+        <div class="reveal flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-16">
           <div>
-            <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">
-              02 / Impact
-            </p>
+            <span class="domain-badge domain-badge-indigo mb-4">02 / Impact</span>
             <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 4vw, 4rem);">
               FIFTEEN YEARS OF WORK.
             </h2>
           </div>
-          <a href="impact.html" class="text-xs font-bold tracking-[0.15em] uppercase text-[--color-blue] hover:underline shrink-0">
+          <a href="impact.html" class="inline-block border border-[--color-blue] text-[--color-blue] px-6 py-3 rounded-lg text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue] hover:text-white transition-all duration-300 shadow-sm shrink-0">
             Full impact story →
           </a>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-0 border border-[--color-border]">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
           <!-- Stat 1 -->
-          <div class="reveal p-10 lg:p-14 border-r border-b lg:border-b-0 border-[--color-border]">
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(2.5rem, 5vw, 5rem);">
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[--color-blue]">
+            <p class="font-black gradient-text-primary leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
               15+
             </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Years Active</p>
-            <p class="text-[10px] text-[--color-ink-muted] mt-1">since founding in 2009</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] font-semibold">Years Active</p>
+            <p class="text-[10px] text-[--color-ink-muted] mt-1">uninterrupted activity since 2009</p>
           </div>
           <!-- Stat 2 -->
-          <div class="reveal p-10 lg:p-14 lg:border-r border-b lg:border-b-0 border-[--color-border]">
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(2.5rem, 5vw, 5rem);">
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-purple hover:border-[--color-purple]" style="transition-delay: 0.05s;">
+            <p class="font-black gradient-text-purple leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
               50+
             </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Events Hosted</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-purple] font-semibold">Events Hosted</p>
             <p class="text-[10px] text-[--color-ink-muted] mt-1">workshops, hackathons, summits</p>
           </div>
           <!-- Stat 3 -->
-          <div class="reveal p-10 lg:p-14 border-r border-[--color-border]">
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(2.5rem, 5vw, 5rem);">
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-cyan hover:border-[--color-cyan]" style="transition-delay: 0.1s;">
+            <p class="font-black gradient-text-accent leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
               5K+
             </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Students Impacted</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-cyan] font-semibold">Students Impacted</p>
             <p class="text-[10px] text-[--color-ink-muted] mt-1">through events &amp; mentorship</p>
           </div>
           <!-- Stat 4 -->
-          <div class="reveal p-10 lg:p-14 border-[--color-border]">
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(2.5rem, 5vw, 5rem);">
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[--color-blue]" style="transition-delay: 0.15s;">
+            <p class="font-black gradient-text-primary leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
+              3×
+            </p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] font-semibold">ICPC Regionals</p>
+            <p class="text-[10px] text-[--color-ink-muted] mt-1">Asia Regionals representation</p>
+          </div>
+          <!-- Stat 5 -->
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-amber hover:border-[--color-amber]" style="transition-delay: 0.2s;">
+            <p class="font-black gradient-text-amber leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
+              ₹2L+
+            </p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-amber] font-semibold">Prize Money Won</p>
+            <p class="text-[10px] text-[--color-ink-muted] mt-1">national hackathons &amp; contests</p>
+          </div>
+          <!-- Stat 6 -->
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-emerald hover:border-[--color-emerald]" style="transition-delay: 0.25s;">
+            <p class="font-black gradient-text-emerald leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
+              45+
+            </p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-emerald] font-semibold">Projects Deployed</p>
+            <p class="text-[10px] text-[--color-ink-muted] mt-1">real software shipped &amp; active</p>
+          </div>
+          <!-- Stat 7 -->
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-cyan hover:border-[--color-cyan]" style="transition-delay: 0.3s;">
+            <p class="font-black gradient-text-accent leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
+              12+
+            </p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-cyan] font-semibold">Workshops / Year</p>
+            <p class="text-[10px] text-[--color-ink-muted] mt-1">hands-on peer-led sessions</p>
+          </div>
+          <!-- Stat 8 -->
+          <div class="reveal group p-6 lg:p-8 border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-purple hover:border-[--color-purple]" style="transition-delay: 0.35s;">
+            <p class="font-black gradient-text-purple leading-none mb-3" style="font-size: clamp(2.2rem, 4vw, 4rem);">
               8
             </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Technical Domains</p>
-            <p class="text-[10px] text-[--color-ink-muted] mt-1">specialized verticals</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-purple] font-semibold">Technical Domains</p>
+            <p class="text-[10px] text-[--color-ink-muted] mt-1">specialized learning tracks</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- DOMAINS TEASER -->
-    <section class="border-t border-[--color-border] py-14 bg-[--color-ground-alt]">
+    <section class="border-t border-[--color-border] py-14 bg-theme-tint-cyan">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="reveal">
-          <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-8">
             <div>
-              <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">
-                03 / Domains
-              </p>
+              <span class="domain-badge domain-badge-cyan mb-4">03 / Domains</span>
               <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 4vw, 4rem);">
                 EIGHT AREAS OF FOCUS.
               </h2>
             </div>
             <a href="domains.html"
-              class="text-xs font-bold tracking-[0.15em] uppercase text-[--color-blue] hover:underline shrink-0">
+              class="inline-block border border-[--color-blue] text-[--color-blue] px-6 py-3 rounded-lg text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue] hover:text-white transition-all duration-300 shadow-sm shrink-0">
               Explore all domains →
             </a>
           </div>
         </div>
 
-        <div class="flex flex-col">
+        <!-- 8 Domains Grid: 4 columns x 2 rows on laptop (md:grid-cols-4), 2 columns x 4 rows on mobile (grid-cols-2) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <!-- Domain 1 -->
           <div class="reveal">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">01</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                CP &amp; DSA
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#1d4ed8]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/cp-dsa-bg.png"
+                  alt="CP &amp; DSA Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-blue">01</span>
+                  <span class="text-xs font-mono text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[--color-blue] transition-colors mb-2">
+                  CP &amp; DSA
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  Algorithms, data structures, and ICPC competitive programming mastery.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#1d4ed8] font-bold">Algorithms · ICPC</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 2 -->
           <div class="reveal" style="transition-delay: 0.05s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">02</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                Artificial Intelligence / ML
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-purple hover:border-[#7c3aed]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/ai-ml-bg.png"
+                  alt="AI &amp; ML Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-purple">02</span>
+                  <span class="text-xs font-mono text-[#7c3aed] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#7c3aed] transition-colors mb-2">
+                  AI &amp; ML
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  Deep learning, computer vision, NLP, and Intelligent systems.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#7c3aed] font-bold">PyTorch · Models</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 3 -->
           <div class="reveal" style="transition-delay: 0.1s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">03</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                Web Development
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#0284c7]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/web-dev-bg.png"
+                  alt="Web Dev Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-sky">03</span>
+                  <span class="text-xs font-mono text-[#0284c7] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#0284c7] transition-colors mb-2">
+                  Web Dev
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  Full-stack architecture, modern frontend frameworks, and cloud backends.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#0284c7] font-bold">Full-Stack · Web</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 4 -->
           <div class="reveal" style="transition-delay: 0.15s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">04</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                App Development
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#4f46e5]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/app-dev-bg.png"
+                  alt="App Dev Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-indigo">04</span>
+                  <span class="text-xs font-mono text-[#4f46e5] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#4f46e5] transition-colors mb-2">
+                  App Dev
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  Native and cross-platform mobile apps built for performance.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#4f46e5] font-bold">Flutter · iOS · Android</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 5 -->
           <div class="reveal" style="transition-delay: 0.2s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">05</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                Cybersecurity
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-emerald hover:border-[#059669]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/cybersec-bg.png"
+                  alt="Cybersecurity Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-emerald">05</span>
+                  <span class="text-xs font-mono text-[#059669] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#059669] transition-colors mb-2">
+                  Cybersec
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  CTF competitions, ethical hacking, and network security analysis.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#059669] font-bold">CTF · Security</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 6 -->
           <div class="reveal" style="transition-delay: 0.25s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">06</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                Cloud &amp; DevOps
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-cyan hover:border-[#06b6d4]">
+              <!-- Background Image -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/cloud-devops-bg.png"
+                  alt="Cloud &amp; DevOps Background"
+                  class="w-full h-full object-cover opacity-55 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-cyan">06</span>
+                  <span class="text-xs font-mono text-[#06b6d4] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#06b6d4] transition-colors mb-2">
+                  Cloud &amp; DevOps
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  CI/CD automation, Docker containers, and scalable infrastructure.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#06b6d4] font-bold">Docker · AWS · CI/CD</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 7 -->
           <div class="reveal" style="transition-delay: 0.3s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">07</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                Design
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#e11d48]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/design-bg.png"
+                  alt="Design Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-rose">07</span>
+                  <span class="text-xs font-mono text-[#e11d48] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#e11d48] transition-colors mb-2">
+                  Design
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  UI/UX research, visual design systems, and product ergonomics.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#e11d48] font-bold">UI/UX · Figma</span>
+              </div>
             </a>
           </div>
+
           <!-- Domain 8 -->
           <div class="reveal" style="transition-delay: 0.35s;">
             <a href="domains.html"
-              class="group flex items-center gap-6 py-5 border-b border-[--color-border] hover:bg-[--color-ground-subtle] -mx-4 px-4 transition-colors">
-              <span class="text-xs font-mono text-[--color-ink-muted] w-8 shrink-0">08</span>
-              <span class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors"
-                style="font-size: clamp(1rem, 2.5vw, 1.75rem);">
-                Open Source
-              </span>
-              <span class="ml-auto text-[--color-ink-muted] opacity-0 group-hover:opacity-100 transition-opacity text-xl">→</span>
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-amber hover:border-[#d97706]">
+              <!-- Background Image with Increased Opacity -->
+              <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <img
+                  src="images/oss-bg.png"
+                  alt="Open Source Background"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                >
+                <!-- Soft fade overlay for legibility -->
+                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+              </div>
+
+              <div class="relative z-10">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="domain-badge domain-badge-amber">08</span>
+                  <span class="text-xs font-mono text-[#d97706] group-hover:translate-x-1 transition-all">→</span>
+                </div>
+                <h3 class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#d97706] transition-colors mb-2">
+                  Open Source
+                </h3>
+                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                  Global repository contributions, GSoC mentoring, and OSS software.
+                </p>
+              </div>
+              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#d97706] font-bold">GSoC · GitHub</span>
+              </div>
             </a>
           </div>
         </div>
@@ -421,57 +629,78 @@
     </section>
 
     <!-- LATEST EVENT TEASER -->
-    <section class="border-t border-[--color-border] py-14 bg-[--color-ground]">
+    <section class="border-t border-[--color-border] py-14 bg-gradient-to-br from-white via-blue-50/20 to-slate-50">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="reveal">
-            <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-6">
-              04 / Events
-            </p>
-            <h2 class="uppercase font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
-              INSOMNIA — CENTRAL INDIA'S LARGEST HACKATHON
-            </h2>
-            <p class="text-base text-[--color-ink-soft] leading-relaxed mb-4">
-              36 continuous hours. 1,500+ builders. One challenge.
-            </p>
-            <p class="text-xs font-mono tracking-widest text-[--color-ink-muted] uppercase mb-10">
-              Annual Flagship · Hackathon
-            </p>
-            <a href="events.html"
-              class="inline-block border border-[--color-border] text-[--color-ink] px-6 py-3 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-colors">
-              View all events →
-            </a>
+          <!-- Flagship Dark Gradient Card -->
+          <div class="reveal relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-[#1e293b] text-white p-8 lg:p-12 shadow-2xl border border-slate-700/60">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10">
+              <span class="domain-badge domain-badge-cyan mb-6">04 / Events</span>
+              <h2 class="uppercase font-black text-white leading-tight mb-6" style="font-size: clamp(2rem, 3.5vw, 3.5rem);">
+                <span style="color:#ffffff;">INSOMNIA</span> <span style="color:#cbd5e1;">— CENTRAL INDIA'S LARGEST HACKATHON</span>
+              </h2>
+              <p class="text-base text-slate-300 leading-relaxed mb-4">
+                36 continuous hours. 1,500+ builders. One challenge.
+              </p>
+              <div class="flex items-center gap-3 mb-10">
+                <span class="text-[10px] font-mono tracking-widest text-cyan-300 uppercase px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30">Annual Flagship</span>
+                <span class="text-[10px] font-mono tracking-widest text-blue-300 uppercase px-3 py-1 rounded-full bg-blue-950/80 border border-blue-500/30">Hackathon</span>
+              </div>
+              <a href="events.html"
+                class="inline-block bg-white text-slate-900 px-7 py-3.5 rounded-lg text-xs font-bold tracking-[0.15em] uppercase hover:bg-slate-100 transition-all duration-200 shadow-lg hover:shadow-cyan-500/20">
+                View all events →
+              </a>
+            </div>
           </div>
 
           <div class="reveal" style="transition-delay: 0.15s;">
-            <div class="border border-[--color-border] bg-[--color-ground-alt] p-10 flex flex-col gap-8">
+            <div class="flex flex-col gap-4">
               <!-- Event 1 -->
-              <div class="flex gap-6 items-start pb-8 border-b border-[--color-border]">
-                <span class="text-[10px] font-mono text-[--color-ink-muted] tracking-widest shrink-0 pt-1">01</span>
-                <div>
-                  <p class="font-bold text-[--color-ink] mb-1">Web Development Workshop</p>
-                  <p class="text-xs text-[--color-ink-muted]">Hands-on workshop covering full-stack architecture, modern frontend systems, and backend development with live deployments.</p>
+              <a href="events.html" class="group block border border-[--color-border] bg-white rounded-xl p-6 theme-card-glow hover:border-[--color-blue]">
+                <div class="flex items-start justify-between gap-4 mb-2">
+                  <div class="flex items-center gap-3">
+                    <span class="domain-badge domain-badge-blue">01</span>
+                    <h3 class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors">Web Development Workshop</h3>
+                  </div>
+                  <span class="domain-badge domain-badge-sky shrink-0">Workshop</span>
                 </div>
-                <span class="text-xs font-mono text-[--color-ink-muted] shrink-0">Workshop</span>
-              </div>
+                <p class="text-xs text-[--color-ink-muted] leading-relaxed mb-3">Hands-on workshop covering full-stack architecture, modern frontend systems, and backend development with live deployments.</p>
+                <div class="flex items-center justify-between text-[10px] font-mono text-[--color-ink-muted] pt-2 border-t border-[--color-border]/60">
+                  <span class="text-blue-600 font-medium">VNIT Campus</span>
+                  <span class="group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">Explore Event →</span>
+                </div>
+              </a>
               <!-- Event 2 -->
-              <div class="flex gap-6 items-start pb-8 border-b border-[--color-border]">
-                <span class="text-[10px] font-mono text-[--color-ink-muted] tracking-widest shrink-0 pt-1">02</span>
-                <div>
-                  <p class="font-bold text-[--color-ink] mb-1">ACM Meet 2026</p>
-                  <p class="text-xs text-[--color-ink-muted]">Students from all four years came together for networking, mentorship, and discussions on ACM initiatives and community building.</p>
+              <a href="events.html" class="group block border border-[--color-border] bg-white rounded-xl p-6 theme-card-glow theme-card-purple hover:border-[--color-purple]">
+                <div class="flex items-start justify-between gap-4 mb-2">
+                  <div class="flex items-center gap-3">
+                    <span class="domain-badge domain-badge-purple">02</span>
+                    <h3 class="font-bold text-[--color-ink] group-hover:text-[--color-purple] transition-colors">ACM Meet 2026</h3>
+                  </div>
+                  <span class="domain-badge domain-badge-purple shrink-0">Community</span>
                 </div>
-                <span class="text-xs font-mono text-[--color-ink-muted] shrink-0">Community</span>
-              </div>
+                <p class="text-xs text-[--color-ink-muted] leading-relaxed mb-3">Students from all four years came together for networking, mentorship, and discussions on ACM initiatives and community building.</p>
+                <div class="flex items-center justify-between text-[10px] font-mono text-[--color-ink-muted] pt-2 border-t border-[--color-border]/60">
+                  <span class="text-purple-600 font-medium">Networking</span>
+                  <span class="group-hover:text-[--color-purple] group-hover:translate-x-1 transition-all">Explore Event →</span>
+                </div>
+              </a>
               <!-- Event 3 -->
-              <div class="flex gap-6 items-start">
-                <span class="text-[10px] font-mono text-[--color-ink-muted] tracking-widest shrink-0 pt-1">03</span>
-                <div>
-                  <p class="font-bold text-[--color-ink] mb-1">CP &amp; DSA Bootcamp</p>
-                  <p class="text-xs text-[--color-ink-muted]">Intensive workshops covering data structures, algorithms, and competitive programming for national-level contests.</p>
+              <a href="events.html" class="group block border border-[--color-border] bg-white rounded-xl p-6 theme-card-glow theme-card-emerald hover:border-[--color-emerald]">
+                <div class="flex items-start justify-between gap-4 mb-2">
+                  <div class="flex items-center gap-3">
+                    <span class="domain-badge domain-badge-emerald">03</span>
+                    <h3 class="font-bold text-[--color-ink] group-hover:text-[--color-emerald] transition-colors">CP &amp; DSA Bootcamp</h3>
+                  </div>
+                  <span class="domain-badge domain-badge-emerald shrink-0">Bootcamp</span>
                 </div>
-                <span class="text-xs font-mono text-[--color-ink-muted] shrink-0">Bootcamp</span>
-              </div>
+                <p class="text-xs text-[--color-ink-muted] leading-relaxed mb-3">Intensive workshops covering data structures, algorithms, and competitive programming for national-level contests.</p>
+                <div class="flex items-center justify-between text-[10px] font-mono text-[--color-ink-muted] pt-2 border-t border-[--color-border]/60">
+                  <span class="text-emerald-600 font-medium">ICPC Track</span>
+                  <span class="group-hover:text-[--color-emerald] group-hover:translate-x-1 transition-all">Explore Event →</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -479,48 +708,65 @@
     </section>
 
     <!-- 05 / JOIN CTA -->
-    <section class="border-t border-[--color-border] py-16 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+    <section class="border-t border-[--color-border] py-16 bg-theme-tint-blue" style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="reveal">
-            <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-6">
-              05 / Join
-            </p>
-            <h2 class="uppercase font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
-              BUILD SOMETHING<br>THAT MATTERS.
-            </h2>
-            <p class="text-base text-[--color-ink-soft] leading-relaxed mb-10 max-w-md">
-              Join a community that takes computing seriously. Open to all VNIT students across every engineering branch.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <a href="team.html"
-                class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors duration-200">
-                Meet the team →
-              </a>
-              <a href="about.html"
-                class="inline-block border border-[--color-border] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:border-[--color-ink] transition-colors duration-200">
-                Learn more
-              </a>
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-[#1e293b] text-white p-10 lg:p-16 shadow-2xl border border-slate-700/60">
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="reveal">
+              <span class="domain-badge domain-badge-cyan mb-6">05 / Join</span>
+              <h2 class="uppercase font-black text-white leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
+                <span style="color:#ffffff;">BUILD</span> <span style="color:#cbd5e1;">SOMETHING</span><br><span style="color:#ffffff;">THAT</span> <span style="color:#cbd5e1;">MATTERS.</span>
+              </h2>
+              <p class="text-base text-slate-300 leading-relaxed mb-10 max-w-md">
+                Join a community that takes computing seriously. Open to all VNIT students across every engineering branch.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a href="team.html"
+                  class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-slate-100 transition-all duration-200 shadow-xl hover:shadow-white/20">
+                  Meet the team →
+                </a>
+                <a href="about.html"
+                  class="inline-block border border-slate-600 text-white px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-white/10 transition-all duration-200">
+                  Learn more
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="reveal" style="transition-delay: 0.15s;">
-            <div class="grid grid-cols-2 gap-px bg-[--color-border]">
-              <div class="bg-[--color-ground] p-8 border border-[--color-border]">
-                <p class="font-black text-[--color-ink] leading-none mb-2" style="font-size: 2.5rem;">15+</p>
-                <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Years</p>
-              </div>
-              <div class="bg-[--color-ground] p-8 border border-[--color-border]">
-                <p class="font-black text-[--color-ink] leading-none mb-2" style="font-size: 2.5rem;">50+</p>
-                <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Events</p>
-              </div>
-              <div class="bg-[--color-ground] p-8 border border-[--color-border]">
-                <p class="font-black text-[--color-ink] leading-none mb-2" style="font-size: 2.5rem;">8</p>
-                <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Domains</p>
-              </div>
-              <div class="bg-[--color-ground] p-8 border border-[--color-border]">
-                <p class="font-black text-[--color-ink] leading-none mb-2" style="font-size: 2.5rem;">5K+</p>
-                <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Students Reached</p>
+            <div class="reveal" style="transition-delay: 0.15s;">
+              <div class="grid grid-cols-2 gap-4">
+                <a href="impact.html" class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">LEGACY</span>
+                    <span class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
+                  </div>
+                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">15+</p>
+                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Years Active</p>
+                </a>
+                <a href="events.html" class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">ACTIVITY</span>
+                    <span class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
+                  </div>
+                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">50+</p>
+                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Events Hosted</p>
+                </a>
+                <a href="domains.html" class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">VERTICALS</span>
+                    <span class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
+                  </div>
+                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">8</p>
+                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Technical Domains</p>
+                </a>
+                <a href="impact.html" class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">COMMUNITY</span>
+                    <span class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
+                  </div>
+                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">5K+</p>
+                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Students Reached</p>
+                </a>
               </div>
             </div>
           </div>

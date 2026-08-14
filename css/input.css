@@ -8,12 +8,18 @@
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  --color-ink: #0d1117;
-  --color-ink-soft: #374151;
-  --color-ink-muted: #6b7280;
-  --color-blue: #1d4ed8;
-  --color-blue-light: #3b82f6;
-  --color-blue-dim: #eff6ff;
+  --color-ink: #0f172a;
+  --color-ink-soft: #334155;
+  --color-ink-muted: #64748b;
+  --color-blue: #2563eb;
+  --color-blue-light: #38bdf8;
+  --color-blue-dim: #f0f9ff;
+  --color-cyan: #06b6d4;
+  --color-indigo: #4f46e5;
+  --color-purple: #7c3aed;
+  --color-emerald: #059669;
+  --color-amber: #d97706;
+  --color-rose: #e11d48;
   --color-ground: #ffffff;
   --color-ground-alt: #f8fafc;
   --color-ground-subtle: #f1f5f9;

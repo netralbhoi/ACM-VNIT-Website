@@ -318,4 +318,68 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // ==========================================
+  // 8. TWO-TONE HEADING STYLER
+  // Applies home-hero first-letter-black / rest-grey effect
+  // to display headings (h1, h2, h3) sitewide.
+  // ==========================================
+  function applyTwoToneHeadings() {
+    const headings = document.querySelectorAll("h1, h2, h3");
+
+    headings.forEach((heading) => {
+      // Skip headings already manually two-toned (contain child spans with inline color)
+      const existingColorSpans = heading.querySelectorAll("span[style*='color']");
+      if (existingColorSpans.length > 0) return;
+
+      // Skip headings inside dark containers or with explicit white text
+      if (heading.closest(".text-white, [class*='bg-gradient'], [class*='from-slate'], [class*='from-blue-600']") ||
+          heading.classList.contains("text-white") ||
+          heading.style.color === "white") return;
+
+      // Skip headings that contain child element nodes (spans, links, etc.)
+      // — these are already specially structured
+      const hasChildElements = Array.from(heading.childNodes).some(
+        n => n.nodeType === Node.ELEMENT_NODE && n.nodeName !== "BR"
+      );
+      if (hasChildElements) return;
+
+      // Skip headings that contain stat-counter elements (animated numbers)
+      if (heading.querySelector(".stat-counter")) return;
+
+      // Skip empty headings
+      if (!heading.textContent.trim()) return;
+
+      // Rebuild heading innerHTML with two-tone word styling
+      const childNodes = Array.from(heading.childNodes);
+      let newHTML = "";
+
+      childNodes.forEach(node => {
+        if (node.nodeName === "BR") {
+          newHTML += "<br>";
+        } else if (node.nodeType === Node.TEXT_NODE) {
+          // Split text into words and whitespace, style each word
+          const parts = node.textContent.split(/(\s+)/);
+          parts.forEach(part => {
+            if (/^\s*$/.test(part)) {
+              newHTML += part; // Preserve whitespace
+            } else if (part.length > 0) {
+              const first = part[0];
+              const rest = part.slice(1);
+              newHTML += `<span style="color:#0a0a0a;font-size:1.06em;">${first}</span>`;
+              if (rest) newHTML += `<span style="color:#636363;">${rest}</span>`;
+            }
+          });
+        } else {
+          // Preserve existing child elements as-is
+          newHTML += node.outerHTML || "";
+        }
+      });
+
+      heading.innerHTML = newHTML;
+    });
+  }
+
+  applyTwoToneHeadings();
+
 });
