@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACM-VNIT — Impact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-[--color-ink]">
+
+  <!-- ═══════════════════════════════════════════ HEADER -->
+  <header id="site-header" style="font-family: var(--font-display)"
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+    <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
+        <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
+        <div class="flex flex-col text-left">
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing Machinery</span>
+          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT Student Chapter</span>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"  class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
+        <a href="about.html"  class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
+        <a href="impact.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-blue]">Impact</a>
+        <a href="domains.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+        <a href="events.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+        <a href="projects.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+        <a href="team.html"   class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Team</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-4">
+        <button class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[--color-blue] border border-[--color-blue] px-4 py-2 hover:bg-[--color-blue] hover:text-white transition-colors duration-200">
+          Contact →
+        </button>
+      </div>
+      <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+    <div class="flex flex-col justify-center h-full px-8 gap-8">
+      <a href="index.html"   class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Home</a>
+      <a href="about.html"   class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
+      <a href="impact.html"  class="text-4xl font-bold text-[--color-blue]">Impact</a>
+      <a href="domains.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
+      <a href="events.html"  class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Events</a>
+      <a href="projects.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Projects</a>
+      <a href="team.html"    class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Team</a>
+      <button class="contact-trigger text-4xl font-bold text-[--color-blue] hover:opacity-70 transition-opacity text-left">Contact →</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO -->
+    <section class="pt-32 pb-0 bg-[--color-ground]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+
+        <!-- Top meta row -->
+        <div class="flex items-center justify-between mb-12 animate-fade-up">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue]">02 / Impact</p>
+          <p class="text-[10px] font-mono tracking-[0.15em] uppercase text-[--color-ink-muted]">2009 – Present</p>
+        </div>
+
+        <!-- Giant headline -->
+        <div class="animate-fade-up" style="animation-delay: 0.1s;">
+          <h1 class="uppercase font-black text-[--color-ink] leading-[0.88] tracking-tight" style="font-size: clamp(3.5rem, 10vw, 10rem);">
+            NUMBERS<br>THAT MATTER.
+          </h1>
+        </div>
+
+        <!-- Sub-row -->
+        <div class="mt-12 pt-8 border-t border-[--color-border] flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-0 animate-fade-up" style="animation-delay: 0.2s;">
+          <p class="text-lg lg:text-xl text-[--color-ink-soft] leading-relaxed max-w-2xl font-medium">
+            Fifteen years of consistent work — in numbers, milestones, and the community we've built together.
+          </p>
+          <a href="events.html" class="text-xs font-bold tracking-[0.15em] uppercase text-[--color-blue] hover:underline shrink-0 pb-1">
+            See all events →
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-[--color-border] mt-12"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ STATS GRID -->
+    <section class="py-0 bg-[--color-ink]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 border-b border-white/10">
+
+          <!-- Stat 1 -->
+          <div class="reveal p-10 lg:p-16 border-r border-white/10 group hover:bg-white/5 transition-colors">
+            <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue-light] mb-6">Students Reached</p>
+            <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+              <span class="stat-counter" data-target="5000">0</span>+
+            </p>
+            <p class="text-xs text-white/60 leading-relaxed">Impacted through technical events, talks, and hands-on mentorship.</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="reveal p-10 lg:p-16 lg:border-r border-white/10 group hover:bg-white/5 transition-colors" style="transition-delay: 0.08s;">
+            <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue-light] mb-6">Events</p>
+            <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+              <span class="stat-counter" data-target="50">0</span>+
+            </p>
+            <p class="text-xs text-white/60 leading-relaxed">Workshops, hackathons, summits, and competitions.</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="reveal p-10 lg:p-16 border-r border-white/10 group hover:bg-white/5 transition-colors" style="transition-delay: 0.16s;">
+            <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue-light] mb-6">Projects</p>
+            <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+              <span class="stat-counter" data-target="45">0</span>+
+            </p>
+            <p class="text-xs text-white/60 leading-relaxed">Real software built and deployed to production.</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="reveal p-10 lg:p-16 border-white/10 group hover:bg-white/5 transition-colors" style="transition-delay: 0.24s;">
+            <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue-light] mb-6">Years</p>
+            <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+              <span class="stat-counter" data-target="15">0</span>+
+            </p>
+            <p class="text-xs text-white/60 leading-relaxed">Continuously active since our founding in 2009.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ KEY METRICS — dark band -->
+    <section class="py-24 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal mb-14">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Competition &amp; achievement</p>
+          <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(1.75rem, 3.5vw, 3rem);">
+            BEYOND THE MEMBERSHIP NUMBERS.
+          </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-0 border border-[--color-border]">
+          <!-- Metric 1 -->
+          <div class="reveal p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground] transition-colors">
+            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: clamp(3rem, 4vw, 4.5rem);">3×</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] mb-3">ICPC Asia Regionals</p>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Teams that have represented VNIT at ICPC Asia Regionals — the most prestigious competitive programming event in the region.</p>
+          </div>
+          <!-- Metric 2 -->
+          <div class="reveal p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground] transition-colors" style="transition-delay: 0.1s;">
+            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: clamp(3rem, 4vw, 4.5rem);">₹2L+</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] mb-3">Prize money won</p>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Total prizes won by ACM-VNIT members at national hackathons, competitions, and open-source programmes.</p>
+          </div>
+          <!-- Metric 3 -->
+          <div class="reveal p-10 lg:p-14 border-[--color-border] group hover:bg-[--color-ground] transition-colors" style="transition-delay: 0.2s;">
+            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: clamp(3rem, 4vw, 4.5rem);">12+</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] mb-3">Workshops per year</p>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Technical sessions delivered annually across all six domains, run entirely by student leads.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ TIMELINE -->
+    <section class="py-28 bg-[--color-ink]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-12 gap-16 items-start">
+
+          <!-- Left sticky label -->
+          <div class="lg:col-span-3 lg:sticky lg:top-28 reveal">
+            <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue-light] mb-8">Timeline</p>
+            <h2 class="uppercase font-black text-white leading-tight" style="font-size: clamp(1.75rem, 3vw, 2.5rem);">
+              WHERE WE'VE BEEN.
+            </h2>
+            <div class="mt-8 w-10 h-px bg-[--color-blue-light]"></div>
+            <p class="text-sm text-white/60 leading-relaxed mt-6">
+              Six milestones across fifteen years that define who we are today.
+            </p>
+          </div>
+
+          <!-- Right timeline list -->
+          <div class="lg:col-span-8 lg:col-start-5">
+
+            <!-- Milestone 1 -->
+            <div class="reveal flex gap-8 lg:gap-12 py-10 border-b border-white/10 group">
+              <div class="shrink-0 w-14 lg:w-20 pt-1">
+                <span class="text-xs font-mono font-bold text-[--color-blue-light] tracking-widest">2009</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start gap-4 mb-3">
+                  <h3 class="uppercase text-xl lg:text-2xl font-black text-white group-hover:text-[--color-blue-light] transition-colors leading-tight">
+                    FOUNDED
+                  </h3>
+                  <span class="shrink-0 mt-1 text-[10px] font-mono uppercase tracking-widest text-[--color-blue-light] border border-[--color-blue-light]/30 bg-white/5 px-2 py-0.5">Origin</span>
+                </div>
+                <p class="text-sm text-white/60 leading-relaxed max-w-xl">
+                  ACM-VNIT established as the official student chapter at VNIT Nagpur, starting with a group of students committed to building a serious computing culture on campus.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="reveal flex gap-8 lg:gap-12 py-10 border-b border-white/10 group" style="transition-delay: 0.07s;">
+              <div class="shrink-0 w-14 lg:w-20 pt-1">
+                <span class="text-xs font-mono font-bold text-[--color-blue-light] tracking-widest">2015</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start gap-4 mb-3">
+                  <h3 class="uppercase text-xl lg:text-2xl font-black text-white group-hover:text-[--color-blue-light] transition-colors leading-tight">
+                    FIRST FLAGSHIP HACKATHON
+                  </h3>
+                  <span class="shrink-0 mt-1 text-[10px] font-mono uppercase tracking-widest text-[--color-blue-light] border border-[--color-blue-light]/30 bg-white/5 px-2 py-0.5">Event</span>
+                </div>
+                <p class="text-sm text-white/60 leading-relaxed max-w-xl">
+                  Organized VNIT's first student-led 24-hour hackathon, which would lay the groundwork for our annual flagship hackathon (Insomnia), proving that students could run serious technical events.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="reveal flex gap-8 lg:gap-12 py-10 border-b border-white/10 group" style="transition-delay: 0.14s;">
+              <div class="shrink-0 w-14 lg:w-20 pt-1">
+                <span class="text-xs font-mono font-bold text-[--color-blue-light] tracking-widest">2018</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start gap-4 mb-3">
+                  <h3 class="uppercase text-xl lg:text-2xl font-black text-white group-hover:text-[--color-blue-light] transition-colors leading-tight">
+                    ICPC QUALIFIERS
+                  </h3>
+                  <span class="shrink-0 mt-1 text-[10px] font-mono uppercase tracking-widest text-[--color-blue-light] border border-[--color-blue-light]/30 bg-white/5 px-2 py-0.5">Competition</span>
+                </div>
+                <p class="text-sm text-white/60 leading-relaxed max-w-xl">
+                  ACM-VNIT teams qualified for ICPC Asia Regionals for the first time — a major milestone that put VNIT on the competitive programming map.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="reveal flex gap-8 lg:gap-12 py-10 border-b border-white/10 group" style="transition-delay: 0.21s;">
+              <div class="shrink-0 w-14 lg:w-20 pt-1">
+                <span class="text-xs font-mono font-bold text-[--color-blue-light] tracking-widest">2021</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start gap-4 mb-3">
+                  <h3 class="uppercase text-xl lg:text-2xl font-black text-white group-hover:text-[--color-blue-light] transition-colors leading-tight">
+                    DEPLOYED CAMPUS TOOLS
+                  </h3>
+                  <span class="shrink-0 mt-1 text-[10px] font-mono uppercase tracking-widest text-[--color-blue-light] border border-[--color-blue-light]/30 bg-white/5 px-2 py-0.5">Utility</span>
+                </div>
+                <p class="text-sm text-white/60 leading-relaxed max-w-xl">
+                  Launched multiple campus utility platforms and resource repositories, built by student teams, connecting thousands of active students with study guides and exam papers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 5 -->
+            <div class="reveal flex gap-8 lg:gap-12 py-10 border-b border-white/10 group" style="transition-delay: 0.28s;">
+              <div class="shrink-0 w-14 lg:w-20 pt-1">
+                <span class="text-xs font-mono font-bold text-[--color-blue-light] tracking-widest">2023</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start gap-4 mb-3">
+                  <h3 class="uppercase text-xl lg:text-2xl font-black text-white group-hover:text-[--color-blue-light] transition-colors leading-tight">
+                    INSOMNIA HACKATHON SCALE
+                  </h3>
+                  <span class="shrink-0 mt-1 text-[10px] font-mono uppercase tracking-widest text-[--color-blue-light] border border-[--color-blue-light]/30 bg-white/5 px-2 py-0.5">Growth</span>
+                </div>
+                <p class="text-sm text-white/60 leading-relaxed max-w-xl">
+                  Insomnia expanded to a national-scale hackathon, attracting over 1,500 builders and industry sponsors from top technical firms across India.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 6 -->
+            <div class="reveal flex gap-8 lg:gap-12 py-10 group" style="transition-delay: 0.35s;">
+              <div class="shrink-0 w-14 lg:w-20 pt-1">
+                <span class="text-xs font-mono font-bold text-[--color-blue-light] tracking-widest">2026</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start gap-4 mb-3">
+                  <h3 class="uppercase text-xl lg:text-2xl font-black text-white group-hover:text-[--color-blue-light] transition-colors leading-tight">
+                    PRESENT DAY
+                  </h3>
+                  <span class="shrink-0 mt-1 text-[10px] font-mono uppercase tracking-widest text-[--color-blue-light] border border-[--color-blue-light]/30 bg-white/5 px-2 py-0.5">Active</span>
+                </div>
+                <p class="text-sm text-white/60 leading-relaxed max-w-xl">
+                  Active across 8 technical domains with 120+ active builders, 45+ deployed projects, and a legacy of uninterrupted technical community building.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FORWARD LOOK -->
+    <section class="py-28 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal border border-[--color-border] p-10 lg:p-16 flex flex-col lg:flex-row gap-12 items-start">
+          <div class="lg:w-1/2">
+            <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-6">What comes next</p>
+            <h2 class="uppercase font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(1.75rem, 3.5vw, 3rem);">
+              WE'RE JUST GETTING STARTED.
+            </h2>
+            <p class="text-base text-[--color-ink-muted] leading-relaxed">
+              Every number on this page represents a person, a project, or an event that moved our community forward. As we head into our next chapter, those numbers will keep growing — but so will the depth and reach of what we do.
+            </p>
+          </div>
+          <div class="lg:w-1/2 flex flex-col gap-6">
+            <div class="flex gap-6 items-start">
+              <span class="text-[10px] font-mono text-[--color-blue] tracking-widest pt-1 shrink-0">→</span>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed">Launching two new domain-specific research reading groups in 2025.</p>
+            </div>
+            <div class="flex gap-6 items-start">
+              <span class="text-[10px] font-mono text-[--color-blue] tracking-widest pt-1 shrink-0">→</span>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed">Expanding our open-source programme with structured GSoC mentoring tracks.</p>
+            </div>
+            <div class="flex gap-6 items-start">
+              <span class="text-[10px] font-mono text-[--color-blue] tracking-widest pt-1 shrink-0">→</span>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed">Growing our industry speaker series with alumni from top tech companies.</p>
+            </div>
+            <div class="flex gap-6 items-start">
+              <span class="text-[10px] font-mono text-[--color-blue] tracking-widest pt-1 shrink-0">→</span>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed">Targeting 600 active members by end of the 2025–26 academic year.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CTA STRIP -->
+    <section class="border-t border-[--color-border] py-20 bg-[--color-ink]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <div>
+            <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-white/40 mb-3">Explore more</p>
+            <p class="text-2xl font-black text-white">See the events behind the numbers.</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="events.html"
+              class="bg-[--color-blue] text-white px-7 py-3.5 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+              All events →
+            </a>
+            <a href="projects.html"
+              class="border border-white/20 text-white px-7 py-3.5 text-xs font-bold tracking-[0.15em] uppercase hover:border-white transition-colors">
+              Projects
+            </a>
+            <a href="about.html"
+              class="border border-white/20 text-white px-7 py-3.5 text-xs font-bold tracking-[0.15em] uppercase hover:border-white transition-colors">
+              About us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="border-t border-[--color-border] bg-[--color-ground]" style="font-family: var(--font-display)">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
+        <div>
+          <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">ACM·VNIT</p>
+          <p class="text-sm text-[--color-ink-muted] leading-relaxed max-w-xs">
+            The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Navigate</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="about.html"    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">About</a></li>
+              <li><a href="domains.html"  class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Domains</a></li>
+              <li><a href="impact.html"   class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Impact</a></li>
+              <li><a href="events.html"   class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Events</a></li>
+              <li><a href="projects.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Projects</a></li>
+              <li><a href="team.html"     class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Connect</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="https://linkedin.com/company/acm-vnit"  target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">LinkedIn</a></li>
+              <li><a href="https://github.com/acm-vnit"            target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">GitHub</a></li>
+              <li><a href="https://instagram.com/acmvnit"          target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Instagram</a></li>
+              <li><a href="https://twitter.com/acmvnit"            target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Twitter/X</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
+          <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+            Visvesvaraya National Institute<br>of Technology, Nagpur<br>Maharashtra 440010, India
+          </p>
+          <a href="mailto:acm@vnit.ac.in" class="inline-block mt-4 text-sm font-medium text-[--color-blue] hover:underline">
+            acm@vnit.ac.in
+          </a>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <p class="text-xs font-mono text-[--color-ink-muted]">© 2026 ACM Student Chapter — VNIT Nagpur</p>
+        <p class="text-xs font-mono text-[--color-ink-muted]">Association for Computing Machinery</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Drawer Backdrop -->
+  <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- Contact Drawer Panel -->
+  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
+      <div>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">ACM·VNIT</p>
+        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+      </div>
+      <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">✕</button>
+    </div>
+    <div class="flex-1 overflow-y-auto px-8 py-8">
+      <div id="contact-success-state" class="hidden flex flex-col items-center justify-center h-full gap-4 text-center">
+        <div class="w-16 h-16 bg-[--color-blue-dim] flex items-center justify-center text-[--color-blue] text-2xl">✓</div>
+        <p class="text-xl font-bold">Message received.</p>
+        <p class="text-sm text-[--color-ink-muted] max-w-xs">We'll get back to you within 48 hours. Thanks for reaching out to ACM-VNIT.</p>
+        <button class="contact-close mt-4 text-xs uppercase tracking-widest text-[--color-blue] font-medium hover:underline">Close panel</button>
+      </div>
+      <div id="contact-form-state">
+        <form class="contact-form flex flex-col gap-5 mb-10">
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
+            <input type="text" required placeholder="Your full name" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
+            <input type="email" required placeholder="you@example.com" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
+            <input type="text" required placeholder="What's this about?" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
+            <textarea required rows="5" placeholder="Your message..." class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent resize-none"></textarea>
+          </div>
+          <button type="submit" class="bg-[--color-blue] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">Send Message →</button>
+        </form>
+        <div class="border-t border-[--color-border] pt-8 flex flex-col gap-6">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</p>
+            <a href="mailto:acm@vnit.ac.in" class="text-sm font-medium text-[--color-ink] hover:text-[--color-blue] transition-colors">acm@vnit.ac.in</a>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+              <a href="https://github.com/acm-vnit"           target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+              <a href="https://instagram.com/acmvnit"         target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Instagram</a>
+              <a href="https://twitter.com/acmvnit"           target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Twitter/X</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Address</p>
+            <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+              Visvesvaraya National Institute of Technology<br>South Ambazari Road, Nagpur<br>Maharashtra 440010, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

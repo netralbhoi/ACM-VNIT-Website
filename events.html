@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACM-VNIT — Events</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-[--color-ink]">
+
+  <!-- ═══════════════════════════════════════════ HEADER -->
+  <header id="site-header" style="font-family: var(--font-display)"
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+    <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
+        <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
+        <div class="flex flex-col text-left">
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing Machinery</span>
+          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT Student Chapter</span>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"   class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
+        <a href="about.html"   class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
+        <a href="impact.html"  class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+        <a href="domains.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+        <a href="events.html"  class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-blue]">Events</a>
+        <a href="projects.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+        <a href="team.html"    class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Team</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-4">
+        <button class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[--color-blue] border border-[--color-blue] px-4 py-2 hover:bg-[--color-blue] hover:text-white transition-colors duration-200">
+          Contact →
+        </button>
+      </div>
+      <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+    <div class="flex flex-col justify-center h-full px-8 gap-8">
+      <a href="index.html"   class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Home</a>
+      <a href="about.html"   class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
+      <a href="impact.html"  class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Impact</a>
+      <a href="domains.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
+      <a href="events.html"  class="text-4xl font-bold text-[--color-blue]">Events</a>
+      <a href="projects.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Projects</a>
+      <a href="team.html"    class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Team</a>
+      <button class="contact-trigger text-4xl font-bold text-[--color-blue] hover:opacity-70 transition-opacity text-left">Contact →</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO -->
+    <section class="pt-32 pb-0 bg-[--color-ground]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+
+        <!-- Top meta row -->
+        <div class="flex items-center justify-between mb-12 animate-fade-up">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue]">04 / Events</p>
+          <p class="text-[10px] font-mono tracking-[0.15em] uppercase text-[--color-ink-muted]">50+ hosted · 2009–present</p>
+        </div>
+
+        <!-- Giant headline -->
+        <div class="grid lg:grid-cols-2 gap-12 items-end animate-fade-up" style="animation-delay: 0.1s;">
+          <h1 class="uppercase font-black text-[--color-ink] leading-[0.88] tracking-tight" style="font-size: clamp(3.5rem, 10vw, 10rem);">
+            THE<br>RECORD.
+          </h1>
+          <div class="lg:pb-3">
+            <p class="text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium">
+              Every workshop, hackathon, competition, and summit we've organized or participated in. The community in motion.
+            </p>
+            <!-- Quick stat strip -->
+            <div class="flex gap-8">
+              <div>
+                <p class="font-black text-[--color-ink] text-3xl leading-none">50+</p>
+                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mt-1">Total events</p>
+              </div>
+              <div>
+                <p class="font-black text-[--color-ink] text-3xl leading-none">1,500+</p>
+                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mt-1">Peak attendance</p>
+              </div>
+              <div>
+                <p class="font-black text-[--color-ink] text-3xl leading-none">8</p>
+                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mt-1">Domains covered</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="border-t border-[--color-border] mt-14"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FILTER BAR (sticky) -->
+    <div class="sticky top-16 z-30 bg-white/98 backdrop-blur border-b border-[--color-border]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-3 flex gap-2 overflow-x-auto" id="events-filter-bar">
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors bg-[--color-blue] text-white" data-category="All">All</button>
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Workshop">Workshop</button>
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Hackathon">Hackathon</button>
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Competition">Competition</button>
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Bootcamp">Bootcamp</button>
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Community">Community</button>
+        <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Mentorship">Mentorship</button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ EVENT LIST -->
+    <section class="py-0 bg-[--color-ink]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+
+        <!-- ── 2026 ────────────────────────────────────── -->
+        <div class="event-year-group pt-20 pb-4" data-year="2026">
+          <div class="reveal flex items-baseline gap-6 mb-2 border-b border-white/10 pb-4">
+            <p class="font-black leading-none select-none text-white/10" style="font-size: clamp(3rem, 7vw, 6rem);">
+              2026
+            </p>
+            <span class="text-xs font-mono uppercase tracking-[0.15em] text-white/40">1 event</span>
+          </div>
+
+          <div class="event-items-container">
+            <!-- Event: ACM Meet 2026 -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Community">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Community
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  ACM Meet 2026
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  January 18, 2026
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  Students from all four years came together for networking, mentorship, and discussions on ACM initiatives and community building.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">150</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 2025 ────────────────────────────────────── -->
+        <div class="event-year-group pt-16 pb-4" data-year="2025">
+          <div class="reveal flex items-baseline gap-6 mb-2 border-b border-white/10 pb-4">
+            <p class="font-black leading-none select-none text-white/10" style="font-size: clamp(3rem, 7vw, 6rem);">
+              2025
+            </p>
+            <span class="text-xs font-mono uppercase tracking-[0.15em] text-white/40">4 events</span>
+          </div>
+
+          <div class="event-items-container">
+            <!-- Event: Web Development Workshop -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Workshop">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Workshop
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  Web Development Workshop
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  October 12–14, 2025
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  Hands-on sessions covering full-stack architecture, modern frontend systems, backend development, JWT authentication, and live deployments.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">180</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+
+            <!-- Event: Insomnia Code Sprint -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Hackathon" style="transition-delay: 0.05s;">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Hackathon
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  Insomnia Code Sprint
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  September 5–6, 2025
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  VNIT's flagship 24-hour hackathon — building continuously, testing algorithmic thinking and problem-solving speed under pressure.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">350</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+
+            <!-- Event: AI / ML Workshop -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Workshop" style="transition-delay: 0.1s;">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Workshop
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  AI / ML Workshop
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  March 22, 2025
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  Hands-on sessions covering neural networks, computer vision, NLP pipelines, and model deployment workflows with real datasets.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">120</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+
+            <!-- Event: CP & DSA Bootcamp -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Bootcamp" style="transition-delay: 0.15s;">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Bootcamp
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  CP &amp; DSA Bootcamp
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  January 10–12, 2025
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  Intensive workshops covering data structures, algorithms, and competitive programming for national-level contests.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">200</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 2024 ────────────────────────────────────── -->
+        <div class="event-year-group pt-16 pb-4" data-year="2024">
+          <div class="reveal flex items-baseline gap-6 mb-2 border-b border-white/10 pb-4">
+            <p class="font-black leading-none select-none text-white/10" style="font-size: clamp(3rem, 7vw, 6rem);">
+              2024
+            </p>
+            <span class="text-xs font-mono uppercase tracking-[0.15em] text-white/40">3 events</span>
+          </div>
+
+          <div class="event-items-container">
+            <!-- Event: Hackathon Guidance & Orientation -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Mentorship">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Mentorship
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  Hackathon Guidance &amp; Orientation
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  November 15, 2024
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  Senior members guiding juniors through project ideation, team formation, tech selection, and strategies for competitive hackathons.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">160</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+
+            <!-- Event: Insomnia 2024 Hackathon -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Competition" style="transition-delay: 0.05s;">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Competition
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  Insomnia 2024 Hackathon
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  September 20–21, 2024
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  The annual chapter hackathon bringing together over 300 developers to build real-world software solutions in a high-intensity environment.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">300</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+
+            <!-- Event: ACM Meet & Guidance Sessions -->
+            <div class="reveal event-list-item group flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-10 py-10 border-b border-white/10 hover:bg-white/5 -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors" data-category="Community" style="transition-delay: 0.1s;">
+              <div class="lg:w-40 shrink-0 pt-1">
+                <span class="inline-block text-[10px] font-mono uppercase tracking-[0.15em] px-2.5 py-1 border border-white/20 text-white/50 group-hover:bg-[--color-blue] group-hover:border-[--color-blue] group-hover:text-white transition-colors">
+                  Community
+                </span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="uppercase font-black leading-tight mb-1 text-white group-hover:text-[--color-blue-light] transition-colors" style="font-size: clamp(1.25rem, 2.5vw, 2rem);">
+                  ACM Meet &amp; Guidance Sessions
+                </h3>
+                <p class="text-xs font-mono text-white/50 tracking-[0.1em] mb-4">
+                  August 14, 2024
+                </p>
+                <p class="text-sm text-white/70 leading-relaxed max-w-2xl">
+                  Regular community meet-ups where senior members guide juniors through project architecture, career paths, and technical deep-dives.
+                </p>
+              </div>
+              <div class="shrink-0 flex lg:flex-col items-center lg:items-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">140</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </div>tems-end gap-6 lg:gap-3 pt-1">
+                <div class="lg:text-right">
+                  <p class="text-2xl font-black text-white">90</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.1em] text-white/50">participants</p>
+                </div>
+                <span class="text-lg text-white/40 opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue-light] transition-all group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bottom padding -->
+        <div class="pb-20"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FEATURED HIGHLIGHT — dark band -->
+    <section class="py-28 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal mb-14">
+          <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Highlight</p>
+          <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(1.75rem, 3.5vw, 3.5rem);">
+            WHAT MAKES OUR EVENTS DIFFERENT.
+          </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-0 border border-[--color-border]">
+          <div class="reveal p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground]">
+            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: 3rem;">100%</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] mb-3">Student-run</p>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Every event — from planning to execution — is organized entirely by student volunteers. No outsourced management.</p>
+          </div>
+          <div class="reveal p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground]" style="transition-delay: 0.1s;">
+            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: 3rem;">Free</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] mb-3">For all members</p>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">All workshops, bootcamps, and internal competitions are free for ACM-VNIT members. No barriers to learning.</p>
+          </div>
+          <div class="reveal p-10 lg:p-14 border-[--color-border] group hover:bg-[--color-ground]" style="transition-delay: 0.2s;">
+            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: 3rem;">12+</p>
+            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-blue] mb-3">Events per year</p>
+            <p class="text-sm text-[--color-ink-muted] leading-relaxed">We run events consistently throughout the academic year — not just during tech fests. Something is always happening.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CTA STRIP -->
+    <section class="border-t border-[--color-border] py-20 bg-[--color-ink]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="reveal flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <div>
+            <p class="text-[10px] font-mono tracking-[0.2em] uppercase text-white/40 mb-3">Stay involved</p>
+            <p class="text-2xl font-black text-white">DON'T MISS THE NEXT ONE.</p>
+            <p class="text-sm text-white/60 mt-2 max-w-sm">Follow us on social media or reach out directly to get notified when new events are announced.</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <button class="contact-trigger bg-[--color-blue] text-white px-7 py-3.5 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+              Contact us →
+            </button>
+            <a href="impact.html"
+              class="border border-white/20 text-white px-7 py-3.5 text-xs font-bold tracking-[0.15em] uppercase hover:border-white transition-colors">
+              Our impact
+            </a>
+            <a href="domains.html"
+              class="border border-white/20 text-white px-7 py-3.5 text-xs font-bold tracking-[0.15em] uppercase hover:border-white transition-colors">
+              Domains
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="border-t border-[--color-border] bg-[--color-ground]" style="font-family: var(--font-display)">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20">
+        <div>
+          <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">ACM·VNIT</p>
+          <p class="text-sm text-[--color-ink-muted] leading-relaxed max-w-xs">
+            The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Navigate</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="about.html"    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">About</a></li>
+              <li><a href="domains.html"  class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Domains</a></li>
+              <li><a href="impact.html"   class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Impact</a></li>
+              <li><a href="events.html"   class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Events</a></li>
+              <li><a href="projects.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Projects</a></li>
+              <li><a href="team.html"     class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Connect</p>
+            <ul class="flex flex-col gap-3">
+              <li><a href="https://linkedin.com/company/acm-vnit"  target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">LinkedIn</a></li>
+              <li><a href="https://github.com/acm-vnit"            target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">GitHub</a></li>
+              <li><a href="https://instagram.com/acmvnit"          target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Instagram</a></li>
+              <li><a href="https://twitter.com/acmvnit"            target="_blank" rel="noopener noreferrer" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Twitter/X</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
+          <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+            Visvesvaraya National Institute<br>of Technology, Nagpur<br>Maharashtra 440010, India
+          </p>
+          <a href="mailto:acm@vnit.ac.in" class="inline-block mt-4 text-sm font-medium text-[--color-blue] hover:underline">
+            acm@vnit.ac.in
+          </a>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <p class="text-xs font-mono text-[--color-ink-muted]">© 2026 ACM Student Chapter — VNIT Nagpur</p>
+        <p class="text-xs font-mono text-[--color-ink-muted]">Association for Computing Machinery</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Drawer Backdrop -->
+  <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- Contact Drawer Panel -->
+  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
+      <div>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">ACM·VNIT</p>
+        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+      </div>
+      <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">✕</button>
+    </div>
+    <div class="flex-1 overflow-y-auto px-8 py-8">
+      <div id="contact-success-state" class="hidden flex flex-col items-center justify-center h-full gap-4 text-center">
+        <div class="w-16 h-16 bg-[--color-blue-dim] flex items-center justify-center text-[--color-blue] text-2xl">✓</div>
+        <p class="text-xl font-bold">Message received.</p>
+        <p class="text-sm text-[--color-ink-muted] max-w-xs">We'll get back to you within 48 hours. Thanks for reaching out to ACM-VNIT.</p>
+        <button class="contact-close mt-4 text-xs uppercase tracking-widest text-[--color-blue] font-medium hover:underline">Close panel</button>
+      </div>
+      <div id="contact-form-state">
+        <form class="contact-form flex flex-col gap-5 mb-10">
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
+            <input type="text" required placeholder="Your full name" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
+            <input type="email" required placeholder="you@example.com" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
+            <input type="text" required placeholder="What's this about?" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+          </div>
+          <div>
+            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
+            <textarea required rows="5" placeholder="Your message..." class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent resize-none"></textarea>
+          </div>
+          <button type="submit" class="bg-[--color-blue] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">Send Message →</button>
+        </form>
+        <div class="border-t border-[--color-border] pt-8 flex flex-col gap-6">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</p>
+            <a href="mailto:acm@vnit.ac.in" class="text-sm font-medium text-[--color-ink] hover:text-[--color-blue] transition-colors">acm@vnit.ac.in</a>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+              <a href="https://github.com/acm-vnit"           target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+              <a href="https://instagram.com/acmvnit"         target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Instagram</a>
+              <a href="https://twitter.com/acmvnit"           target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Twitter/X</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Address</p>
+            <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+              Visvesvaraya National Institute of Technology<br>South Ambazari Road, Nagpur<br>Maharashtra 440010, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
