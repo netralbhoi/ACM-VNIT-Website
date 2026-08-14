@@ -141,20 +141,10 @@
             </div>
 
             <div class="animate-fade-up" style="animation-delay: 0.2s;">
-              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-8 max-w-xl">
+              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-0 max-w-xl">
                 The computing community at Visvesvaraya National Institute of Technology. Advancing technology through
                 research, collaboration, and community since 2009.
               </p>
-              
-              <div class="flex flex-wrap gap-4">
-                <a href="domains.html"
-                  class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
-                  Explore Domains →
-                </a>
-                <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
-                  Get in Touch
-                </button>
-              </div>
             </div>
           </div>
           
@@ -163,11 +153,22 @@
 
       <!-- Bottom bar -->
       <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
-        <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16 animate-fade-up"
+        <div class="pt-6 border-t border-[--color-border] flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up"
           style="animation-delay: 0.5s;">
-          <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Computing</span>
-          <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Innovation</span>
-          <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Community</span>
+          <div class="flex flex-wrap gap-8 lg:gap-16">
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Computing</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Innovation</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Community</span>
+          </div>
+          <div class="flex flex-wrap gap-4 md:justify-end">
+            <a href="domains.html"
+              class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+              Explore Domains →
+            </a>
+            <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              Get in Touch
+            </button>
+          </div>
         </div>
       </div>
       
