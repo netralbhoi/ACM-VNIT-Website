@@ -380,6 +380,72 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ==========================================
+  // 9. LIGHTBOX IMAGE MODAL
+  // ==========================================
+  const imageModal = document.getElementById("image-modal");
+  const imageModalImg = document.getElementById("image-modal-img");
+  const imageModalTitle = document.getElementById("image-modal-title");
+  const imageModalDate = document.getElementById("image-modal-date");
+  const imageModalClose = document.getElementById("image-modal-close");
+  const viewPicButtons = document.querySelectorAll(".view-full-pic-btn");
+
+  const openImageModal = (src, title, date) => {
+    if (!imageModal || !imageModalImg) return;
+    imageModalImg.src = src;
+    imageModalImg.alt = title || "Full picture";
+    if (imageModalTitle) imageModalTitle.textContent = title || "";
+    if (imageModalDate) imageModalDate.textContent = date || "";
+
+    imageModal.classList.remove("opacity-0", "pointer-events-none");
+    imageModal.classList.add("opacity-100", "pointer-events-auto");
+    imageModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeImageModal = () => {
+    if (!imageModal) return;
+    imageModal.classList.remove("opacity-100", "pointer-events-auto");
+    imageModal.classList.add("opacity-0", "pointer-events-none");
+    imageModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+
+    setTimeout(() => {
+      if (imageModalImg) imageModalImg.src = "";
+    }, 300);
+  };
+
+  viewPicButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const src = btn.getAttribute("data-img-src");
+      const title = btn.getAttribute("data-img-title");
+      const date = btn.getAttribute("data-img-date");
+      if (src) {
+        openImageModal(src, title, date);
+      }
+    });
+  });
+
+  if (imageModalClose) {
+    imageModalClose.addEventListener("click", closeImageModal);
+  }
+
+  if (imageModal) {
+    imageModal.addEventListener("click", (e) => {
+      if (e.target === imageModal || e.target.classList.contains("backdrop-blur-md")) {
+        closeImageModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && imageModal && imageModal.classList.contains("opacity-100")) {
+      closeImageModal();
+    }
+  });
+
   applyTwoToneHeadings();
 
 });
+
