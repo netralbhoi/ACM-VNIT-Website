@@ -58,50 +58,93 @@
 
   <main>
 
-    <!-- ═══════════════════════════════════════════ HERO -->
-    <section class="pt-16 pb-0 bg-[--color-ground]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <!-- ═══════════════════════════════════════════ HERO (HOME Section Style) -->
+    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-white" style="font-family: var(--font-display)">
+      <!-- Fine grid background -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
+      </div>
 
-        <!-- Top meta row -->
-        <div class="flex items-center justify-between mb-12 animate-fade-up">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue]">03 / Domains</p>
-          <p class="text-[10px] font-mono tracking-[0.15em] uppercase text-[--color-ink-muted]">Eight areas of focus</p>
-        </div>
+      <!-- Coordinates & Meta Badges -->
+      <div class="absolute top-24 right-12 hidden lg:block text-right z-20">
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">21°8′N 79°4′E</p>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">NAGPUR, INDIA</p>
+      </div>
+      <div class="absolute top-24 left-6 lg:left-12 z-20">
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">03 / Domains</p>
+        <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[--color-blue]">8 Technical Domains</p>
+      </div>
 
-        <!-- Giant headline -->
-        <div class="grid lg:grid-cols-2 gap-12 items-end animate-fade-up" style="animation-delay: 0.1s;">
-          <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-            <span class="block">
-              <span style="color: #0a0a0a; font-size: 1.13em;">A</span><span class="text-[--color-ink]" style="color: #636363;">REAS</span>
-            </span>
-            <span class="block mt-1">
-              <span style="color: #0a0a0a; font-size: 1.13em;">O</span><span class="text-[--color-ink]" style="color: #636363;">F </span><span style="color: #0a0a0a; font-size: 1.13em;">F</span><span class="text-[--color-ink]" style="color: #636363;">OCUS.</span>
-            </span>
-          </h1>
-          <div class="lg:pb-3">
-            <p class="text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium">
-              Eight technical communities, each with its own projects, workshops, and rhythm. Find yours — or explore them all.
-            </p>
-            <!-- Domain index pills -->
-            <div class="flex flex-wrap gap-2">
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">CP &amp; DSA</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">AI / ML</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">Web Dev</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">App Dev</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">Cybersec</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">Cloud &amp; DevOps</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">Design</span>
-              <span class="text-[10px] font-mono uppercase tracking-widest text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1.5">Open Source</span>
+      <!-- Main content container -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
+        <div class="max-w-4xl w-full mt-8 lg:mt-0">
+          <div class="flex flex-col justify-center text-left">
+            <div class="mb-6 animate-fade-up">
+              <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.8rem, 8vw, 5.2rem);">
+                <span class="block">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">A</span><span class="text-[--color-ink]" style="color: #636363;">REAS</span>
+                </span>
+                <span class="block mt-1">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">O</span><span class="text-[--color-ink]" style="color: #636363;">F </span><span style="color: #0a0a0a; font-size: 1.13em;">F</span><span class="text-[--color-ink]" style="color: #636363;">OCUS.</span>
+                </span>
+              </h1>
+            </div>
+
+            <div class="animate-fade-up" style="animation-delay: 0.2s;">
+              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-0 max-w-2xl">
+                Eight specialized technical communities, each with its own projects, hands-on workshops, and dedicated mentorship. Find your passion — or master them all.
+              </p>
             </div>
           </div>
         </div>
-
       </div>
-      <div class="border-t border-[--color-border] mt-14"></div>
+
+      <!-- Bottom Action Bar -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
+        <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up" style="animation-delay: 0.3s;">
+          <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16">
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Engineering</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Specialization</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Mentorship</span>
+          </div>
+
+          <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
+            <a href="#domains-list" class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+              Explore Domains ↓
+            </a>
+            <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
+    <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
+      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">APP DEV (RANK A ♠) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">WEB DEV (RANK K ♣) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">AI / ML (RANK Q ♦) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DESIGN (RANK J ♥) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">CYBERSECURITY (RANK 10 ★) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">CP &amp; DSA (RANK 9 ♣) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">CLOUD &amp; DEVOPS (RANK 7 ♠) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">OPEN SOURCE (RANK 8 ♦) ·</span>
+        <!-- Loop repeat -->
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">APP DEV (RANK A ♠) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">WEB DEV (RANK K ♣) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">AI / ML (RANK Q ♦) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DESIGN (RANK J ♥) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">CYBERSECURITY (RANK 10 ★) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">CP &amp; DSA (RANK 9 ♣) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">CLOUD &amp; DEVOPS (RANK 7 ♠) ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">OPEN SOURCE (RANK 8 ♦) ·</span>
+      </div>
+    </div>
+
     <!-- ═══════════════════════════════════════════ DOMAINS LIST (Desktop) -->
-    <section class="border-t border-[--color-border] bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+    <section id="domains-list" class="border-t border-[--color-border] bg-[--color-ground-alt]" style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-12">
 
@@ -113,14 +156,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="01"
                 data-name="CP &amp; DSA"
-                data-desc="Algorithms, data structures, and competitive programming mastery at national and international level."
-                data-tags="Algorithms, Data Structures, ICPC, Codeforces, LeetCode">
+                data-desc="Sharpening algorithmic thinking through coding contests, data structures, optimization techniques, and problem-solving under pressure."
+                data-tags="C++, Codeforces, LeetCode, DSA, ICPC">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">01</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    CP &amp; DSA
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">Algorithms · Data Structures · ICPC · Codeforces</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      CP &amp; DSA
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#4AE6A0]/40 text-[#4AE6A0] bg-[#4AE6A0]/10 rounded">Rank 9 ♣</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">C++ · Codeforces · LeetCode · DSA · ICPC</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -131,14 +177,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="02"
                 data-name="AI / ML"
-                data-desc="Neural networks, deep learning models, NLP, and computer vision systems built end-to-end."
-                data-tags="PyTorch, TensorFlow, Deep Learning, Computer Vision, NLP">
+                data-desc="Developing intelligent systems through neural networks, predictive modeling, and cutting-edge research in artificial intelligence."
+                data-tags="PyTorch, TensorFlow, Python, Pandas, Deep Learning">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">02</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    AI / ML
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">PyTorch · TensorFlow · Deep Learning · NLP</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      AI / ML
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#B44AF5]/40 text-[#B44AF5] bg-[#B44AF5]/10 rounded">Rank Q ♦</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">PyTorch · TensorFlow · Python · Pandas</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -149,14 +198,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="03"
                 data-name="Web Dev"
-                data-desc="Full-stack architecture, modern UI systems, REST APIs, GraphQL, and production deployments."
-                data-tags="Next.js, GoLang, React, Node.js, Databases, DevOps">
+                data-desc="Building the foundational fabric of the modern web using robust full-stack frameworks and scalable architectures."
+                data-tags="Next.js, GoLang, Node.js, PostgreSQL, TailwindCSS">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">03</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    Web Dev
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">Next.js · GoLang · React · Node.js</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      Web Dev
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#4AE6A0]/40 text-[#4AE6A0] bg-[#4AE6A0]/10 rounded">Rank K ♣</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Next.js · GoLang · Node.js · PostgreSQL</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -167,14 +219,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="04"
                 data-name="App Dev"
-                data-desc="Native Android, iOS, and cross-platform mobile applications with Flutter and React Native."
-                data-tags="Flutter, SwiftUI, Native Android, iOS, React Native">
+                data-desc="Engineering seamless mobile experiences across platforms with a focus on high-performance architecture and reactive UI patterns."
+                data-tags="Flutter, React Native, SwiftUI, Kotlin">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">04</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    App Dev
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">Flutter · SwiftUI · Native Android · iOS</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      App Dev
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#4A9FF5]/40 text-[#4A9FF5] bg-[#4A9FF5]/10 rounded">Rank A ♠</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Flutter · React Native · SwiftUI · Kotlin</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -185,14 +240,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="05"
                 data-name="Cybersecurity"
-                data-desc="Network defense, ethical hacking, CTF challenges, and system hardening techniques."
-                data-tags="CTF, Pen Test, Network Defense, Cryptography, Ethical Hacking">
+                data-desc="Securing the perimeter. Offensive and defensive security research, penetration testing, and vulnerability assessment."
+                data-tags="Burp Suite, OWASP, CTF, Wireshark, Pen Testing">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">05</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    Cybersecurity
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">CTF · Pen Test · Cryptography · Ethical Hacking</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      Cybersecurity
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#F5A44A]/40 text-[#F5A44A] bg-[#F5A44A]/10 rounded">Rank 10 ★</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Burp Suite · OWASP · CTF · Wireshark</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -203,14 +261,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="06"
                 data-name="Cloud &amp; DevOps"
-                data-desc="Docker, Kubernetes, CI/CD pipelines, and cloud-native infrastructure on AWS and GCP."
-                data-tags="AWS, GCP, Docker, Kubernetes, CI/CD">
+                data-desc="Automating deployment pipelines, managing cloud infrastructure, and ensuring scalable, reliable software delivery."
+                data-tags="AWS, Docker, Kubernetes, CI/CD, Terraform">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">06</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    Cloud &amp; DevOps
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">AWS · GCP · Docker · Kubernetes · CI/CD</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      Cloud &amp; DevOps
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#4A9FF5]/40 text-[#4A9FF5] bg-[#4A9FF5]/10 rounded">Rank 7 ♠</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">AWS · Docker · Kubernetes · CI/CD</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -221,14 +282,17 @@
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="07"
                 data-name="Design"
-                data-desc="UI/UX design systems, user-centric product logic, typography, motion, and wireframes."
-                data-tags="Figma, Framer, UI/UX, Design Systems, Wireframes">
+                data-desc="The visual blueprint. Crafting user-first interfaces and motion graphics that marry modern aesthetics with functional purpose."
+                data-tags="Figma, After Effects, Blender, UI/UX">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">07</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    Design
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">Figma · Framer · UI/UX · Design Systems</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      Design
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#F54A8A]/40 text-[#F54A8A] bg-[#F54A8A]/10 rounded">Rank J ♥</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Figma · After Effects · Blender · UI/UX</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>
@@ -238,15 +302,18 @@
             <div class="reveal" style="transition-delay: 0.35s;">
               <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
                 data-id="08"
-                data-name="Open Source"
-                data-desc="Contributing to global open-source codebases, GSoC guidance, and building ecosystem modules."
-                data-tags="GSoC, GitHub, Open Source, Git, Contributions">
+                data-name="Open Source Development"
+                data-desc="Building impactful software collaboratively through open-source contributions, version control workflows, and community-driven innovation."
+                data-tags="Git, GitHub, Linux, GSSoC, GSoC">
                 <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">08</span>
                 <div class="flex-1 min-w-0">
-                  <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                    Open Source
-                  </p>
-                  <p class="text-xs font-mono text-[--color-ink-soft] mt-1 opacity-0 group-hover:opacity-100 transition-opacity">GSoC · GitHub · Git · Contributions</p>
+                  <div class="flex items-center gap-3 mb-1">
+                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
+                      Open Source Development
+                    </p>
+                    <span class="text-[10px] font-mono font-bold px-2 py-0.5 border border-[#F5D44A]/40 text-[#F5D44A] bg-[#F5D44A]/10 rounded">Rank 8 ♦</span>
+                  </div>
+                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Git · GitHub · Linux · GSSoC · GSoC</p>
                 </div>
                 <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
               </button>

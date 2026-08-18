@@ -60,27 +60,90 @@
   </div>
 
   <main>
-    <!-- PAGE HEADER -->
-    <section class="pt-16 pb-8 bg-[--color-ground]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-8">
-          05 / Projects
-        </p>
-        <div class="grid lg:grid-cols-2 gap-12 items-end animate-fade-up">
-          <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-            <span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]" style="color: #636363;">HAT </span><span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]" style="color: #636363;">E </span><span style="color: #0a0a0a; font-size: 1.13em;">B</span><span class="text-[--color-ink]" style="color: #636363;">UILD.</span>
-          </h1>
-          <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium lg:pb-4">
-            Real software, shipped by students, used by the community. No demo-ware. No theoretical exercises.
-          </p>
+    <!-- ═══════════════════════════════════════════ HERO (HOME Section Style) -->
+    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-white" style="font-family: var(--font-display)">
+      <!-- Fine grid background -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
+      </div>
+
+      <!-- Coordinates & Meta Badges -->
+      <div class="absolute top-24 right-12 hidden lg:block text-right z-20">
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">21°8′N 79°4′E</p>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">NAGPUR, INDIA</p>
+      </div>
+      <div class="absolute top-24 left-6 lg:left-12 z-20">
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">05 / Projects</p>
+        <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[--color-blue]">Open Source &amp; Software</p>
+      </div>
+
+      <!-- Main content container -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
+        <div class="max-w-4xl w-full mt-8 lg:mt-0">
+          <div class="flex flex-col justify-center text-left">
+            <div class="mb-6 animate-fade-up">
+              <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.8rem, 8vw, 5.2rem);">
+                <span class="block">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]" style="color: #636363;">HAT </span><span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]" style="color: #636363;">E </span><span style="color: #0a0a0a; font-size: 1.13em;">B</span><span class="text-[--color-ink]" style="color: #636363;">UILD.</span>
+                </span>
+              </h1>
+            </div>
+
+            <div class="animate-fade-up" style="animation-delay: 0.2s;">
+              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-0 max-w-2xl">
+                Real production software shipped by student developers and open-source contributors at VNIT. No demo-ware. No purely theoretical exercises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Action Bar -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
+        <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up" style="animation-delay: 0.3s;">
+          <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16">
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Production</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Open Source</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Campus Built</span>
+          </div>
+
+          <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
+            <a href="#projects-grid" class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+              View Projects ↓
+            </a>
+            <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              Get in Touch
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="border-t border-[--color-border]"></div>
+    <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
+    <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
+      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">NEXT.JS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">FLUTTER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PYTORCH ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">LANGCHAIN ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">GOLANG ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOCKER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">KUBERNETES ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DISCORD.JS ·</span>
+        <!-- Loop repeat -->
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">NEXT.JS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">FLUTTER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PYTORCH ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">LANGCHAIN ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">GOLANG ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOCKER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">KUBERNETES ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DISCORD.JS ·</span>
+      </div>
+    </div>
 
     <!-- PROJECTS GRID -->
-    <section class="border-t border-[--color-border] bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+    <section id="projects-grid" class="border-t border-[--color-border] bg-[--color-ground-alt]" style="font-family: var(--font-display)">
       
       <!-- Project 01 (Even) -->
       <div class="border-b border-[--color-border]">

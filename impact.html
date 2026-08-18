@@ -58,80 +58,130 @@
 
   <main>
 
-    <!-- ═══════════════════════════════════════════ HERO -->
-    <section class="pt-16 pb-0 bg-[--color-ground]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <!-- ═══════════════════════════════════════════ HERO (HOME Section Style) -->
+    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-white" style="font-family: var(--font-display)">
+      <!-- Fine grid background -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
+      </div>
 
-        <!-- Top meta row -->
-        <div class="flex items-center justify-between mb-12 animate-fade-up">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue]">02 / Impact</p>
-          <p class="text-[10px] font-mono tracking-[0.15em] uppercase text-[--color-ink-muted]">2009 – Present</p>
-        </div>
+      <!-- Coordinates & Meta Badges -->
+      <div class="absolute top-24 right-12 hidden lg:block text-right z-20">
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">21°8′N 79°4′E</p>
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">NAGPUR, INDIA</p>
+      </div>
+      <div class="absolute top-24 left-6 lg:left-12 z-20">
+        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">02 / Impact</p>
+        <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[--color-blue]">2009 – Present</p>
+      </div>
 
-        <!-- Giant headline -->
-        <div class="animate-fade-up" style="animation-delay: 0.1s;">
-          <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-            <span class="block">
-              <span style="color: #0a0a0a; font-size: 1.13em;">N</span><span class="text-[--color-ink]" style="color: #636363;">UMBERS</span>
-            </span>
-            <span class="block mt-1">
-              <span style="color: #0a0a0a; font-size: 1.13em;">T</span><span class="text-[--color-ink]" style="color: #636363;">HAT </span><span style="color: #0a0a0a; font-size: 1.13em;">M</span><span class="text-[--color-ink]" style="color: #636363;">ATTER.</span>
-            </span>
-          </h1>
-        </div>
+      <!-- Main content container -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
+        <div class="max-w-4xl w-full mt-8 lg:mt-0">
+          <div class="flex flex-col justify-center text-left">
+            <div class="mb-6 animate-fade-up">
+              <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.8rem, 8vw, 5.2rem);">
+                <span class="block">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">N</span><span class="text-[--color-ink]" style="color: #636363;">UMBERS</span>
+                </span>
+                <span class="block mt-1">
+                  <span style="color: #0a0a0a; font-size: 1.13em;">T</span><span class="text-[--color-ink]" style="color: #636363;">HAT </span><span style="color: #0a0a0a; font-size: 1.13em;">M</span><span class="text-[--color-ink]" style="color: #636363;">ATTER.</span>
+                </span>
+              </h1>
+            </div>
 
-        <!-- Sub-row -->
-        <div class="mt-12 pt-8 border-t border-[--color-border] flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-0 animate-fade-up" style="animation-delay: 0.2s;">
-          <p class="text-lg lg:text-xl text-[--color-ink-soft] leading-relaxed max-w-2xl font-medium">
-            Fifteen years of consistent work — in numbers, milestones, and the community we've built together.
-          </p>
-          <a href="events.html" class="text-xs font-bold tracking-[0.15em] uppercase text-[--color-blue] hover:underline shrink-0 pb-1">
-            See all events →
-          </a>
+            <div class="animate-fade-up" style="animation-delay: 0.2s;">
+              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-0 max-w-2xl">
+                Fifteen years of continuous impact — measured in student career transformations, open-source code contributions, and technical events that shape VNIT's engineering culture.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="border-t border-[--color-border] mt-12"></div>
+
+      <!-- Bottom Action Bar -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
+        <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up" style="animation-delay: 0.3s;">
+          <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16">
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Metrics</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Growth</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Scale</span>
+          </div>
+
+          <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
+            <a href="#stats-grid" class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+              Impact Report ↓
+            </a>
+            <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
+    <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
+      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">5,000+ STUDENTS REACHED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">50+ EVENTS HOSTED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">45+ PROJECTS SHIPPED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">3× ICPC ASIA REGIONALS ·</span>
+        <!-- Loop repeat -->
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">5,000+ STUDENTS REACHED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">50+ EVENTS HOSTED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">45+ PROJECTS SHIPPED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">3× ICPC ASIA REGIONALS ·</span>
+      </div>
+    </div>
+
     <!-- ═══════════════════════════════════════════ STATS GRID -->
-    <section class="border-t border-[--color-border] py-0 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="grid grid-cols-2 lg:grid-cols-4 border-b border-[--color-border]">
+    <section id="stats-grid" class="border-t border-[--color-border] py-0 bg-theme-tint-blue" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-12">
+        <div class="reveal mb-10">
+          <span class="domain-badge domain-badge-blue mb-4">02 / Metrics</span>
+          <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 4vw, 4rem);">
+            THE CHAPTER BY NUMBERS.
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 border border-[--color-border] bg-white">
 
           <!-- Stat 1 -->
-          <div class="reveal p-5 lg:p-8 border-r border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors">
+          <div class="reveal p-6 lg:p-10 border-r border-b lg:border-b-0 border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors">
             <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue] mb-6">Students Reached</p>
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+            <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[--color-blue] transition-colors" style="font-size: clamp(3rem, 5vw, 5.5rem);">
               <span class="stat-counter" data-target="5000">0</span>+
             </p>
-            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Impacted through technical events, talks, and hands-on mentorship.</p>
+            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Impacted through technical events, bootcamps, talks, and mentorship.</p>
           </div>
 
           <!-- Stat 2 -->
-          <div class="reveal p-5 lg:p-8 lg:border-r border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors" style="transition-delay: 0.08s;">
+          <div class="reveal p-6 lg:p-10 lg:border-r border-b lg:border-b-0 border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors" style="transition-delay: 0.08s;">
             <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue] mb-6">Events</p>
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+            <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[--color-blue] transition-colors" style="font-size: clamp(3rem, 5vw, 5.5rem);">
               <span class="stat-counter" data-target="50">0</span>+
             </p>
-            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Workshops, hackathons, summits, and competitions.</p>
+            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Workshops, hackathons, summits, and technical competitions.</p>
           </div>
 
           <!-- Stat 3 -->
-          <div class="reveal p-5 lg:p-8 border-r border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors" style="transition-delay: 0.16s;">
+          <div class="reveal p-6 lg:p-10 border-r border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors" style="transition-delay: 0.16s;">
             <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue] mb-6">Projects</p>
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+            <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[--color-blue] transition-colors" style="font-size: clamp(3rem, 5vw, 5.5rem);">
               <span class="stat-counter" data-target="45">0</span>+
             </p>
-            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Real software built and deployed to production.</p>
+            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Real production software built, maintained, and shipped.</p>
           </div>
 
           <!-- Stat 4 -->
-          <div class="reveal p-5 lg:p-8 border-[--color-border] group hover:bg-[--color-ground-subtle] transition-colors" style="transition-delay: 0.24s;">
-            <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue] mb-6">Years</p>
-            <p class="font-black text-[--color-ink] leading-none mb-3" style="font-size: clamp(3rem, 5vw, 5.5rem);">
+          <div class="reveal p-6 lg:p-10 group hover:bg-[--color-ground-subtle] transition-colors" style="transition-delay: 0.24s;">
+            <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[--color-blue] mb-6">Years Active</p>
+            <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[--color-blue] transition-colors" style="font-size: clamp(3rem, 5vw, 5.5rem);">
               <span class="stat-counter" data-target="15">0</span>+
             </p>
-            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Continuously active since our founding in 2009.</p>
+            <p class="text-xs text-[--color-ink-soft] leading-relaxed">Continuously active community since founding in 2009.</p>
           </div>
 
         </div>

@@ -58,19 +58,19 @@
 
   <main>
 
-    <!-- ═══════════════════════════════════════════ HERO -->
-    <section class="pt-16 pb-0 bg-[--color-ground]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <!-- ═══════════════════════════════════════════ HERO (Full 1-Slide Height) -->
+    <section class="min-h-[calc(100vh-4rem)] flex flex-col justify-between pt-32 pb-12 bg-[--color-ground]" style="font-family: var(--font-display)">
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 flex-grow flex flex-col justify-between">
 
-        <!-- Top meta row -->
-        <div class="flex items-center justify-between mb-12 animate-fade-up">
+        <!-- Top meta row with proper navbar margin -->
+        <div class="flex items-center justify-between mb-8 animate-fade-up">
           <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue]">04 / Events</p>
-          <p class="text-[10px] font-mono tracking-[0.15em] uppercase text-[--color-ink-muted]">50+ hosted · 2009–present</p>
+          <p class="text-xs font-mono tracking-[0.15em] uppercase text-[--color-ink-muted]">50+ Hosted · 2009–Present</p>
         </div>
 
-        <!-- Giant headline -->
-        <div class="grid lg:grid-cols-2 gap-12 items-end animate-fade-up" style="animation-delay: 0.1s;">
-          <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
+        <!-- Main Hero Content -->
+        <div class="my-auto py-6 animate-fade-up" style="animation-delay: 0.1s;">
+          <h1 class="font-black leading-[0.95] tracking-tight mb-8" style="font-size: clamp(2.8rem, 8vw, 5rem);">
             <span class="block">
               <span style="color: #0a0a0a; font-size: 1.13em;">T</span><span class="text-[--color-ink]" style="color: #636363;">HE</span>
             </span>
@@ -78,30 +78,41 @@
               <span style="color: #0a0a0a; font-size: 1.13em;">R</span><span class="text-[--color-ink]" style="color: #636363;">ECORD.</span>
             </span>
           </h1>
-          <div class="lg:pb-3">
-            <p class="text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium">
-              Every workshop, hackathon, competition, and summit we've organized or participated in. The community in motion.
-            </p>
-            <!-- Quick stat strip -->
-            <div class="flex gap-8">
+
+          <div class="grid lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-7">
+              <p class="text-lg lg:text-xl text-[--color-ink-soft] leading-relaxed font-medium mb-4">
+                Every workshop, hackathon, technical competition, and speaker summit organized by ACM-VNIT. The computing community in motion.
+              </p>
+              <p class="text-base text-[--color-ink-muted] leading-relaxed">
+                Explore our full event directory spanning Web Development, Artificial Intelligence, Competitive Programming, and Cybersecurity.
+              </p>
+            </div>
+            <!-- Quick Stat Strip -->
+            <div class="lg:col-span-5 grid grid-cols-3 gap-6 pt-4 lg:pt-0 lg:border-l border-[--color-border] lg:pl-8">
               <div>
-                <p class="font-black text-[--color-ink] text-3xl leading-none">50+</p>
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mt-1">Total events</p>
+                <p class="font-black text-[--color-ink] text-3xl lg:text-4xl leading-none">50+</p>
+                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-blue] mt-2 font-bold">Total Events</p>
               </div>
               <div>
-                <p class="font-black text-[--color-ink] text-3xl leading-none">1,500+</p>
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mt-1">Peak attendance</p>
+                <p class="font-black text-[--color-ink] text-3xl lg:text-4xl leading-none">1,500+</p>
+                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-blue] mt-2 font-bold">Peak Attendance</p>
               </div>
               <div>
-                <p class="font-black text-[--color-ink] text-3xl leading-none">8</p>
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mt-1">Domains covered</p>
+                <p class="font-black text-[--color-ink] text-3xl lg:text-4xl leading-none">8</p>
+                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-blue] mt-2 font-bold">Domains Covered</p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Bottom Action Strip & Divider -->
+        <div class="pt-8 border-t border-[--color-border] flex items-center justify-between animate-fade-up" style="animation-delay: 0.2s;">
+          <span class="text-xs font-mono uppercase tracking-[0.15em] text-[--color-ink-muted]">Scroll or filter to explore events ↓</span>
+          <a href="#events-filter-bar" class="text-xs font-mono font-bold uppercase tracking-[0.15em] text-[--color-blue] hover:underline">Filter Events →</a>
+        </div>
+
       </div>
-      <div class="border-t border-[--color-border] mt-14"></div>
     </section>
 
     <!-- ═══════════════════════════════════════════ FILTER BAR (sticky) -->
