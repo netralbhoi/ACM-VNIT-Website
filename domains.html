@@ -143,367 +143,181 @@
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════════════ DOMAINS LIST (Desktop) -->
-    <section id="domains-list" class="border-t border-[--color-border] bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+    <!-- ═══════════════════════════════════════════ DOMAINS GRID (4x2) -->
+    <section id="domains-list" class="border-t border-[--color-border] py-16 lg:py-24 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-12">
-
-          <!-- Left list -->
-          <div class="lg:col-span-7 border-r border-[--color-border] flex flex-col">
-
-            <!-- Domain 1 -->
-            <div class="reveal">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="01"
-                data-name="CP &amp; DSA"
-                data-desc="Sharpening algorithmic thinking through coding contests, data structures, optimization techniques, and problem-solving under pressure."
-                data-tags="C++, Codeforces, LeetCode, DSA, ICPC">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">01</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      CP &amp; DSA
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">C++ · Codeforces · LeetCode · DSA · ICPC</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 2 -->
-            <div class="reveal" style="transition-delay: 0.05s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="02"
-                data-name="AI / ML"
-                data-desc="Developing intelligent systems through neural networks, predictive modeling, and cutting-edge research in artificial intelligence."
-                data-tags="PyTorch, TensorFlow, Python, Pandas, Deep Learning">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">02</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      AI / ML
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">PyTorch · TensorFlow · Python · Pandas</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 3 -->
-            <div class="reveal" style="transition-delay: 0.1s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="03"
-                data-name="Web Dev"
-                data-desc="Building the foundational fabric of the modern web using robust full-stack frameworks and scalable architectures."
-                data-tags="Next.js, GoLang, Node.js, PostgreSQL, TailwindCSS">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">03</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      Web Dev
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Next.js · GoLang · Node.js · PostgreSQL</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 4 -->
-            <div class="reveal" style="transition-delay: 0.15s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="04"
-                data-name="App Dev"
-                data-desc="Engineering seamless mobile experiences across platforms with a focus on high-performance architecture and reactive UI patterns."
-                data-tags="Flutter, React Native, SwiftUI, Kotlin">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">04</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      App Dev
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Flutter · React Native · SwiftUI · Kotlin</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 5 -->
-            <div class="reveal" style="transition-delay: 0.2s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="05"
-                data-name="Cybersecurity"
-                data-desc="Securing the perimeter. Offensive and defensive security research, penetration testing, and vulnerability assessment."
-                data-tags="Burp Suite, OWASP, CTF, Wireshark, Pen Testing">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">05</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      Cybersecurity
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Burp Suite · OWASP · CTF · Wireshark</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 6 -->
-            <div class="reveal" style="transition-delay: 0.25s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="06"
-                data-name="Cloud &amp; DevOps"
-                data-desc="Automating deployment pipelines, managing cloud infrastructure, and ensuring scalable, reliable software delivery."
-                data-tags="AWS, Docker, Kubernetes, CI/CD, Terraform">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">06</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      Cloud &amp; DevOps
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">AWS · Docker · Kubernetes · CI/CD</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 7 -->
-            <div class="reveal" style="transition-delay: 0.3s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="07"
-                data-name="Design"
-                data-desc="The visual blueprint. Crafting user-first interfaces and motion graphics that marry modern aesthetics with functional purpose."
-                data-tags="Figma, After Effects, Blender, UI/UX">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">07</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      Design
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Figma · After Effects · Blender · UI/UX</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-            <!-- Domain 8 -->
-            <div class="reveal" style="transition-delay: 0.35s;">
-              <button class="domain-item w-full text-left group flex items-center gap-6 py-9 pr-10 border-b border-[--color-border] transition-all hover:bg-[--color-ground-subtle]"
-                data-id="08"
-                data-name="Open Source Development"
-                data-desc="Building impactful software collaboratively through open-source contributions, version control workflows, and community-driven innovation."
-                data-tags="Git, GitHub, Linux, GSSoC, GSoC">
-                <span class="domain-id-text text-xs font-mono w-8 shrink-0 text-[--color-ink-muted] group-hover:text-[--color-blue] transition-colors">08</span>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-center gap-3 mb-1">
-                    <p class="domain-name-text font-black leading-tight transition-colors text-[--color-ink] group-hover:text-[--color-blue]" style="font-size: clamp(1.35rem, 2.5vw, 2.25rem);">
-                      Open Source Development
-                    </p>
-                  </div>
-                  <p class="text-xs font-mono text-[--color-ink-soft] opacity-0 group-hover:opacity-100 transition-opacity">Git · GitHub · Linux · GSSoC · GSoC</p>
-                </div>
-                <span class="domain-arrow text-xl text-[--color-ink-muted] opacity-0 group-hover:opacity-100 group-hover:text-[--color-blue] transition-all group-hover:translate-x-1 shrink-0">→</span>
-              </button>
-            </div>
-
-          </div><!-- /left list -->
-
-          <!-- Right detail panel (desktop only) -->
-          <div class="hidden lg:flex lg:col-span-5 sticky top-16 h-[calc(100vh-4rem)] flex-col">
-            <div id="domain-detail-pane" class="flex-1 overflow-y-auto p-12">
-              <!-- Default empty state -->
-              <div class="flex flex-col justify-center h-full">
-                <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Explore</p>
-                <p class="text-2xl font-black text-[--color-ink] leading-tight mb-4">HOVER A DOMAIN<br>TO LEARN MORE.</p>
-                <div class="w-8 h-px bg-[--color-border] mb-8"></div>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>01 / CP &amp; DSA
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>02 / AI / ML
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>03 / Web Dev
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>04 / App Dev
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>05 / Cybersecurity
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>06 / Cloud &amp; DevOps
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>07 / Design
-                  </div>
-                  <div class="flex items-center gap-3 text-xs font-mono text-[--color-ink-muted]">
-                    <span class="w-4 h-px bg-[--color-border]"></span>08 / Open Source
-                  </div>
-                </div>
-              </div>
-            </div>
+        
+        <!-- Section Header -->
+        <div class="reveal mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <p class="text-xs md:text-sm font-bold font-mono tracking-[0.25em] uppercase text-[--color-blue] mb-3">Our Core Specializations</p>
+            <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 3.5vw, 3.5rem);">
+              TECHNICAL DOMAINS
+            </h2>
           </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ DOMAINS LIST (Mobile) -->
-    <section class="lg:hidden border-t border-[--color-border] py-10 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6">
-        <div class="reveal mb-12">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-2">Domain details</p>
-          <p class="text-2xl font-black text-[--color-ink]">EXPLORE EACH DOMAIN.</p>
+          <p class="text-sm font-mono text-[--color-ink-muted]">08 ACTIVE DOMAINS</p>
         </div>
 
-        <div class="flex flex-col gap-8">
+        <!-- 4x2 Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
 
-          <!-- CP & DSA Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">01</span>
+          <!-- Card 01: CP & DSA -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.05s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">01</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">CP &amp; DSA</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Sharpening algorithmic thinking through coding contests, data structures, optimization techniques, and problem-solving under pressure.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">CP &amp; DSA</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Algorithms, data structures, and competitive programming mastery at national and international level.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Algorithms</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Data Structures</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">ICPC</span>
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">C++</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Codeforces</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">LeetCode</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">DSA</span>
             </div>
           </div>
 
-          <!-- AI / ML Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.05s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">02</span>
+          <!-- Card 02: AI / ML -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.1s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">02</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">AI / ML</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Developing intelligent systems through neural networks, predictive modeling, and cutting-edge research in artificial intelligence.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">AI / ML</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Neural networks, deep learning models, NLP, and computer vision systems built end-to-end.
-            </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">PyTorch</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">TensorFlow</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Deep Learning</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Computer Vision</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">NLP</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Python</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Pandas</span>
             </div>
           </div>
 
-          <!-- Web Dev Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.1s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">03</span>
+          <!-- Card 03: Web Dev -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.15s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">03</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">Web Dev</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Building the foundational fabric of the modern web using robust full-stack frameworks and scalable architectures.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">Web Dev</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Full-stack architecture, modern UI systems, REST APIs, GraphQL, and production deployments.
-            </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Next.js</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">GoLang</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">React</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Node.js</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">DevOps</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">PostgreSQL</span>
             </div>
           </div>
 
-          <!-- App Dev Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.15s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">04</span>
+          <!-- Card 04: App Dev -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.2s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">04</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">App Dev</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Engineering seamless mobile experiences across platforms with a focus on high-performance architecture and reactive UI patterns.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">App Dev</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Native Android, iOS, and cross-platform mobile applications with Flutter and React Native.
-            </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Flutter</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">React Native</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">SwiftUI</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Native Android</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">iOS</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Kotlin</span>
             </div>
           </div>
 
-          <!-- Cybersecurity Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.2s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">05</span>
+          <!-- Card 05: Cybersecurity -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.25s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">05</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">Cybersecurity</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Securing the perimeter. Offensive and defensive security research, penetration testing, and vulnerability assessment.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">Cybersecurity</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Network defense, ethical hacking, CTF challenges, and system hardening techniques.
-            </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Burp Suite</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">OWASP</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">CTF</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Pen Test</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Network Defense</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Cryptography</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Ethical Hacking</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Wireshark</span>
             </div>
           </div>
 
-          <!-- Cloud & DevOps Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.25s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">06</span>
+          <!-- Card 06: Cloud & DevOps -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.3s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">06</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">Cloud &amp; DevOps</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Automating deployment pipelines, managing cloud infrastructure, and ensuring scalable, reliable software delivery.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">Cloud &amp; DevOps</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Docker, Kubernetes, CI/CD pipelines, and cloud-native infrastructure on AWS and GCP.
-            </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">AWS</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">GCP</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Docker</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Kubernetes</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">CI/CD</span>
             </div>
           </div>
 
-          <!-- Design Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.3s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">07</span>
+          <!-- Card 07: Design -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.35s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">07</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">Design</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                The visual blueprint. Crafting user-first interfaces and motion graphics that marry modern aesthetics with functional purpose.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">Design</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              UI/UX design systems, user-centric product logic, typography, motion, and wireframes.
-            </p>
-            <div class="flex flex-wrap gap-2">
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Figma</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Framer</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">After Effects</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Blender</span>
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">UI/UX</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Design Systems</span>
             </div>
           </div>
 
-          <!-- Open Source Mobile -->
-          <div class="reveal border border-[--color-border] bg-white p-8" style="transition-delay: 0.35s;">
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-xs font-mono text-[--color-blue] tracking-widest">08</span>
+          <!-- Card 08: Open Source -->
+          <div class="reveal group border border-[--color-border] bg-white p-7 flex flex-col justify-between hover:border-[--color-blue] hover:shadow-xl transition-all duration-300 rounded-sm" style="transition-delay: 0.4s;">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono font-bold tracking-[0.2em] text-[--color-blue]">08</span>
+                <span class="text-lg text-[--color-ink-muted] group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <h3 class="text-xl lg:text-2xl font-black text-[--color-ink] group-hover:text-[--color-blue] transition-colors mb-3 uppercase">Open Source</h3>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
+                Building impactful software collaboratively through open-source contributions, version control workflows, and community-driven innovation.
+              </p>
             </div>
-            <h3 class="uppercase text-2xl font-black text-[--color-ink] mb-3">Open Source</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-5">
-              Contributing to global open-source codebases, GSoC guidance, and building ecosystem modules.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">GSoC</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">GitHub</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Open Source</span>
+            <div class="pt-4 border-t border-[--color-border]/60 flex flex-wrap gap-1.5">
               <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Git</span>
-              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Contributions</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">GitHub</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">Linux</span>
+              <span class="text-[10px] font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-2 py-0.5">GSoC</span>
             </div>
           </div>
 
