@@ -447,5 +447,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyTwoToneHeadings();
 
+  // ==========================================
+  // 9. HERO SKETCH HOVER SPOTLIGHT (B&W Sketch -> Color Reveal on Hover)
+  // ==========================================
+  const heroSection = document.getElementById("hero-section");
+  const heroColorBg = document.getElementById("hero-color-bg");
+
+  if (heroSection && heroColorBg) {
+    heroSection.addEventListener("mousemove", (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      heroColorBg.style.setProperty("--mouse-x", `${x}px`);
+      heroColorBg.style.setProperty("--mouse-y", `${y}px`);
+      heroColorBg.style.opacity = "1";
+    });
+
+    heroSection.addEventListener("mouseleave", () => {
+      heroColorBg.style.opacity = "0";
+    });
+  }
+
 });
 
