@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   // 4. INTERSECTION OBSERVER FOR REVEALS
   // ==========================================
-  const revealElements = document.querySelectorAll(".reveal");
+  const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-up, .reveal-scale");
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
           heading.style.color === "white") return;
 
       // Skip headings that contain child element nodes (spans, links, etc.)
-      // — these are already specially structured
+      // Note: these are already specially structured
       const hasChildElements = Array.from(heading.childNodes).some(
         n => n.nodeType === Node.ELEMENT_NODE && n.nodeName !== "BR"
       );

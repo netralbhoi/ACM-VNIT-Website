@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
   --font-display: 'Manrope', sans-serif;
   --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: 'Plus Jakarta Sans', sans-serif;
 
   --color-ink: #0f172a;
   --color-ink-soft: #334155;
@@ -24,6 +24,31 @@
   --color-ground-subtle: #f1f5f9;
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+/* Reduced tracking and display font for section labels, eyebrows, and badges */
+.tracking-\[0\.2em\],
+.tracking-\[0\.25em\],
+.tracking-\[0\.15em\],
+.tracking-widest {
+  letter-spacing: 0.05em !important;
+  font-family: var(--font-display) !important;
+}
+
+/* Tight line height and letter spacing matching hero heading */
+h1, h2 {
+  letter-spacing: -0.025em;
+}
+
+h2.font-black,
+.font-black.leading-tight,
+h2.leading-tight {
+  line-height: 0.95 !important;
+  letter-spacing: -0.025em !important;
 }
 
 * {
@@ -128,16 +153,40 @@ body {
   animation: slideOutRight 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* Static HTML conversion layers */
-.reveal {
+/* Scroll reveal animation layers */
+.reveal, .reveal-left, .reveal-right, .reveal-up, .reveal-scale {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.reveal.visible {
+.reveal {
+  transform: translateY(24px);
+}
+
+.reveal-left {
+  transform: translateX(-36px);
+}
+
+.reveal-right {
+  transform: translateX(36px);
+}
+
+.reveal-up {
+  transform: translateY(36px);
+}
+
+.reveal-scale {
+  transform: scale(0.95);
+}
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible,
+.reveal-up.visible,
+.reveal-scale.visible {
   opacity: 1;
-  transform: none;
+  transform: translate(0, 0) scale(1);
 }
 
 .contact-panel {
