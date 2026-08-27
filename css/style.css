@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Sora:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --font-display: 'Manrope', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Sora', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-serif: 'Newsreader', serif;
 
-  --color-ink: #0f172a;
-  --color-ink-soft: #334155;
-  --color-ink-muted: #64748b;
-  --color-blue: #2563eb;
-  --color-blue-light: #38bdf8;
-  --color-blue-dim: #f0f9ff;
-  --color-cyan: #06b6d4;
-  --color-indigo: #4f46e5;
-  --color-purple: #7c3aed;
+  --color-ink: #000000;
+  --color-ink-soft: #0a0a0a;
+  --color-ink-muted: #1a1a1a;
+  --color-blue: #0075c9;
+  --color-blue-light: #0085ca;
+  --color-blue-dim: #e6f4ff;
+  --color-cyan: #0075c9;
+  --color-indigo: #0066cc;
+  --color-purple: #0055b8;
   --color-emerald: #059669;
   --color-amber: #d97706;
   --color-rose: #e11d48;
@@ -30,18 +29,51 @@
   font-family: var(--font-mono) !important;
 }
 
-/* Reduced tracking and display font for section labels, eyebrows, and badges */
+.font-serif {
+  font-family: var(--font-serif) !important;
+}
+
+/* Reduced tracking and monospace font for section labels, eyebrows, and badges */
 .tracking-\[0\.2em\],
 .tracking-\[0\.25em\],
 .tracking-\[0\.15em\],
 .tracking-widest {
-  letter-spacing: 0.05em !important;
-  font-family: var(--font-display) !important;
+  letter-spacing: 0.08em !important;
+  font-family: var(--font-mono) !important;
 }
 
-/* Tight line height and letter spacing matching hero heading */
-h1, h2 {
+/* ── Global font-weight reduction ───────────────────────────── */
+/* font-black (900) → 800  |  font-bold (700) → 600 */
+.font-black  { font-weight: 800 !important; }
+.font-bold   { font-weight: 600 !important; }
+.font-extrabold { font-weight: 700 !important; }
+
+
+h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
+  color: #000000;
+  -webkit-text-fill-color: #000000;
+}
+
+/* Preserve white text in dark sections — these explicitly set text-white or text colors via Tailwind/inline */
+.text-white,
+[class*="text-white"],
+[class*="text-slate-"],
+[class*="text-zinc-"],
+[style*="color: #fff"],
+[style*="color: white"],
+[style*="color:#fff"],
+[style*="color: rgb(255"] {
+  -webkit-text-fill-color: currentColor !important;
+}
+
+/* Dark section containers — headings inside should be white */
+.bg-\[#0f172a\] h1, .bg-\[#0f172a\] h2, .bg-\[#0f172a\] h3,
+.bg-\[#1e293b\] h1, .bg-\[#1e293b\] h2, .bg-\[#1e293b\] h3,
+[class*="from-\[#1e293b\]"] h1, [class*="from-\[#1e293b\]"] h2, [class*="from-\[#1e293b\]"] h3,
+[class*="from-\[#0f172a\]"] h1, [class*="from-\[#0f172a\]"] h2, [class*="from-\[#0f172a\]"] h3 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 h2.font-black,

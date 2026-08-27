@@ -122,7 +122,7 @@
       </div>
 
       <!-- Main content container (middle of screen) -->
-      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-20 flex-grow flex items-center">
         <div class="max-w-4xl w-full mt-8 lg:mt-0">
 
           <!-- Left side content (heading, description, buttons) -->
@@ -130,26 +130,20 @@
             <div class="mb-4 flex items-center gap-2.5">
             </div>
             <div class="mb-6 animate-fade-up">
-              <h1 class="font-black leading-[0.95] tracking-tight" style="font-size: clamp(2.6rem, 7.5vw, 4.5rem);">
-                <span class="block">
-                  <span style="color: #0a0a0a; font-size: 1.13em;">W</span><span class="text-[--color-ink]"
-                    style="color: #636363;">E </span><span class="text-[--color-ink]">A</span><span
-                    class="text-[--color-ink]" style="color: #636363;">RE </span><span
-                    class="text-[--color-ink]">T</span><span class="text-[--color-ink]"
-                    style="color: #636363;">HE</span>
-                </span>
-                <span class="block mt-1">
-                  <span style="color: #0a0a0a; font-size: 1.13em;">A</span><span class="text-[--color-ink]"
-                    style="color: #636363;">SSOCIATION </span><span class="text-[--color-ink]">F</span><span
-                    class="text-[--color-ink]" style="color: #636363;">OR</span>
-                </span>
-                <span class="block mt-1">
-                  <span style="color: #0a0a0a; font-size: 1.13em;">C</span><span class="text-[--color-ink]"
-                    style="color: #636363;">OMPUTING </span><br><span
-                    style="color: #0a0a0a; font-size: 1.13em;">M</span><span class="text-[--color-ink]"
-                    style="color: #636363;">ACHINERY</span>
-                </span>
-              </h1>
+              <p style="
+                font-size: clamp(2.6rem, 7.5vw, 4.5rem);
+                line-height: 0.95;
+                letter-spacing: -0.025em;
+                font-weight: 800;
+                color: #000000;
+                font-family: 'Sora', sans-serif;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+                -webkit-text-fill-color: #000000;
+              ">
+                WE ARE THE<br>ASSOCIATION FOR<br>COMPUTING MACHINERY
+              </p>
             </div>
 
             <div class="animate-fade-up" style="animation-delay: 0.2s;">
@@ -164,7 +158,7 @@
       </div>
 
       <!-- Bottom bar -->
-      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-20 bot-bar">
         <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up"
           style="animation-delay: 0.5s;">
 
@@ -227,16 +221,24 @@
     </div>
 
     <!-- 01 / ABOUT -->
-    <section class="border-t border-[--color-border] py-14 bg-theme-tint-blue">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <section class="relative border-t border-[--color-border] py-16 overflow-hidden bg-white">
+      <!-- Fixed Translucent Background Image -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.55;">
+      </div>
+      <!-- Subtle Gradient Overlay for crisp text readability -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-white/80 via-white/70 to-white/55">
+      </div>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="reveal-up">
             <span class="domain-badge domain-badge-blue mb-6">01 / About</span>
-            <h2 class="uppercase font-black text-[--color-ink] leading-[0.95] tracking-tight"
-              style="font-size: clamp(2.4rem, 5vw, 5rem);">
+            <h2 class="uppercase font-black text-black leading-[0.95] tracking-tight"
+              style="font-size: clamp(2.4rem, 5vw, 5rem); color: #000000 !important;">
               COMPUTING<br>IS A CRAFT.<br>WE TAKE IT<br>SERIOUSLY.
             </h2>
-            <p class="text-base text-[--color-ink-muted] leading-relaxed mt-8">
+            <p class="text-base text-[--color-ink-muted] leading-relaxed mt-8 font-medium">
               From research and open-source contributions to large-scale technical events, we turn ideas into real-world
               impact, with 5,000+ students reached and 15+ years of uninterrupted activity.
             </p>
@@ -244,12 +246,12 @@
 
           <div class="reveal-up" style="transition-delay: 0.15s;">
             <!-- Campus image above the text, fades seamlessly under paragraph text -->
-            <div class="relative overflow-hidden rounded-t-xl border-t border-x border-b-0 border-[--color-border]">
-              <img src="images/vnit-campus.jpg" alt="VNIT Nagpur Campus" class="w-full object-cover block"
+            <div class="relative overflow-hidden rounded-t-xl border border-[--color-border] shadow-lg">
+              <img src="images/about-bg.jpg" alt="VNIT Nagpur Campus & Fighter Jet" class="w-full object-cover block"
                 style="aspect-ratio: 16/9; object-position: center;">
               <!-- Fade overlay: transparent until 65% → section background at bottom -->
               <div class="absolute inset-0 pointer-events-none"
-                style="background: linear-gradient(to bottom, transparent 65%, #f8fafc 98%);"></div>
+                style="background: linear-gradient(to bottom, transparent 65%, rgba(255,255,255,0.95) 98%);"></div>
             </div>
             <p
               class="relative z-10 -mt-6 text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium text-center px-4">
@@ -392,14 +394,22 @@
     </section>
 
     <!-- DOMAINS TEASER -->
-    <section class="border-t border-[--color-border] py-14 bg-theme-tint-cyan">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <section class="relative border-t border-[--color-border] py-16 overflow-hidden bg-white">
+      <!-- Fixed Translucent Background Image -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.55;">
+      </div>
+      <!-- Subtle Gradient Overlay for crisp text readability -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-white/80 via-white/70 to-white/55">
+      </div>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="reveal">
           <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-8">
             <div>
               <span class="domain-badge domain-badge-cyan mb-4">03 / Domains</span>
-              <h2 class="uppercase font-black text-[--color-ink] leading-[0.95] tracking-tight"
-                style="font-size: clamp(2rem, 4vw, 4rem);">
+              <h2 class="uppercase font-black text-black leading-[0.95] tracking-tight"
+                style="font-size: clamp(2rem, 4vw, 4rem); color: #000000 !important;">
                 EIGHT AREAS OF FOCUS.
               </h2>
             </div>
@@ -684,8 +694,7 @@
               <span class="domain-badge domain-badge-cyan mb-6">04 / Events</span>
               <h2 class="uppercase font-black text-white leading-tight mb-6"
                 style="font-size: clamp(2rem, 3.5vw, 3.5rem);">
-                <span style="color:#ffffff;">INSOMNIA</span><br><span style="color:#cbd5e1;">CENTRAL INDIA'S LARGEST
-                  HACKATHON</span>
+                INSOMNIA<br>CENTRAL INDIA'S LARGEST HACKATHON
               </h2>
               <p class="text-base text-slate-300 leading-relaxed mb-4">
                 36 continuous hours. 1,500+ builders. One challenge.
@@ -783,8 +792,7 @@
             <div class="reveal">
               <span class="domain-badge domain-badge-cyan mb-6">05 / Join</span>
               <h2 class="uppercase font-black text-white leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
-                <span style="color:#ffffff;">BUILD</span> <span style="color:#cbd5e1;">SOMETHING</span><br><span
-                  style="color:#ffffff;">THAT</span> <span style="color:#cbd5e1;">MATTERS.</span>
+                BUILD SOMETHING<br>THAT MATTERS.
               </h2>
               <p class="text-base text-slate-300 leading-relaxed mb-10 max-w-md">
                 Join a community that takes computing seriously. Open to all VNIT students across every engineering
