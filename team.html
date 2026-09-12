@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-[--color-ink]">
+<body class="bg-[#080d1a] text-[--color-ink]">
   <!-- Header -->
-  <header id="site-header" style="font-family: var(--font-display)" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+  <header id="site-header" style="font-family: var(--font-display)" class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-[#1e293b]">
     <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
         <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
@@ -21,6 +21,7 @@
 
       <!-- Desktop Links -->
       <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
         <a href="about.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
         <a href="domains.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
         <a href="impact.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
@@ -45,8 +46,9 @@
   </header>
 
   <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+  <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
     <div class="flex flex-col justify-center h-full px-8 gap-8">
+      <a href="index.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Home</a>
       <a href="about.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
       <a href="domains.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
       <a href="impact.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Impact</a>
@@ -61,7 +63,7 @@
 
   <main>
     <!-- ═══════════════════════════════════════════ HERO (HOME Section Style) -->
-    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-white" style="font-family: var(--font-display)">
+    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]" style="font-family: var(--font-display)">
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
         style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
@@ -82,7 +84,7 @@
         <div class="max-w-4xl w-full mt-8 lg:mt-0">
           <div class="flex flex-col justify-center text-left">
             <div class="mb-6 animate-fade-up">
-              <h1 class="font-black text-black leading-[0.95] tracking-tight" style="font-size: clamp(2.8rem, 8vw, 5.2rem); color: #000000 !important;">
+              <h1 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0; padding: 0; -webkit-text-fill-color: #ffffff;">
                 THE PEOPLE BEHIND IT.
               </h1>
             </div>
@@ -158,8 +160,8 @@
               <!-- Info -->
               <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-6">
                 <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">President</p>
-                <h2 class="font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
-                  Ankur Kumar
+                <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 1rem 0; -webkit-text-fill-color: #ffffff;">
+                  ANKUR KUMAR
                 </h2>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
                   President of ACM-VNIT, leading chapter initiatives, managing cross-functional technical domains, and driving campus development initiatives. Visvesvaraya National Institute of Technology.
@@ -185,8 +187,8 @@
               <!-- Info -->
               <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-1 lg:row-start-1">
                 <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Vice President</p>
-                <h2 class="font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
-                  Chinmay Sabharwal
+                <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 1rem 0; -webkit-text-fill-color: #ffffff;">
+                  CHINMAY SABHARWAL
                 </h2>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
                   "Engineering the impossible into reality." Coordinating event execution, chapter operations, and managing resources for technical sessions.
@@ -212,8 +214,8 @@
               <!-- Info -->
               <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-6">
                 <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Senior Advisor</p>
-                <h2 class="font-black text-[--color-ink] leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
-                  Manjeet Singh
+                <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 1rem 0; -webkit-text-fill-color: #ffffff;">
+                  MANJEET SINGH
                 </h2>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
                   "If you can't code without AI, you shouldn't use it." Mentoring the competitive programming track, and guiding the chapter in algorithmic and technical strategy.
@@ -363,7 +365,7 @@
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
         <div>
           <p class="text-xs md:text-sm font-bold font-mono tracking-[0.15em] uppercase text-[--color-blue] mb-3">Open positions</p>
-          <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">JOIN THE TEAM FOR 2025–26.</h2>
+          <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0; -webkit-text-fill-color: #ffffff;">JOIN THE TEAM FOR 2025–26.</h2>
         </div>
         <a href="mailto:acm@vnit.ac.in" class="shrink-0 bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
           Express interest →
@@ -482,14 +484,14 @@
   <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
   <!-- Contact Drawer Panel -->
-  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-[#0d1424] w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
     <!-- Header -->
     <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
       <div>
         <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">
           ACM·VNIT
         </p>
-        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+        <h2 class="text-2xl font-bold text-white uppercase">GET IN TOUCH</h2>
       </div>
       <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">
         ✕

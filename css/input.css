@@ -7,23 +7,28 @@
   --font-mono: 'JetBrains Mono', monospace;
   --font-serif: 'Newsreader', serif;
 
-  --color-ink: #000000;
-  --color-ink-soft: #111111;
-  --color-ink-muted: #222222;
-  --color-blue: #0075c9;
-  --color-blue-light: #0085ca;
-  --color-blue-dim: #e6f4ff;
-  --color-cyan: #0075c9;
-  --color-indigo: #0066cc;
-  --color-purple: #0055b8;
-  --color-emerald: #059669;
-  --color-amber: #d97706;
-  --color-rose: #e11d48;
-  --color-ground: #ffffff;
-  --color-ground-alt: #f8fafc;
-  --color-ground-subtle: #f1f5f9;
-  --color-border: #e2e8f0;
-  --color-border-strong: #cbd5e1;
+  --color-ink: #f8fafc;
+  --color-ink-soft: #cbd5e1;
+  --color-ink-muted: #94a3b8;
+  --color-blue: #38bdf8;
+  --color-blue-light: #60a5fa;
+  --color-blue-dim: rgba(56, 189, 248, 0.15);
+  --color-purple: #a855f7;
+  --color-purple-light: #c084fc;
+  --color-purple-dim: rgba(168, 85, 247, 0.2);
+  --color-accent: #a855f7;
+  --color-accent-light: #c084fc;
+  --color-cyan: #38bdf8;
+  --color-indigo: #818cf8;
+  --color-purple: #c084fc;
+  --color-emerald: #34d399;
+  --color-amber: #fbbf24;
+  --color-rose: #fb7185;
+  --color-ground: #080d1a;
+  --color-ground-alt: #0d1424;
+  --color-ground-subtle: #121a2d;
+  --color-border: #1e293b;
+  --color-border-strong: #334155;
 }
 
 .font-mono {
@@ -46,12 +51,12 @@
 /* Tight line height and letter spacing matching hero heading */
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
-  color: #000000;
+  color: #f8fafc;
 }
 
 h1:not(.text-white *):not(.bg-[#0f172a] *):not(.bg-[#090d16] *):not(.bg-black *),
 h2:not(.text-white *):not(.bg-[#0f172a] *):not(.bg-[#090d16] *):not(.bg-black *) {
-  color: #000000 !important;
+  color: #f8fafc !important;
 }
 
 h2.font-black,
@@ -67,6 +72,7 @@ h2.leading-tight {
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-ground);
 }
 
 body {
@@ -81,14 +87,14 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #080d1a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #1e293b;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #334155;
 }
 
 @keyframes fadeUp {

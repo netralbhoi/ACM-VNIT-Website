@@ -9,19 +9,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-[--color-ink]">
+<body class="bg-[#080d1a] text-[--color-ink]">
   <!-- Header -->
   <header id="site-header" style="font-family: var(--font-display)"
-    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/90 backdrop-blur-md border-b border-[--color-border]">
     <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
       <a href="index.html"
-        class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
+        class="flex items-center gap-3 text-white hover:text-[#a855f7] transition-colors">
         <img src="acm-logo.png" alt="ACM Logo" class="w-8 h-8">
         <div class=" flex flex-col text-left">
-          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight text-white">Association for Computing
             Machinery</span>
           <span
-            class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT
+            class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-slate-400">VNIT
             Student Chapter</span>
         </div>
       </a>
@@ -29,57 +29,57 @@
       <!-- Desktop Links -->
       <div class="hidden lg:flex items-center gap-8">
         <a href="index.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-300 hover:text-[#a855f7]">Home</a>
         <a href="about.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">About</a>
         <a href="impact.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Impact</a>
         <a href="domains.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Domains</a>
         <a href="events.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Events</a>
         <a href="projects.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Projects</a>
         <a href="team.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Team</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Team</a>
       </div>
 
       <div class="hidden lg:flex items-center gap-4">
         <button
-          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[--color-blue] border border-[--color-blue] px-4 py-2 hover:bg-[--color-blue] hover:text-white transition-colors duration-200">
+          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[#a855f7] border border-[#a855f7] px-4 py-2 hover:bg-[#a855f7] hover:text-white transition-colors duration-200 rounded-lg shadow-sm shadow-[#a855f7]/20">
           Contact →
         </button>
       </div>
 
       <!-- Hamburger Menu Button -->
       <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300 origin-center"></span>
       </button>
     </nav>
   </header>
 
   <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none"
+  <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none"
     style="font-family: var(--font-display)">
     <div class="flex flex-col justify-center h-full px-8 gap-8">
       <a href="index.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Home</a>
+        class="text-4xl font-bold text-white hover:text-[#a855f7] transition-colors">Home</a>
       <a href="about.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
+        class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">About</a>
       <a href="impact.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Impact</a>
+        class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Impact</a>
       <a href="domains.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
+        class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Domains</a>
       <a href="events.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Events</a>
+        class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Events</a>
       <a href="projects.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Projects</a>
+        class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Projects</a>
       <a href="team.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Team</a>
+        class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Team</a>
       <button
-        class="contact-trigger text-4xl font-bold text-[--color-blue] hover:opacity-70 transition-opacity text-left">
+        class="contact-trigger text-4xl font-bold text-[#a855f7] hover:opacity-70 transition-opacity text-left">
         Contact →
       </button>
     </div>
@@ -88,36 +88,31 @@
   <main>
     <!-- HERO SECTION -->
     <section id="hero-section"
-      class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-white"
+      class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
       style="font-family: var(--font-display)">
-      <!-- 1st Uploaded Picture: Black & White Sketch (Base Layer) -->
+      <!-- Fine grid background (behind image) -->
       <div class="absolute inset-0 pointer-events-none z-0"
-        style="background-image: url('Home_hero_bw_sketch.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; opacity: 0.75;">
+        style="background-image: linear-gradient(rgba(56,189,248,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(168,85,247,0.08) 1px, transparent 1px); background-size: 80px 80px;">
       </div>
-      <!-- 2nd Uploaded Picture: Colored Sketch (Revealed on mouse hover in the hovered area) -->
-      <div id="hero-color-bg"
-        class="absolute inset-0 pointer-events-none z-[1] transition-opacity duration-300 opacity-0"
-        style="background-image: url('Home_hero_colored_sketch.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; opacity: 0.95; -webkit-mask-image: radial-gradient(circle 200px at var(--mouse-x, -500px) var(--mouse-y, -500px), black 0%, black 60%, transparent 100%); mask-image: radial-gradient(circle 200px at var(--mouse-x, -500px) var(--mouse-y, -500px), black 0%, black 60%, transparent 100%);">
+      <!-- Hero Background Image (High-Resolution heroHomeBg.png with smooth fade to left) -->
+      <div class="absolute inset-0 pointer-events-none z-[1]"
+        style="background-image: url('heroHomeBg.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,1) 85%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,1) 85%);">
       </div>
-      <!-- Fade overlay: white on the left, transparent on the right -->
+      <!-- Smooth dark gradient overlay for text readability -->
       <div class="absolute inset-0 pointer-events-none z-[2]"
-        style="background: linear-gradient(to right, #ffffff 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 75%);">
-      </div>
-      <!-- Fine grid background -->
-      <div class="absolute inset-0 pointer-events-none z-[2]"
-        style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
+        style="background: linear-gradient(to right, #080d1a 20%, rgba(8,13,26,0.65) 50%, rgba(8,13,26,0.1) 80%, transparent 100%);">
       </div>
 
       <!-- Coordinates -->
       <div class="absolute top-24 right-12 hidden lg:block text-right z-20">
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">21°8′N 79°4′E</p>
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">NAGPUR, INDIA</p>
+        <p class="text-[10px] font-mono text-slate-400 tracking-[0.15em]">21°8′N 79°4′E</p>
+        <p class="text-[10px] font-mono text-slate-400 tracking-[0.15em]">NAGPUR, INDIA</p>
       </div>
       <!-- ACM badge -->
       <div class="absolute top-24 left-6 lg:left-12 z-20">
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">ACM Student Chapter</p>
+        <p class="text-[10px] font-mono text-slate-400 tracking-[0.2em] uppercase">ACM Student Chapter</p>
         <p
-          class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase font-bold text-[--color-blue]">
+          class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[#a855f7]">
           Est. 2009</p>
       </div>
 
@@ -128,26 +123,31 @@
           <!-- Left side content (heading, description, buttons) -->
           <div class="flex flex-col justify-center text-left">
             <div class="mb-4 flex items-center gap-2.5">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#a855f7] bg-[#a855f7]/10 border border-[#a855f7]/30 uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse"></span>
+                Official Student Chapter
+              </span>
             </div>
             <div class="mb-6 animate-fade-up">
               <p style="
                 font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                line-height: 0.95;
+                line-height: 1.15;
                 letter-spacing: -0.025em;
+                word-spacing: 0.15em;
                 font-weight: 800;
-                color: #000000;
+                color: #ffffff;
                 font-family: 'Sora', sans-serif;
                 text-transform: uppercase;
                 margin: 0;
                 padding: 0;
-                -webkit-text-fill-color: #000000;
+                -webkit-text-fill-color: #ffffff;
               ">
                 WE ARE THE<br>ASSOCIATION FOR<br>COMPUTING MACHINERY
               </p>
             </div>
 
             <div class="animate-fade-up" style="animation-delay: 0.2s;">
-              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-0 max-w-xl">
+              <p class="text-base lg:text-lg text-slate-300 leading-relaxed font-medium mb-0 max-w-xl">
                 The computing community at Visvesvaraya National Institute of Technology. Advancing technology through
                 research, collaboration, and community since 2009.
               </p>
@@ -163,20 +163,20 @@
           style="animation-delay: 0.5s;">
 
           <!-- Spans with overline -->
-          <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16">
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Computing</span>
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Innovation</span>
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Community</span>
+          <div class="pt-6 border-t border-[#1e293b] flex flex-wrap gap-8 lg:gap-16">
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-slate-400">Computing</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-slate-400">Innovation</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-slate-400">Community</span>
           </div>
 
           <!-- Buttons shifted to bottom right (no overline) -->
           <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
             <a href="domains.html"
-              class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+              class="inline-block bg-[#0075c9] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#38bdf8] hover:text-slate-950 transition-all duration-200 shadow-lg shadow-[#0075c9]/25 hover:shadow-xl hover:shadow-[#38bdf8]/40 rounded-lg border border-[#38bdf8]/40">
               Explore Domains →
             </a>
             <button
-              class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              class="contact-trigger inline-block border-2 border-[#a855f7] text-[#a855f7] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#a855f7] hover:text-white transition-all duration-200 shadow-lg shadow-[#a855f7]/20 rounded-lg">
               Get in Touch
             </button>
           </div>
@@ -187,16 +187,16 @@
     </section>
 
     <!-- MARQUEE -->
-    <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
+    <div class="border-y border-[#1e293b] overflow-hidden py-4 bg-[#0d1424]">
       <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Algorithms ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Machine Learning ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Web Development ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">App Development ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Cybersecurity ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Cloud &amp; DevOps ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Design ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Open Source ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Algorithms <span class="text-[#a855f7]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Machine Learning <span class="text-[#38bdf8]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Web Development <span class="text-[#a855f7]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">App Development <span class="text-[#38bdf8]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Cybersecurity <span class="text-[#a855f7]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Cloud &amp; DevOps <span class="text-[#38bdf8]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Design <span class="text-[#a855f7]">·</span></span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-slate-400">Open Source <span class="text-[#38bdf8]">·</span></span>
         <!-- Repeat for marquee loop -->
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Algorithms ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">Machine Learning ·</span>
@@ -221,171 +221,242 @@
     </div>
 
     <!-- 01 / ABOUT -->
-    <section class="relative border-t border-[--color-border] py-16 overflow-hidden bg-white">
-      <!-- Fixed Translucent Background Image -->
+    <section class="relative border-t border-[#1e293b] py-24 overflow-hidden bg-[#080d1a]">
+      <!-- Fixed Translucent Background Image with High Visibility -->
       <div class="absolute inset-0 pointer-events-none z-0"
-        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.55;">
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.35;">
       </div>
-      <!-- Subtle Gradient Overlay for crisp text readability -->
-      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-white/80 via-white/70 to-white/55">
+      <!-- Translucent Overlay for High Visibility + Crisp Text Readability -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/90 via-[#080d1a]/80 to-[#080d1a]/60">
       </div>
 
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="reveal-up">
-            <span class="domain-badge domain-badge-blue mb-6">01 / About</span>
-            <h2 class="uppercase font-black text-black leading-[0.95] tracking-tight"
-              style="font-size: clamp(2.4rem, 5vw, 5rem); color: #000000 !important;">
-              COMPUTING<br>IS A CRAFT.<br>WE TAKE IT<br>SERIOUSLY.
+        <!-- Section Eyebrow, Title & Right-Aligned "OUR FULL STORY" Button -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-8 reveal-up">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#a855f7] bg-[#a855f7]/10 border border-[#a855f7]/30 uppercase mb-4">
+              01 / About ACM-VNIT
+            </span>
+            <h2 style="
+              font-size: clamp(2.5rem, 5vw, 4.2rem);
+              line-height: 1.15;
+              letter-spacing: -0.025em;
+              word-spacing: 0.15em;
+              font-weight: 800;
+              color: #ffffff;
+              font-family: 'Sora', sans-serif;
+              text-transform: uppercase;
+              margin: 0;
+              -webkit-text-fill-color: #ffffff;
+            ">
+              COMPUTING IS A CRAFT.<br>WE TAKE IT SERIOUSLY.
             </h2>
-            <p class="text-base text-[--color-ink-muted] leading-relaxed mt-8 font-medium">
-              From research and open-source contributions to large-scale technical events, we turn ideas into real-world
-              impact, with 5,000+ students reached and 15+ years of uninterrupted activity.
-            </p>
+          </div>
+          <div class="shrink-0 lg:mb-2">
+            <a href="about.html"
+              class="inline-block bg-[#a855f7] text-white px-7 py-3.5 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-200 shadow-lg shadow-[#a855f7]/25">
+              Our Full Story →
+            </a>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-12 items-stretch">
+          
+          <!-- Left Column: Story & 3 Core Pillars -->
+          <div class="lg:col-span-6 reveal-left flex flex-col justify-between">
+            <div>
+              <p class="text-base lg:text-lg text-slate-200 leading-relaxed font-medium mb-6">
+                ACM-VNIT is the official student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur. Since 2009, we’ve been fostering a culture of technical rigor, open-source innovation, and engineering leadership.
+              </p>
+
+              <!-- 3 Core Feature Cards -->
+              <div class="space-y-4">
+                
+                <!-- Pillar 1 -->
+                <div class="p-5 rounded-2xl bg-[#0d1424]/90 backdrop-blur-md border border-slate-700/60 hover:border-[#38bdf8] transition-all duration-300 group">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="w-8 h-8 rounded-lg bg-[#38bdf8]/10 border border-[#38bdf8]/30 flex items-center justify-center text-[#38bdf8] font-mono text-xs font-bold">01</span>
+                    <h3 class="font-bold text-white text-base group-hover:text-[#38bdf8] transition-colors">Research &amp; Open Source</h3>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed pl-11">Publishing research, contributing to global OSS repositories, and mentoring students for competitive programs like GSoC.</p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-5 rounded-2xl bg-[#0d1424]/90 backdrop-blur-md border border-slate-700/60 hover:border-[#a855f7] transition-all duration-300 group">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="w-8 h-8 rounded-lg bg-[#a855f7]/10 border border-[#a855f7]/30 flex items-center justify-center text-[#a855f7] font-mono text-xs font-bold">02</span>
+                    <h3 class="font-bold text-white text-base group-hover:text-[#a855f7] transition-colors">Engineering &amp; Systems</h3>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed pl-11">Hands-on masterclasses covering full-stack architecture, machine learning models, cloud DevOps, and competitive programming.</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-5 rounded-2xl bg-[#0d1424]/90 backdrop-blur-md border border-slate-700/60 hover:border-[#34d399] transition-all duration-300 group">
+                  <div class="flex items-center gap-3 mb-2">
+                    <span class="w-8 h-8 rounded-lg bg-[#34d399]/10 border border-[#34d399]/30 flex items-center justify-center text-[#34d399] font-mono text-xs font-bold">03</span>
+                    <h3 class="font-bold text-white text-base group-hover:text-[#34d399] transition-colors">Community Leadership</h3>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed pl-11">Connecting 5,000+ student engineers with alumni networks, industry leaders, and national-level hackathons.</p>
+                </div>
+
+              </div>
+            </div>
           </div>
 
-          <div class="reveal-up" style="transition-delay: 0.15s;">
-            <!-- Campus image above the text, fades seamlessly under paragraph text -->
-            <div class="relative overflow-hidden rounded-t-xl border border-[--color-border] shadow-lg">
-              <img src="images/about-bg.jpg" alt="VNIT Nagpur Campus & Fighter Jet" class="w-full object-cover block"
-                style="aspect-ratio: 16/9; object-position: center;">
-              <!-- Fade overlay: transparent until 65% → section background at bottom -->
-              <div class="absolute inset-0 pointer-events-none"
-                style="background: linear-gradient(to bottom, transparent 65%, rgba(255,255,255,0.95) 98%);"></div>
-            </div>
-            <p
-              class="relative z-10 -mt-6 text-lg text-[--color-ink-soft] leading-relaxed mb-8 font-medium text-center px-4">
-              ACM-VNIT is the official student chapter of the Association for Computing Machinery at VNIT Nagpur, one
-              of India's premier engineering institutions. We've been pushing boundaries and challenging conventions
-              since 2009.
-            </p>
-            <div class="text-center relative z-10">
-              <a href="about.html"
-                class="btn-gradient-primary inline-block px-7 py-3 rounded-lg text-xs font-bold tracking-[0.15em] uppercase transition-all">
-                Our full story →
-              </a>
+          <!-- Right Column: Interactive Media & Campus Highlight Card -->
+          <div class="lg:col-span-6 reveal-right flex flex-col">
+            <div class="relative overflow-hidden rounded-3xl border border-slate-700/60 shadow-2xl bg-[#0d1424]/95 backdrop-blur-md h-full flex flex-col justify-between group p-3">
+              
+              <!-- Campus Image Container -->
+              <div class="relative overflow-hidden rounded-2xl h-72 lg:h-[298px] w-full">
+                <img src="images/about-bg.jpg" alt="VNIT Nagpur Campus" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/30 to-transparent"></div>
+                
+                <!-- Floating Badges over Image -->
+                <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold tracking-widest text-white bg-black/60 backdrop-blur-md border border-white/20 uppercase">
+                    VNIT NAGPUR
+                  </span>
+                  <span class="px-3 py-1 rounded-full text-[10px] font-mono font-bold tracking-widest text-[#38bdf8] bg-[#38bdf8]/20 backdrop-blur-md border border-[#38bdf8]/40 uppercase">
+                    EST. 2009
+                  </span>
+                </div>
+              </div>
+
+              <!-- Content Below Image inside Card -->
+              <div class="p-5">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3.5 mb-3.5">
+                  <div>
+                    <p class="text-xs font-mono text-[#a855f7] tracking-widest font-bold uppercase mb-1">CHAPTER IMPACT</p>
+                    <p class="text-white font-bold text-base">Premier Technical Community in Central India</p>
+                  </div>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#34d399] animate-pulse shrink-0"></span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 text-left">
+                  <div class="bg-[#080d1a]/80 p-3.5 rounded-xl border border-slate-800">
+                    <p class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Active Legacy</p>
+                    <p class="text-xl font-black text-white">15+ Years</p>
+                  </div>
+                  <div class="bg-[#080d1a]/80 p-3.5 rounded-xl border border-slate-800">
+                    <p class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Total Reach</p>
+                    <p class="text-xl font-black text-white">5,000+ Students</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- 02 / IMPACT (Card Container UI matching reference design) -->
-    <section class="border-t border-[--color-border] py-16 bg-[--color-ground-alt]">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <!-- 02 / IMPACT -->
+    <section class="relative border-t border-[#1e293b] py-20 overflow-hidden bg-[#080d1a]">
+      <!-- Fixed Translucent Background Image -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.35;">
+      </div>
+      <!-- Subtle Dark Overlay -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#080d1a]/90 via-[#080d1a]/75 to-[#080d1a]/90">
+      </div>
 
-        <!-- Dark Container Banner -->
-        <div
-          class="reveal-scale bg-[#0f172a] text-white rounded-3xl p-8 md:p-12 lg:p-14 border border-slate-800 shadow-2xl relative overflow-hidden">
-
-          <!-- Subtle Glow Background Accent -->
-          <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
+        <!-- Section Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-8">
+          <div class="max-w-2xl">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] bg-[#38bdf8]/10 border border-[#38bdf8]/30 uppercase mb-4">
+              02 / Impact
+            </span>
+            <h2 style="
+              font-size: clamp(2.5rem, 5vw, 4.2rem);
+              line-height: 1.15;
+              letter-spacing: -0.025em;
+              word-spacing: 0.15em;
+              font-weight: 800;
+              color: #ffffff;
+              font-family: 'Sora', sans-serif;
+              text-transform: uppercase;
+              margin: 0;
+              -webkit-text-fill-color: #ffffff;
+            ">
+              FIFTEEN YEARS OF<br>TECHNICAL EXCELLENCE.
+            </h2>
           </div>
-          <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none">
+          <div class="shrink-0">
+            <a href="impact.html"
+              class="inline-flex items-center gap-2 bg-[#a855f7] text-white px-7 py-3.5 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-300 shadow-lg shadow-[#a855f7]/25">
+              Full Impact Story →
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Elevated Dark Glass Stat Pillars -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Pillar 1: Legacy -->
+          <div class="reveal-up bg-[#0d1424]/85 backdrop-blur-md border border-slate-700/60 rounded-2xl p-8 flex flex-col justify-between hover:border-[#a855f7] transition-all duration-300 group shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#a855f7] to-[#c084fc]"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="text-[11px] font-mono font-bold tracking-widest text-[#a855f7] uppercase">01 · LEGACY</span>
+                <span class="text-slate-400 group-hover:text-[#a855f7] group-hover:translate-x-1 transition-all">↗</span>
+              </div>
+              <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 4.2rem);">15+</p>
+              <p class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">YEARS ACTIVE</p>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed pt-4 border-t border-slate-800">
+              Uninterrupted computing activity and technical growth since 2009.
+            </p>
           </div>
 
-          <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
-
-            <!-- Left Side Content -->
-            <div class="lg:col-span-5 reveal-left">
-              <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] bg-[#38bdf8]/10 border border-[#38bdf8]/20 uppercase">
-                02 / Impact
-              </span>
-              <h2 class="uppercase font-black text-white leading-[0.98] tracking-tight mt-6 mb-6"
-                style="font-size: clamp(2rem, 3.8vw, 3.6rem);">
-                FIFTEEN YEARS OF WORK.
-              </h2>
-              <p class="text-sm lg:text-base text-slate-300 leading-relaxed mb-8 max-w-lg">
-                Join a community that takes computing seriously. Uninterrupted technical impact, building real software,
-                and empowering VNIT engineers since 2009.
-              </p>
-              <div class="flex flex-wrap items-center gap-4">
-                <a href="impact.html"
-                  class="inline-flex items-center gap-2 bg-white text-[#0f172a] px-6 py-3.5 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-slate-100 transition-all duration-300 shadow-md">
-                  Full impact story →
-                </a>
-                <a href="about.html"
-                  class="inline-flex items-center gap-2 border border-slate-700 text-slate-300 px-6 py-3.5 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:border-slate-500 hover:text-white transition-all duration-300">
-                  Learn More
-                </a>
+          <!-- Pillar 2: Activity -->
+          <div class="reveal-up bg-[#0d1424]/85 backdrop-blur-md border border-slate-700/60 rounded-2xl p-8 flex flex-col justify-between hover:border-[#38bdf8] transition-all duration-300 group shadow-xl relative overflow-hidden" style="transition-delay: 0.1s;">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#38bdf8] to-[#60a5fa]"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] uppercase">02 · ACTIVITY</span>
+                <span class="text-slate-400 group-hover:text-[#38bdf8] group-hover:translate-x-1 transition-all">↗</span>
               </div>
+              <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 4.2rem);">50+</p>
+              <p class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">FLAGSHIP EVENTS</p>
             </div>
+            <p class="text-xs text-slate-400 leading-relaxed pt-4 border-t border-slate-800">
+              Hackathons, national workshops, and competitive bootcamps hosted.
+            </p>
+          </div>
 
-            <!-- Right Side 2x2 Grid of Cards -->
-            <div class="lg:col-span-7">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
-
-                <!-- Stat Card 1 (Legacy - Left) -->
-                <div
-                  class="reveal-left bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:border-[#38bdf8]/60 transition-all duration-300 group"
-                  style="transition-delay: 0.1s;">
-                  <div class="flex items-center justify-between mb-6">
-                    <span class="text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] uppercase">LEGACY</span>
-                    <span
-                      class="text-xs text-slate-400 group-hover:text-[#38bdf8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">↗</span>
-                  </div>
-                  <div>
-                    <p class="font-black text-white leading-none mb-2" style="font-size: clamp(2.5rem, 4vw, 3.5rem);">
-                      15+</p>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">YEARS ACTIVE</p>
-                  </div>
-                </div>
-
-                <!-- Stat Card 2 (Activity - Right) -->
-                <div
-                  class="reveal-right bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:border-[#38bdf8]/60 transition-all duration-300 group"
-                  style="transition-delay: 0.15s;">
-                  <div class="flex items-center justify-between mb-6">
-                    <span
-                      class="text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] uppercase">ACTIVITY</span>
-                    <span
-                      class="text-xs text-slate-400 group-hover:text-[#38bdf8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">↗</span>
-                  </div>
-                  <div>
-                    <p class="font-black text-white leading-none mb-2" style="font-size: clamp(2.5rem, 4vw, 3.5rem);">
-                      50+</p>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">EVENTS HOSTED</p>
-                  </div>
-                </div>
-
-                <!-- Stat Card 3 (Verticals - Left) -->
-                <div
-                  class="reveal-left bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:border-[#38bdf8]/60 transition-all duration-300 group"
-                  style="transition-delay: 0.2s;">
-                  <div class="flex items-center justify-between mb-6">
-                    <span
-                      class="text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] uppercase">VERTICALS</span>
-                    <span
-                      class="text-xs text-slate-400 group-hover:text-[#38bdf8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">↗</span>
-                  </div>
-                  <div>
-                    <p class="font-black text-white leading-none mb-2" style="font-size: clamp(2.5rem, 4vw, 3.5rem);">8
-                    </p>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">TECHNICAL DOMAINS</p>
-                  </div>
-                </div>
-
-                <!-- Stat Card 4 (Community - Right) -->
-                <div
-                  class="reveal-right bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-2xl p-6 lg:p-7 flex flex-col justify-between hover:border-[#38bdf8]/60 transition-all duration-300 group"
-                  style="transition-delay: 0.25s;">
-                  <div class="flex items-center justify-between mb-6">
-                    <span
-                      class="text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] uppercase">COMMUNITY</span>
-                    <span
-                      class="text-xs text-slate-400 group-hover:text-[#38bdf8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">↗</span>
-                  </div>
-                  <div>
-                    <p class="font-black text-white leading-none mb-2" style="font-size: clamp(2.5rem, 4vw, 3.5rem);">
-                      5K+</p>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">STUDENTS REACHED</p>
-                  </div>
-                </div>
-
+          <!-- Pillar 3: Verticals -->
+          <div class="reveal-up bg-[#0d1424]/85 backdrop-blur-md border border-slate-700/60 rounded-2xl p-8 flex flex-col justify-between hover:border-[#38bdf8] transition-all duration-300 group shadow-xl relative overflow-hidden" style="transition-delay: 0.2s;">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#38bdf8] to-[#34d399]"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="text-[11px] font-mono font-bold tracking-widest text-[#38bdf8] uppercase">03 · VERTICALS</span>
+                <span class="text-slate-400 group-hover:text-[#38bdf8] group-hover:translate-x-1 transition-all">↗</span>
               </div>
+              <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 4.2rem);">8</p>
+              <p class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">TECHNICAL DOMAINS</p>
             </div>
+            <p class="text-xs text-slate-400 leading-relaxed pt-4 border-t border-slate-800">
+              Specialized student tracks spanning AI, Web3, Cybersec, and CP.
+            </p>
+          </div>
 
+          <!-- Pillar 4: Community -->
+          <div class="reveal-up bg-[#0d1424]/85 backdrop-blur-md border border-slate-700/60 rounded-2xl p-8 flex flex-col justify-between hover:border-[#a855f7] transition-all duration-300 group shadow-xl relative overflow-hidden" style="transition-delay: 0.3s;">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#a855f7] to-[#fb7185]"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="text-[11px] font-mono font-bold tracking-widest text-[#a855f7] uppercase">04 · COMMUNITY</span>
+                <span class="text-slate-400 group-hover:text-[#a855f7] group-hover:translate-x-1 transition-all">↗</span>
+              </div>
+              <p class="font-black text-white leading-none mb-3" style="font-size: clamp(3rem, 5vw, 4.2rem);">5K+</p>
+              <p class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">STUDENTS REACHED</p>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed pt-4 border-t border-slate-800">
+              Active engineering minds mentored across VNIT and Central India.
+            </p>
           </div>
 
         </div>
@@ -394,285 +465,279 @@
     </section>
 
     <!-- DOMAINS TEASER -->
-    <section class="relative border-t border-[--color-border] py-16 overflow-hidden bg-white">
+    <section class="relative border-t border-[#1e293b] py-16 overflow-hidden bg-[#080d1a]">
       <!-- Fixed Translucent Background Image -->
       <div class="absolute inset-0 pointer-events-none z-0"
-        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.55;">
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.25;">
       </div>
-      <!-- Subtle Gradient Overlay for crisp text readability -->
-      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-white/80 via-white/70 to-white/55">
+      <!-- Subtle Dark Gradient Overlay for crisp text readability -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/95 via-[#080d1a]/85 to-[#080d1a]/70">
       </div>
 
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div class="reveal">
-          <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-8">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-6 gap-8">
             <div>
-              <span class="domain-badge domain-badge-cyan mb-4">03 / Domains</span>
-              <h2 class="uppercase font-black text-black leading-[0.95] tracking-tight"
-                style="font-size: clamp(2rem, 4vw, 4rem); color: #000000 !important;">
-                EIGHT AREAS OF FOCUS.
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#a855f7] bg-[#a855f7]/10 border border-[#a855f7]/30 uppercase mb-4">03 / Domains</span>
+              <h2 style="
+                font-size: clamp(2.5rem, 5vw, 4.2rem);
+                line-height: 1.15;
+                letter-spacing: -0.025em;
+                word-spacing: 0.15em;
+                font-weight: 800;
+                color: #ffffff;
+                font-family: 'Sora', sans-serif;
+                text-transform: uppercase;
+                margin: 0;
+                -webkit-text-fill-color: #ffffff;
+              ">
+                EIGHT AREAS OF<br>TECHNICAL FOCUS.
               </h2>
             </div>
             <a href="domains.html"
-              class="inline-block border border-[--color-blue] text-[--color-blue] px-6 py-3 rounded-lg text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue] hover:text-white transition-all duration-300 shadow-sm shrink-0">
+              class="inline-block border border-[#a855f7] text-[#a855f7] px-6 py-3 rounded-lg text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#a855f7] hover:text-white transition-all duration-300 shadow-sm shrink-0 shadow-[#a855f7]/20">
               Explore all domains →
             </a>
           </div>
         </div>
 
-        <!-- 8 Domains Grid: 4 columns x 2 rows on laptop (md:grid-cols-4), 2 c        <!-- 8 Domains Grid: 4 columns x 2 rows on laptop (md:grid-cols-4), 2 columns x 4 rows on mobile (grid-cols-2) -->
+        <!-- 8 Domains Grid -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <!-- Domain 1 (Left side) -->
+          <!-- Domain 1 -->
           <div class="reveal-left">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#1d4ed8]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#38bdf8] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/cp-dsa-bg.png" alt="CP &amp; DSA Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/cp-dsa-bg-dark.png" alt="CP &amp; DSA Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-blue">01</span>
-                  <span class="text-xs font-mono text-[--color-blue] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#38bdf8] px-2 py-0.5 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/20">01</span>
+                  <span class="text-xs font-mono text-[#38bdf8] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[--color-blue] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#38bdf8] transition-colors mb-2">
                   CP &amp; DSA
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   Algorithms, data structures, and ICPC competitive programming mastery.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#1d4ed8] font-bold">Algorithms ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#38bdf8] font-bold">Algorithms ·
                   ICPC</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 2 (Left side) -->
+          <!-- Domain 2 -->
           <div class="reveal-left" style="transition-delay: 0.08s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-purple hover:border-[#7c3aed]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#a855f7] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/ai-ml-bg.png" alt="AI &amp; ML Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/ai-ml-bg-dark.png" alt="AI &amp; ML Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-purple">02</span>
-                  <span class="text-xs font-mono text-[#7c3aed] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#a855f7] px-2 py-0.5 rounded bg-[#a855f7]/10 border border-[#a855f7]/20">02</span>
+                  <span class="text-xs font-mono text-[#a855f7] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#7c3aed] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#a855f7] transition-colors mb-2">
                   AI &amp; ML
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   Deep learning, computer vision, NLP, and Intelligent systems.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#7c3aed] font-bold">PyTorch ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#a855f7] font-bold">PyTorch ·
                   Models</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 3 (Right side) -->
+          <!-- Domain 3 -->
           <div class="reveal-right" style="transition-delay: 0.08s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#0284c7]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#38bdf8] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/web-dev-bg.png" alt="Web Dev Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/web-dev-bg-dark.png" alt="Web Dev Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-sky">03</span>
-                  <span class="text-xs font-mono text-[#0284c7] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#38bdf8] px-2 py-0.5 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/20">03</span>
+                  <span class="text-xs font-mono text-[#38bdf8] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#0284c7] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#38bdf8] transition-colors mb-2">
                   Web Dev
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   Full-stack architecture, modern frontend frameworks, and cloud backends.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#0284c7] font-bold">Full-Stack ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#38bdf8] font-bold">Full-Stack ·
                   Web</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 4 (Right side) -->
+          <!-- Domain 4 -->
           <div class="reveal-right" style="transition-delay: 0.16s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#4f46e5]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#a855f7] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/app-dev-bg.png" alt="App Dev Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/app-dev-bg-dark.png" alt="App Dev Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-indigo">04</span>
-                  <span class="text-xs font-mono text-[#4f46e5] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#a855f7] px-2 py-0.5 rounded bg-[#a855f7]/10 border border-[#a855f7]/20">04</span>
+                  <span class="text-xs font-mono text-[#a855f7] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#4f46e5] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#a855f7] transition-colors mb-2">
                   App Dev
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   Native and cross-platform mobile apps built for performance.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#4f46e5] font-bold">Flutter · iOS ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#a855f7] font-bold">Flutter · iOS ·
                   Android</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 5 (Left side) -->
+          <!-- Domain 5 -->
           <div class="reveal-left" style="transition-delay: 0.12s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-emerald hover:border-[#059669]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#34d399] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/cybersec-bg.png" alt="Cybersecurity Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/cybersec-bg-dark.png" alt="Cybersecurity Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-emerald">05</span>
-                  <span class="text-xs font-mono text-[#059669] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#34d399] px-2 py-0.5 rounded bg-[#34d399]/10 border border-[#34d399]/20">05</span>
+                  <span class="text-xs font-mono text-[#34d399] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#059669] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#34d399] transition-colors mb-2">
                   Cybersec
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   CTF competitions, ethical hacking, and network security analysis.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#059669] font-bold">CTF ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#34d399] font-bold">CTF ·
                   Security</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 6 (Left side) -->
+          <!-- Domain 6 -->
           <div class="reveal-left" style="transition-delay: 0.2s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-cyan hover:border-[#06b6d4]">
-              <!-- Background Image -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#38bdf8] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/cloud-devops-bg.png" alt="Cloud &amp; DevOps Background"
-                  class="w-full h-full object-cover opacity-55 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/cloud-devops-bg-dark.png" alt="Cloud &amp; DevOps Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-cyan">06</span>
-                  <span class="text-xs font-mono text-[#06b6d4] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#38bdf8] px-2 py-0.5 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/20">06</span>
+                  <span class="text-xs font-mono text-[#38bdf8] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#06b6d4] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#38bdf8] transition-colors mb-2">
                   Cloud &amp; DevOps
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   CI/CD automation, Docker containers, and scalable infrastructure.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#06b6d4] font-bold">Docker · AWS ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#38bdf8] font-bold">Docker · AWS ·
                   CI/CD</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 7 (Right side) -->
+          <!-- Domain 7 -->
           <div class="reveal-right" style="transition-delay: 0.12s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow hover:border-[#e11d48]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#fb7185] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/design-bg.png" alt="Design Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/design-bg-dark.png" alt="Design Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-rose">07</span>
-                  <span class="text-xs font-mono text-[#e11d48] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#fb7185] px-2 py-0.5 rounded bg-[#fb7185]/10 border border-[#fb7185]/20">07</span>
+                  <span class="text-xs font-mono text-[#fb7185] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#e11d48] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#fb7185] transition-colors mb-2">
                   Design
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   UI/UX research, visual design systems, and product ergonomics.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#e11d48] font-bold">UI/UX ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#fb7185] font-bold">UI/UX ·
                   Figma</span>
               </div>
             </a>
           </div>
 
-          <!-- Domain 8 (Right side) -->
+          <!-- Domain 8 -->
           <div class="reveal-right" style="transition-delay: 0.2s;">
             <a href="domains.html"
-              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[--color-border] bg-white rounded-xl theme-card-glow theme-card-amber hover:border-[#d97706]">
-              <!-- Background Image with Increased Opacity -->
+              class="group relative overflow-hidden flex flex-col justify-between p-6 h-full border border-[#1e293b] bg-[#0d1424] rounded-xl hover:border-[#a855f7] transition-all duration-300">
               <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                <img src="images/oss-bg.png" alt="Open Source Background"
-                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                <!-- Soft fade overlay for legibility -->
-                <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/40 to-transparent"></div>
+                <img src="images/oss-bg-dark.png" alt="Open Source Background"
+                  class="w-full h-full object-cover opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1424] via-[#0d1424]/75 to-transparent"></div>
               </div>
 
               <div class="relative z-10">
                 <div class="flex items-center justify-between mb-4">
-                  <span class="domain-badge domain-badge-amber">08</span>
-                  <span class="text-xs font-mono text-[#d97706] group-hover:translate-x-1 transition-all">→</span>
+                  <span class="text-xs font-mono font-bold text-[#a855f7] px-2 py-0.5 rounded bg-[#a855f7]/10 border border-[#a855f7]/20">08</span>
+                  <span class="text-xs font-mono text-[#a855f7] group-hover:translate-x-1 transition-all">→</span>
                 </div>
                 <h3
-                  class="font-black text-[--color-ink] text-lg lg:text-xl leading-snug group-hover:text-[#d97706] transition-colors mb-2">
+                  class="font-black text-white text-lg lg:text-xl leading-snug group-hover:text-[#a855f7] transition-colors mb-2">
                   Open Source
                 </h3>
-                <p class="text-xs text-[--color-ink-soft] leading-relaxed font-medium">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium">
                   Global repository contributions, GSoC mentoring, and OSS software.
                 </p>
               </div>
-              <div class="relative z-10 mt-6 pt-3 border-t border-[--color-border]">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-[#d97706] font-bold">GSoC ·
+              <div class="relative z-10 mt-6 pt-3 border-t border-[#1e293b]">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-[#a855f7] font-bold">GSoC ·
                   GitHub</span>
               </div>
             </a>
@@ -682,178 +747,215 @@
     </section>
 
     <!-- LATEST EVENT TEASER -->
-    <section class="border-t border-[--color-border] py-14 bg-gradient-to-br from-white via-blue-50/20 to-slate-50">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+    <!-- LATEST EVENT TEASER -->
+    <section class="relative border-t border-[#1e293b] py-20 overflow-hidden bg-[#080d1a]">
+      <!-- Fixed Translucent Background Image -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.35;">
+      </div>
+      <!-- Subtle Dark Overlay -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#080d1a]/90 via-[#080d1a]/80 to-[#080d1a]/90">
+      </div>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          
           <!-- Flagship Dark Gradient Card -->
           <div
-            class="reveal relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-[#1e293b] text-white p-8 lg:p-12 shadow-2xl border border-slate-700/60">
-            <div class="absolute -top-24 -right-24 w-64 h-64 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none">
+            class="reveal relative overflow-hidden rounded-3xl bg-[#0d1424]/90 backdrop-blur-md text-white p-8 lg:p-12 shadow-2xl border border-slate-700/60 hover:border-[#38bdf8]/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-72 h-72 bg-[#38bdf8]/15 rounded-full blur-3xl pointer-events-none">
             </div>
             <div class="relative z-10">
-              <span class="domain-badge domain-badge-cyan mb-6">04 / Events</span>
-              <h2 class="uppercase font-black text-white leading-tight mb-6"
-                style="font-size: clamp(2rem, 3.5vw, 3.5rem);">
-                INSOMNIA<br>CENTRAL INDIA'S LARGEST HACKATHON
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#a855f7] bg-[#a855f7]/10 border border-[#a855f7]/30 uppercase mb-6">
+                04 / Events
+              </span>
+              <h2 style="
+                font-size: clamp(2.2rem, 4.2vw, 3.8rem);
+                line-height: 1.15;
+                letter-spacing: -0.025em;
+                word-spacing: 0.15em;
+                font-weight: 800;
+                color: #ffffff;
+                font-family: 'Sora', sans-serif;
+                text-transform: uppercase;
+                margin: 0 0 1.5rem 0;
+                -webkit-text-fill-color: #ffffff;
+              ">
+                INSOMNIA<br>BIGGEST HACKATHON<br>OF VNIT
               </h2>
-              <p class="text-base text-slate-300 leading-relaxed mb-4">
-                36 continuous hours. 1,500+ builders. One challenge.
+              <p class="text-base text-slate-300 leading-relaxed mb-6 font-medium">
+                36 continuous hours of building, prototyping, and competing with 1,500+ student developers from across India.
               </p>
               <div class="flex items-center gap-3 mb-10">
                 <span
-                  class="text-[10px] font-mono tracking-widest text-cyan-300 uppercase px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30">Annual
-                  Flagship</span>
+                  class="text-[10px] font-mono tracking-widest text-[#a855f7] uppercase px-3 py-1 rounded-full bg-[#a855f7]/10 border border-[#a855f7]/30 font-bold">
+                  Annual Flagship
+                </span>
                 <span
-                  class="text-[10px] font-mono tracking-widest text-blue-300 uppercase px-3 py-1 rounded-full bg-blue-950/80 border border-blue-500/30">Hackathon</span>
+                  class="text-[10px] font-mono tracking-widest text-[#38bdf8] uppercase px-3 py-1 rounded-full bg-[#38bdf8]/10 border border-[#38bdf8]/30 font-bold">
+                  Hackathon
+                </span>
               </div>
               <a href="events.html"
-                class="inline-block bg-white text-slate-900 px-7 py-3.5 rounded-lg text-xs font-bold tracking-[0.15em] uppercase hover:bg-slate-100 transition-all duration-200 shadow-lg hover:shadow-cyan-500/20">
-                View all events →
+                class="inline-block bg-[#a855f7] text-white px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-200 shadow-lg shadow-[#a855f7]/25">
+                Explore All Events →
               </a>
             </div>
           </div>
 
+          <!-- Event List Column -->
           <div class="reveal" style="transition-delay: 0.15s;">
             <div class="flex flex-col gap-4">
+              
               <!-- Event 1 -->
               <a href="events.html"
-                class="group block border border-[--color-border] bg-white rounded-xl p-6 theme-card-glow hover:border-[--color-blue]">
+                class="group block border border-slate-700/60 bg-[#0d1424]/90 backdrop-blur-md rounded-2xl p-6 hover:border-[#38bdf8] transition-all duration-300 shadow-md">
                 <div class="flex items-start justify-between gap-4 mb-2">
                   <div class="flex items-center gap-3">
-                    <span class="domain-badge domain-badge-blue">01</span>
-                    <h3 class="font-bold text-[--color-ink] group-hover:text-[--color-blue] transition-colors">Web
-                      Development Workshop</h3>
+                    <span class="text-xs font-mono font-bold text-[#38bdf8] px-2 py-0.5 rounded bg-[#38bdf8]/10 border border-[#38bdf8]/20">01</span>
+                    <h3 class="font-bold text-white group-hover:text-[#38bdf8] transition-colors text-base">Web Development Masterclass</h3>
                   </div>
-                  <span class="domain-badge domain-badge-sky shrink-0">Workshop</span>
+                  <span class="text-[10px] font-mono text-[#38bdf8] border border-[#38bdf8]/30 bg-[#38bdf8]/10 px-2.5 py-0.5 rounded-full shrink-0 font-semibold">Workshop</span>
                 </div>
-                <p class="text-xs text-[--color-ink-muted] leading-relaxed mb-3">Hands-on workshop covering full-stack
-                  architecture, modern frontend systems, and backend development with live deployments.</p>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">Hands-on workshop covering full-stack architecture, modern frontend systems, and cloud deployments.</p>
                 <div
-                  class="flex items-center justify-between text-[10px] font-mono text-[--color-ink-muted] pt-2 border-t border-[--color-border]/60">
-                  <span class="text-blue-600 font-medium">VNIT Campus</span>
-                  <span class="group-hover:text-[--color-blue] group-hover:translate-x-1 transition-all">Explore Event
-                    →</span>
+                  class="flex items-center justify-between text-[10px] font-mono text-slate-400 pt-3 border-t border-slate-800">
+                  <span class="text-[#38bdf8] font-medium">VNIT Campus</span>
+                  <span class="group-hover:text-[#38bdf8] group-hover:translate-x-1 transition-all">View Details →</span>
                 </div>
               </a>
+
               <!-- Event 2 -->
               <a href="events.html"
-                class="group block border border-[--color-border] bg-white rounded-xl p-6 theme-card-glow theme-card-purple hover:border-[--color-purple]">
+                class="group block border border-slate-700/60 bg-[#0d1424]/90 backdrop-blur-md rounded-2xl p-6 hover:border-[#a855f7] transition-all duration-300 shadow-md">
                 <div class="flex items-start justify-between gap-4 mb-2">
                   <div class="flex items-center gap-3">
-                    <span class="domain-badge domain-badge-purple">02</span>
-                    <h3 class="font-bold text-[--color-ink] group-hover:text-[--color-purple] transition-colors">ACM
-                      Meet 2026</h3>
+                    <span class="text-xs font-mono font-bold text-[#a855f7] px-2 py-0.5 rounded bg-[#a855f7]/10 border border-[#a855f7]/20">02</span>
+                    <h3 class="font-bold text-white group-hover:text-[#a855f7] transition-colors text-base">ACM Annual Meet 2026</h3>
                   </div>
-                  <span class="domain-badge domain-badge-purple shrink-0">Community</span>
+                  <span class="text-[10px] font-mono text-[#a855f7] border border-[#a855f7]/30 bg-[#a855f7]/10 px-2.5 py-0.5 rounded-full shrink-0 font-semibold">Community</span>
                 </div>
-                <p class="text-xs text-[--color-ink-muted] leading-relaxed mb-3">Students from all four years came
-                  together for networking, mentorship, and discussions on ACM initiatives and community building.</p>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">Networking, alumni mentorship panels, and roadmap discussions for all engineering batches.</p>
                 <div
-                  class="flex items-center justify-between text-[10px] font-mono text-[--color-ink-muted] pt-2 border-t border-[--color-border]/60">
-                  <span class="text-purple-600 font-medium">Networking</span>
-                  <span class="group-hover:text-[--color-purple] group-hover:translate-x-1 transition-all">Explore Event
-                    →</span>
+                  class="flex items-center justify-between text-[10px] font-mono text-slate-400 pt-3 border-t border-slate-800">
+                  <span class="text-[#a855f7] font-medium">Networking</span>
+                  <span class="group-hover:text-[#a855f7] group-hover:translate-x-1 transition-all">View Details →</span>
                 </div>
               </a>
+
               <!-- Event 3 -->
               <a href="events.html"
-                class="group block border border-[--color-border] bg-white rounded-xl p-6 theme-card-glow theme-card-emerald hover:border-[--color-emerald]">
+                class="group block border border-slate-700/60 bg-[#0d1424]/90 backdrop-blur-md rounded-2xl p-6 hover:border-[#34d399] transition-all duration-300 shadow-md">
                 <div class="flex items-start justify-between gap-4 mb-2">
                   <div class="flex items-center gap-3">
-                    <span class="domain-badge domain-badge-emerald">03</span>
-                    <h3 class="font-bold text-[--color-ink] group-hover:text-[--color-emerald] transition-colors">CP
-                      &amp; DSA Bootcamp</h3>
+                    <span class="text-xs font-mono font-bold text-[#34d399] px-2 py-0.5 rounded bg-[#34d399]/10 border border-[#34d399]/20">03</span>
+                    <h3 class="font-bold text-white group-hover:text-[#34d399] transition-colors text-base">CP &amp; DSA Bootcamp</h3>
                   </div>
-                  <span class="domain-badge domain-badge-emerald shrink-0">Bootcamp</span>
+                  <span class="text-[10px] font-mono text-[#34d399] border border-[#34d399]/30 bg-[#34d399]/10 px-2.5 py-0.5 rounded-full shrink-0 font-semibold">Bootcamp</span>
                 </div>
-                <p class="text-xs text-[--color-ink-muted] leading-relaxed mb-3">Intensive workshops covering data
-                  structures, algorithms, and competitive programming for national-level contests.</p>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">Intensive contest-focused training on data structures, graph theory, and ICPC strategies.</p>
                 <div
-                  class="flex items-center justify-between text-[10px] font-mono text-[--color-ink-muted] pt-2 border-t border-[--color-border]/60">
-                  <span class="text-emerald-600 font-medium">ICPC Track</span>
-                  <span class="group-hover:text-[--color-emerald] group-hover:translate-x-1 transition-all">Explore
-                    Event →</span>
+                  class="flex items-center justify-between text-[10px] font-mono text-slate-400 pt-3 border-t border-slate-800">
+                  <span class="text-[#34d399] font-medium">ICPC Track</span>
+                  <span class="group-hover:text-[#34d399] group-hover:translate-x-1 transition-all">View Details →</span>
                 </div>
               </a>
+
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- 05 / JOIN CTA -->
-    <section class="border-t border-[--color-border] py-16 bg-theme-tint-blue" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <section class="relative border-t border-[#1e293b] py-20 bg-[#080d1a]" style="font-family: var(--font-display)">
+      <!-- Fixed Translucent Background Image -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('images/about-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center; opacity: 0.35;">
+      </div>
+      <!-- Subtle Overlay -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#080d1a]/95 via-[#080d1a]/85 to-[#080d1a]/95">
+      </div>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div
-          class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-[#1e293b] text-white p-10 lg:p-16 shadow-2xl border border-slate-700/60">
-          <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none">
+          class="relative overflow-hidden rounded-3xl bg-[#0d1424]/95 backdrop-blur-md text-white p-10 lg:p-16 shadow-2xl border border-slate-700/60">
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-[#a855f7]/15 rounded-full blur-3xl pointer-events-none">
           </div>
-          <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            <div class="reveal">
-              <span class="domain-badge domain-badge-cyan mb-6">05 / Join</span>
-              <h2 class="uppercase font-black text-white leading-tight mb-6" style="font-size: clamp(2rem, 4vw, 4rem);">
+          <div class="absolute -top-24 -right-24 w-80 h-80 bg-[#0075c9]/15 rounded-full blur-3xl pointer-events-none">
+          </div>
+          
+          <div class="grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Side Title & CTA -->
+            <div class="lg:col-span-5 reveal">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#a855f7] bg-[#a855f7]/10 border border-[#a855f7]/30 uppercase mb-6">
+                05 / Join Us
+              </span>
+              <h2 style="
+                font-size: clamp(2.5rem, 5vw, 4.2rem);
+                line-height: 1.15;
+                letter-spacing: -0.025em;
+                word-spacing: 0.15em;
+                font-weight: 800;
+                color: #ffffff;
+                font-family: 'Sora', sans-serif;
+                text-transform: uppercase;
+                margin: 0 0 1.5rem 0;
+                -webkit-text-fill-color: #ffffff;
+              ">
                 BUILD SOMETHING<br>THAT MATTERS.
               </h2>
-              <p class="text-base text-slate-300 leading-relaxed mb-10 max-w-md">
-                Join a community that takes computing seriously. Open to all VNIT students across every engineering
-                branch.
+              <p class="text-base text-slate-300 leading-relaxed mb-8 max-w-md">
+                Join a community that takes computing seriously. Open to all VNIT students across every engineering discipline.
               </p>
               <div class="flex flex-wrap gap-4">
+                <button
+                  class="contact-trigger inline-block bg-[#a855f7] text-white px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-200 shadow-xl shadow-[#a855f7]/25">
+                  Get in Touch →
+                </button>
                 <a href="team.html"
-                  class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-slate-100 transition-all duration-200 shadow-xl hover:shadow-white/20">
-                  Meet the team →
-                </a>
-                <a href="about.html"
-                  class="inline-block border border-slate-600 text-white px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:bg-white/10 transition-all duration-200">
-                  Learn more
+                  class="inline-block border border-slate-600 text-white px-8 py-4 rounded-xl text-xs font-bold tracking-[0.15em] uppercase hover:border-[#38bdf8] hover:text-[#38bdf8] transition-all duration-200">
+                  Meet The Team
                 </a>
               </div>
             </div>
 
-            <div class="reveal" style="transition-delay: 0.15s;">
-              <div class="grid grid-cols-2 gap-4">
-                <a href="impact.html"
-                  class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                  <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">LEGACY</span>
-                    <span
-                      class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
-                  </div>
-                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">15+</p>
-                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Years Active</p>
-                </a>
-                <a href="events.html"
-                  class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                  <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">ACTIVITY</span>
-                    <span
-                      class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
-                  </div>
-                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">50+</p>
-                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Events Hosted</p>
-                </a>
-                <a href="domains.html"
-                  class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                  <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">VERTICALS</span>
-                    <span
-                      class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
-                  </div>
-                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">8</p>
-                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Technical Domains</p>
-                </a>
-                <a href="impact.html"
-                  class="group block bg-white/10 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
-                  <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-mono text-cyan-300 tracking-widest font-bold">COMMUNITY</span>
-                    <span
-                      class="text-xs font-mono text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all">→</span>
-                  </div>
-                  <p class="font-black text-white leading-none mb-2" style="font-size: 2.5rem;">5K+</p>
-                  <p class="text-xs font-mono uppercase tracking-[0.15em] text-blue-200">Students Reached</p>
-                </a>
+            <!-- Right Side Member Perks Cards (Replacing duplicate stat cards) -->
+            <div class="lg:col-span-7 reveal" style="transition-delay: 0.15s;">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Perk 1 -->
+                <div class="bg-[#080d1a]/90 border border-slate-700/60 p-6 rounded-2xl hover:border-[#a855f7] transition-all duration-300 group">
+                  <div class="text-2xl mb-3">🚀</div>
+                  <h3 class="font-bold text-white text-base mb-2 group-hover:text-[#a855f7] transition-colors">Technical Projects</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Build real software, open-source tools, and enterprise web apps with senior developer mentorship.</p>
+                </div>
+
+                <!-- Perk 2 -->
+                <div class="bg-[#080d1a]/90 border border-slate-700/60 p-6 rounded-2xl hover:border-[#38bdf8] transition-all duration-300 group">
+                  <div class="text-2xl mb-3">⚡</div>
+                  <h3 class="font-bold text-white text-base mb-2 group-hover:text-[#38bdf8] transition-colors">Masterclasses</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Exclusive hands-on bootcamps on AI/ML, Cloud DevOps, Web Frameworks, and Competitive Programming.</p>
+                </div>
+
+                <!-- Perk 3 -->
+                <div class="bg-[#080d1a]/90 border border-slate-700/60 p-6 rounded-2xl hover:border-[#38bdf8] transition-all duration-300 group">
+                  <div class="text-2xl mb-3">🌐</div>
+                  <h3 class="font-bold text-white text-base mb-2 group-hover:text-[#38bdf8] transition-colors">Global Network</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Connect with 5,000+ ACM-VNIT alumni leading technology teams across top global companies.</p>
+                </div>
+
+                <!-- Perk 4 -->
+                <div class="bg-[#080d1a]/90 border border-slate-700/60 p-6 rounded-2xl hover:border-[#a855f7] transition-all duration-300 group">
+                  <div class="text-2xl mb-3">🏆</div>
+                  <h3 class="font-bold text-white text-base mb-2 group-hover:text-[#a855f7] transition-colors">Hackathons &amp; CTFs</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Represent VNIT at ICPC programming contests, national hackathons, and security CTF competitions.</p>
+                </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -861,20 +963,20 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-[--color-border] bg-[--color-ground]" style="font-family: var(--font-display)">
+  <footer class="border-t border-[#1e293b] bg-[#080d1a]" style="font-family: var(--font-display)">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
       <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-12">
         <!-- Left Side: ACM-VNIT, NAVIGATE, CONNECT -->
         <div class="w-full lg:w-[52%] flex flex-col sm:flex-row justify-between gap-8">
           <div class="sm:w-[38%] shrink-0">
-            <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">VNIT</p>
-            <p class="text-sm text-[--color-ink-muted] leading-relaxed">
+            <p class="text-xl font-bold tracking-tight text-white mb-3">VNIT</p>
+            <p class="text-sm text-slate-400 leading-relaxed">
               Established in 1960 as an Institute of National Importance, VNIT Nagpur is a premier technological
               institution driving research, technical innovation, and computing excellence in Central India.
             </p>
-            <div class="mt-6 pt-4 border-t border-[--color-border]/60">
-              <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">ACM·VNIT</p>
-              <p class="text-sm text-[--color-ink-muted] leading-relaxed">
+            <div class="mt-6 pt-4 border-t border-[#1e293b]">
+              <p class="text-xl font-bold tracking-tight text-white mb-3">ACM·VNIT</p>
+              <p class="text-sm text-slate-400 leading-relaxed">
                 The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of
                 Technology, Nagpur.
               </p>
@@ -884,32 +986,32 @@
           <!-- Shifted Navigate & Connect options with evenly distributed space -->
           <div class="sm:w-[65%] flex justify-evenly gap-6">
             <div>
-              <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Navigate</p>
+              <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-4">Navigate</p>
               <ul class="flex flex-col gap-3">
                 <li><a href="about.html"
-                    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">About</a></li>
+                    class="text-sm text-slate-300 hover:text-[#a855f7] transition-colors">About</a></li>
                 <li><a href="domains.html"
-                    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Domains</a></li>
+                    class="text-sm text-slate-300 hover:text-[#a855f7] transition-colors">Domains</a></li>
                 <li><a href="impact.html"
-                    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Impact</a></li>
+                    class="text-sm text-slate-300 hover:text-[#a855f7] transition-colors">Impact</a></li>
                 <li><a href="events.html"
-                    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Events</a></li>
+                    class="text-sm text-slate-300 hover:text-[#a855f7] transition-colors">Events</a></li>
                 <li><a href="projects.html"
-                    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Projects</a>
+                    class="text-sm text-slate-300 hover:text-[#a855f7] transition-colors">Projects</a>
                 </li>
                 <li><a href="team.html"
-                    class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Team</a></li>
+                    class="text-sm text-slate-300 hover:text-[#a855f7] transition-colors">Team</a></li>
               </ul>
             </div>
 
             <div>
-              <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Connect</p>
+              <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-4">Connect</p>
               <ul class="flex flex-col gap-3">
                 <li>
                   <a href="https://www.linkedin.com/company/acm-student-chapter-vnit/" target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[#0a66c2] shrink-0 fill-current" viewBox="0 0 24 24">
+                    class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-[#38bdf8] transition-colors">
+                    <svg class="w-4 h-4 text-[#38bdf8] shrink-0 fill-current" viewBox="0 0 24 24">
                       <path
                         d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z" />
                     </svg>
@@ -918,8 +1020,8 @@
                 </li>
                 <li>
                   <a href="https://github.com/AnkurKumarIO/ACM-VNIT" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[--color-ink] shrink-0 fill-current" viewBox="0 0 24 24">
+                    class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-[#a855f7] transition-colors">
+                    <svg class="w-4 h-4 text-slate-200 shrink-0 fill-current" viewBox="0 0 24 24">
                       <path
                         d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
                     </svg>
@@ -928,8 +1030,8 @@
                 </li>
                 <li>
                   <a href="https://www.instagram.com/acm_vnit/" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[#e1306c] shrink-0 fill-current" viewBox="0 0 24 24">
+                    class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-[#a855f7] transition-colors">
+                    <svg class="w-4 h-4 text-[#fb7185] shrink-0 fill-current" viewBox="0 0 24 24">
                       <path
                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
@@ -944,21 +1046,21 @@
         <!-- Right Side: LOCATION (45% width on right) with Google Maps -->
         <div class="w-full lg:w-[45%] flex flex-col justify-between">
           <div>
-            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-4">Location</p>
             <div class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-[--color-blue] shrink-0 mt-0.5" fill="none" stroke="currentColor"
+              <svg class="w-4 h-4 text-[#a855f7] shrink-0 mt-0.5" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+              <p class="text-sm text-slate-300 leading-relaxed">
                 Visvesvaraya National Institute of Technology, Nagpur, Maharashtra 440010, India
               </p>
             </div>
             <a href="mailto:acm@vnit.ac.in"
-              class="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[--color-blue] hover:underline">
-              <svg class="w-4 h-4 text-[--color-blue] shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[#38bdf8] hover:underline">
+              <svg class="w-4 h-4 text-[#38bdf8] shrink-0" fill="none" stroke="currentColor" stroke-width="2"
                 viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -968,7 +1070,7 @@
           </div>
 
           <div
-            class="mt-4 w-full h-72 sm:h-80 lg:h-[290px] rounded-xl overflow-hidden border border-[--color-border] shadow-sm">
+            class="mt-4 w-full h-72 sm:h-80 lg:h-[290px] rounded-xl overflow-hidden border border-[#1e293b] shadow-sm">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5038753239247!2d79.04945417594921!3d21.127364183533688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3453b3f27f0d046f%3A0x93309a47ff78e1b!2sVisvesvaraya%20National%20Institute%20of%20Technology%20(VNIT)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -979,11 +1081,11 @@
       </div>
 
       <div
-        class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <p class="text-xs font-mono text-[--color-ink-muted]">
+        class="mt-16 pt-8 border-t border-[#1e293b] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <p class="text-xs font-mono text-slate-400">
           © 2026 ACM Student Chapter | VNIT Nagpur
         </p>
-        <p class="text-xs font-mono text-[--color-ink-muted]">
+        <p class="text-xs font-mono text-slate-400">
           Association for Computing Machinery
         </p>
       </div>
@@ -992,23 +1094,23 @@
 
   <!-- Contact Drawer Backdrop -->
   <div
-    class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    class="contact-backdrop fixed inset-0 z-50 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
   </div>
 
   <!-- Contact Drawer Panel -->
   <aside
-    class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+    class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-[#0d1424] text-white border-l border-[#1e293b] w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
     style="font-family: var(--font-display)" aria-hidden="true">
     <!-- Header -->
-    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
+    <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[#1e293b]">
       <div>
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">
+        <p class="text-[10px] font-mono text-[#a855f7] tracking-[0.2em] uppercase mb-1">
           ACM·VNIT
         </p>
-        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+        <h2 class="text-2xl font-bold text-white uppercase">GET IN TOUCH</h2>
       </div>
       <button
-        class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors"
+        class="contact-close w-10 h-10 flex items-center justify-center text-slate-400 hover:text-white border border-[#1e293b] hover:border-[#a855f7] transition-colors rounded-lg"
         aria-label="Close">
         ✕
       </button>
@@ -1017,15 +1119,15 @@
     <!-- Body / Form -->
     <div class="flex-1 overflow-y-auto px-8 py-8">
       <div id="contact-success-state" class="hidden flex flex-col items-center justify-center h-full gap-4 text-center">
-        <div class="w-16 h-16 bg-[--color-blue-dim] flex items-center justify-center text-[--color-blue] text-2xl">
+        <div class="w-16 h-16 bg-[#38bdf8]/10 border border-[#38bdf8]/30 flex items-center justify-center text-[#38bdf8] text-2xl rounded-full">
           ✓
         </div>
-        <p class="text-xl font-bold">Message received.</p>
-        <p class="text-sm text-[--color-ink-muted] max-w-xs">
+        <p class="text-xl font-bold text-white">Message received.</p>
+        <p class="text-sm text-slate-300 max-w-xs">
           We'll get back to you within 48 hours. Thanks for reaching out to ACM-VNIT.
         </p>
         <button
-          class="contact-close mt-4 text-xs uppercase tracking-widest text-[--color-blue] font-medium hover:underline">
+          class="contact-close mt-4 text-xs uppercase tracking-widest text-[#a855f7] font-medium hover:underline">
           Close panel
         </button>
       </div>
@@ -1034,57 +1136,57 @@
         <form class="contact-form flex flex-col gap-5 mb-10">
           <div>
             <label
-              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2">Name</label>
             <input type="text" required placeholder="Your full name"
-              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+              class="w-full border border-[#1e293b] bg-[#121a2d] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#a855f7] transition-colors rounded-lg">
           </div>
           <div>
             <label
-              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2">Email</label>
             <input type="email" required placeholder="you@example.com"
-              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+              class="w-full border border-[#1e293b] bg-[#121a2d] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#a855f7] transition-colors rounded-lg">
           </div>
           <div>
             <label
-              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2">Subject</label>
             <input type="text" required placeholder="What's this about?"
-              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+              class="w-full border border-[#1e293b] bg-[#121a2d] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#a855f7] transition-colors rounded-lg">
           </div>
           <div>
             <label
-              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2">Message</label>
             <textarea required rows="5" placeholder="Your message..."
-              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent resize-none"></textarea>
+              class="w-full border border-[#1e293b] bg-[#121a2d] px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#a855f7] transition-colors rounded-lg resize-none"></textarea>
           </div>
           <button type="submit"
-            class="bg-[--color-blue] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+            class="bg-[#0075c9] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[#a855f7] transition-colors rounded-lg shadow-lg shadow-[#0075c9]/20">
             Send Message →
           </button>
         </form>
 
         <!-- Details -->
-        <div class="border-t border-[--color-border] pt-8 flex flex-col gap-6">
+        <div class="border-t border-[#1e293b] pt-8 flex flex-col gap-6">
           <div>
-            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</p>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2">Email</p>
             <a href="mailto:acm@vnit.ac.in"
-              class="text-sm font-medium text-[--color-ink] hover:text-[--color-blue] transition-colors">acm@vnit.ac.in</a>
+              class="text-sm font-medium text-white hover:text-[#38bdf8] transition-colors">acm@vnit.ac.in</a>
           </div>
           <div>
-            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-3">Find us online
             </p>
             <div class="flex flex-wrap gap-3">
               <a href="https://www.linkedin.com/company/acm-student-chapter-vnit/" target="_blank"
                 rel="noopener noreferrer"
-                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
+                class="text-xs font-medium text-slate-300 border border-[#1e293b] bg-[#121a2d] px-3 py-1.5 hover:border-[#38bdf8] hover:text-[#38bdf8] transition-colors rounded-md">LinkedIn</a>
               <a href="https://github.com/AnkurKumarIO/ACM-VNIT" target="_blank" rel="noopener noreferrer"
-                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+                class="text-xs font-medium text-slate-300 border border-[#1e293b] bg-[#121a2d] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors rounded-md">GitHub</a>
               <a href="https://www.instagram.com/acm_vnit/" target="_blank" rel="noopener noreferrer"
-                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Instagram</a>
+                class="text-xs font-medium text-slate-300 border border-[#1e293b] bg-[#121a2d] px-3 py-1.5 hover:border-[#fb7185] hover:text-[#fb7185] transition-colors rounded-md">Instagram</a>
             </div>
           </div>
           <div>
-            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Address</p>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2">Address</p>
+            <p class="text-sm text-slate-300 leading-relaxed">
               Visvesvaraya National Institute of Technology<br>South Ambazari Road, Nagpur<br>Maharashtra 440010, India
             </p>
           </div>

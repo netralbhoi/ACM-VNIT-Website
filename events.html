@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-[--color-ink]">
+<body class="bg-[#080d1a] text-[--color-ink]">
 
   <!-- ═══════════════════════════════════════════ HEADER -->
   <header id="site-header" style="font-family: var(--font-display)"
-    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[--color-border]">
+    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-[#1e293b]">
     <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
         <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
@@ -43,7 +43,7 @@
   </header>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-white transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+  <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
     <div class="flex flex-col justify-center h-full px-8 gap-8">
       <a href="index.html"   class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Home</a>
       <a href="about.html"   class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
@@ -70,7 +70,7 @@
 
         <!-- Main Hero Content -->
         <div class="my-auto py-6 animate-fade-up" style="animation-delay: 0.1s;">
-          <h1 style="font-size: clamp(2.8rem, 8vw, 5rem); line-height: 0.95; letter-spacing: -0.025em; font-weight: 800; color: #000000; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 2rem 0; padding: 0; -webkit-text-fill-color: #000000;">
+          <h1 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #000000; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 2rem 0; padding: 0; -webkit-text-fill-color: #000000;">
             THE RECORD.
           </h1>
 
@@ -111,7 +111,7 @@
     </section>
 
     <!-- ═══════════════════════════════════════════ FILTER BAR (sticky) -->
-    <div class="sticky top-16 z-30 bg-white/98 backdrop-blur border-b border-[--color-border]" style="font-family: var(--font-display)">
+    <div class="sticky top-16 z-30 bg-[#080d1a]/98 backdrop-blur border-b border-[#1e293b]" style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-3 flex gap-2 overflow-x-auto" id="events-filter-bar">
         <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors bg-[--color-blue] text-white" data-category="All">All</button>
         <button class="event-filter-btn shrink-0 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.12em] transition-colors text-[--color-ink-muted] border border-[--color-border] hover:border-[--color-ink] hover:text-[--color-ink]" data-category="Workshop">Workshop</button>
@@ -472,7 +472,7 @@
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="reveal mb-14">
           <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Highlight</p>
-          <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(2rem, 4vw, 4rem);">
+          <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #000000; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0; -webkit-text-fill-color: #000000;">
             WHAT MAKES OUR EVENTS DIFFERENT.
           </h2>
         </div>
@@ -503,7 +503,7 @@
         <div class="reveal flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
           <div>
             <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-3">Stay involved</p>
-            <h2 class="uppercase font-black text-[--color-ink] leading-tight" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">DON'T MISS THE NEXT ONE.</h2>
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0; -webkit-text-fill-color: #ffffff;">DON'T MISS THE NEXT ONE.</h2>
             <p class="text-sm text-[--color-ink-soft] mt-2 max-w-sm">Follow us on social media or reach out directly to get notified when new events are announced.</p>
           </div>
           <div class="flex flex-wrap gap-4">
@@ -626,11 +626,11 @@
   <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
   <!-- Contact Drawer Panel -->
-  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-white w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-[#0d1424] w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
     <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
       <div>
         <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase mb-1">ACM·VNIT</p>
-        <h2 class="text-2xl font-bold text-[--color-ink]">Get in touch</h2>
+        <h2 class="text-2xl font-bold text-white uppercase">GET IN TOUCH</h2>
       </div>
       <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">✕</button>
     </div>

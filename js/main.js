@@ -366,8 +366,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (part.length > 0) {
               const first = part[0];
               const rest = part.slice(1);
-              newHTML += `<span style="color:#0a0a0a;font-size:1.06em;">${first}</span>`;
-              if (rest) newHTML += `<span style="color:#636363;">${rest}</span>`;
+              newHTML += `<span style="color:#ffffff;font-size:1.05em;">${first}</span>`;
+              if (rest) newHTML += `<span style="color:#cbd5e1;">${rest}</span>`;
             }
           });
         } else {
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTwoToneHeadings();
 
   // ==========================================
-  // 9. HERO SKETCH HOVER SPOTLIGHT (B&W Sketch -> Color Reveal on Hover)
+  // 9. HERO SKETCH HOVER SPOTLIGHT (B&W Sketch -> Vibrant Color Spotlight on Hover)
   // ==========================================
   const heroSection = document.getElementById("hero-section");
   const heroColorBg = document.getElementById("hero-color-bg");
