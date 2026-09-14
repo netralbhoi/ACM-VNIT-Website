@@ -186,14 +186,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const renderDetails = (id, name, desc, tagsString) => {
     const tags = tagsString.split(",").map(t => t.trim());
     const tagsHTML = tags.map(tag => `
-      <span class="text-xs font-mono text-[--color-blue] border border-[--color-blue]/30 bg-[--color-blue-dim] px-3 py-1">
+      <span class="text-xs font-mono text-[#a855f7] border border-[#a855f7]/30 bg-[#a855f7]/10 px-3 py-1">
         ${tag}
       </span>
     `).join("");
 
     return `
       <div style="animation: fadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards">
-        <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-6">
+        <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-6">
           Domain ${id}
         </p>
         <h2 class="text-3xl font-black text-[--color-ink] mb-6">
@@ -224,17 +224,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const updatePane = (active) => {
         if (active) {
           // Add active classes to item UI
-          item.classList.add("bg-[--color-blue-dim]");
-          item.querySelector(".domain-id-text").classList.replace("text-[--color-ink-muted]", "text-[--color-blue]");
-          item.querySelector(".domain-name-text").classList.replace("text-[--color-ink]", "text-[--color-blue]");
+          item.classList.add("bg-[#a855f7]/10");
+          item.querySelector(".domain-id-text").classList.replace("text-[--color-ink-muted]", "text-[#a855f7]");
+          item.querySelector(".domain-name-text").classList.replace("text-[--color-ink]", "text-[#a855f7]");
           item.querySelector(".domain-arrow").classList.remove("opacity-0");
           item.querySelector(".domain-arrow").classList.add("opacity-100", "translate-x-1");
           domainDetailPane.innerHTML = renderDetails(id, name, desc, tags);
         } else {
           // Remove active classes
-          item.classList.remove("bg-[--color-blue-dim]");
-          item.querySelector(".domain-id-text").classList.replace("text-[--color-blue]", "text-[--color-ink-muted]");
-          item.querySelector(".domain-name-text").classList.replace("text-[--color-blue]", "text-[--color-ink]");
+          item.classList.remove("bg-[#a855f7]/10");
+          item.querySelector(".domain-id-text").classList.replace("text-[#a855f7]", "text-[--color-ink-muted]");
+          item.querySelector(".domain-name-text").classList.replace("text-[#a855f7]", "text-[--color-ink]");
           item.querySelector(".domain-arrow").classList.remove("opacity-100", "translate-x-1");
           item.querySelector(".domain-arrow").classList.add("opacity-0");
           domainDetailPane.innerHTML = defaultDetailsHTML;
@@ -247,13 +247,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Click triggers (for touch screens / mobile fallback)
       item.addEventListener("click", (e) => {
-        const isCurrentlyActive = item.classList.contains("bg-[--color-blue-dim]");
+        const isCurrentlyActive = item.classList.contains("bg-[#a855f7]/10");
         
         // Reset all first
         domainItems.forEach(i => {
-          i.classList.remove("bg-[--color-blue-dim]");
-          i.querySelector(".domain-id-text").classList.replace("text-[--color-blue]", "text-[--color-ink-muted]");
-          i.querySelector(".domain-name-text").classList.replace("text-[--color-blue]", "text-[--color-ink]");
+          i.classList.remove("bg-[#a855f7]/10");
+          i.querySelector(".domain-id-text").classList.replace("text-[#a855f7]", "text-[--color-ink-muted]");
+          i.querySelector(".domain-name-text").classList.replace("text-[#a855f7]", "text-[--color-ink]");
           i.querySelector(".domain-arrow").classList.remove("opacity-100", "translate-x-1");
           i.querySelector(".domain-arrow").classList.add("opacity-0");
         });
@@ -282,10 +282,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update active class on buttons
         filterButtons.forEach(b => {
-          b.classList.remove("bg-[--color-blue]", "text-white");
+          b.classList.remove("bg-[#a855f7]", "bg-[--color-blue]", "text-white");
           b.classList.add("text-[--color-ink-muted]", "border", "border-[--color-border]", "hover:border-[--color-ink]", "hover:text-[--color-ink]");
         });
-        btn.classList.add("bg-[--color-blue]", "text-white");
+        btn.classList.add("bg-[#a855f7]", "text-white");
         btn.classList.remove("text-[--color-ink-muted]", "border", "border-[--color-border]", "hover:border-[--color-ink]", "hover:text-[--color-ink]");
 
         // Filter event items

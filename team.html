@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,31 +8,44 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-[#080d1a] text-[--color-ink]">
   <!-- Header -->
-  <header id="site-header" style="font-family: var(--font-display)" class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-[#1e293b]">
+  <header id="site-header" style="font-family: var(--font-display)"
+    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-[#1e293b]">
     <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[--color-blue] transition-colors">
+      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[#a855f7] transition-colors">
         <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
         <div class="flex flex-col text-left">
-          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing Machinery</span>
-          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT Student Chapter</span>
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing
+            Machinery</span>
+          <span
+            class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT
+            Student Chapter</span>
         </div>
       </a>
 
       <!-- Desktop Links -->
       <div class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
-        <a href="about.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
-        <a href="domains.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
-        <a href="impact.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
-        <a href="events.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
-        <a href="projects.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
-        <a href="team.html" class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-blue]">Team</a>
+        <a href="index.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
+        <a href="about.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
+        <a href="domains.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+        <a href="impact.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+        <a href="events.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+        <a href="projects.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+        <a href="team.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[#a855f7]">Team</a>
       </div>
 
       <div class="hidden lg:flex items-center gap-4">
-        <button class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[--color-blue] border border-[--color-blue] px-4 py-2 hover:bg-[--color-blue] hover:text-white transition-colors duration-200">
+        <button
+          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[#a855f7] border border-[#a855f7] px-4 py-2 hover:bg-[#a855f7] hover:text-white transition-colors duration-200">
           Contact →
         </button>
       </div>
@@ -46,16 +60,22 @@
   </header>
 
   <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none" style="font-family: var(--font-display)">
+  <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none"
+    style="font-family: var(--font-display)">
     <div class="flex flex-col justify-center h-full px-8 gap-8">
-      <a href="index.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Home</a>
-      <a href="about.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">About</a>
-      <a href="domains.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Domains</a>
-      <a href="impact.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Impact</a>
-      <a href="events.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Events</a>
-      <a href="projects.html" class="text-4xl font-bold text-[--color-ink] hover:text-[--color-blue] transition-colors">Projects</a>
-      <a href="team.html" class="text-4xl font-bold text-[--color-blue] transition-colors">Team</a>
-      <button class="contact-trigger text-4xl font-bold text-[--color-blue] hover:opacity-70 transition-opacity text-left">
+      <a href="index.html" class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Home</a>
+      <a href="about.html"
+        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">About</a>
+      <a href="domains.html"
+        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Domains</a>
+      <a href="impact.html"
+        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Impact</a>
+      <a href="events.html"
+        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Events</a>
+      <a href="projects.html"
+        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Projects</a>
+      <a href="team.html" class="text-4xl font-bold text-[#a855f7] transition-colors">Team</a>
+      <button class="contact-trigger text-4xl font-bold text-[#a855f7] hover:opacity-70 transition-opacity text-left">
         Contact →
       </button>
     </div>
@@ -63,7 +83,9 @@
 
   <main>
     <!-- ═══════════════════════════════════════════ HERO (HOME Section Style) -->
-    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]" style="font-family: var(--font-display)">
+    <section id="hero-section"
+      class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
+      style="font-family: var(--font-display)">
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
         style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
@@ -76,22 +98,42 @@
       </div>
       <div class="absolute top-24 left-6 lg:left-12 z-20">
         <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">06 / Team</p>
-        <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[--color-blue]">Chapter Leadership</p>
+        <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[#a855f7]">Chapter Leadership</p>
       </div>
 
       <!-- Main content container -->
       <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
         <div class="max-w-4xl w-full mt-8 lg:mt-0">
           <div class="flex flex-col justify-center text-left">
+            <div class="mb-4 flex items-center gap-2.5">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#a855f7] bg-[#a855f7]/10 border border-[#a855f7]/30 uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse"></span>
+                CHAPTER LEADERSHIP
+              </span>
+            </div>
             <div class="mb-6 animate-fade-up">
-              <h1 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0; padding: 0; -webkit-text-fill-color: #ffffff;">
+              <p style="
+                font-size: clamp(2.6rem, 7.5vw, 4.5rem);
+                line-height: 1.15;
+                letter-spacing: -0.025em;
+                word-spacing: 0.15em;
+                font-weight: 800;
+                color: #ffffff;
+                font-family: 'Sora', sans-serif;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+                -webkit-text-fill-color: #ffffff;
+              ">
                 THE PEOPLE BEHIND IT.
-              </h1>
+              </p>
             </div>
 
             <div class="animate-fade-up" style="animation-delay: 0.2s;">
-              <p class="text-base lg:text-lg text-[--color-ink-soft] leading-relaxed font-medium mb-0 max-w-2xl">
-                Students who give their time, vision, and craftsmanship to make ACM-VNIT exceptional. Chapter leaders, project leads, domain heads, and community architects.
+              <p class="text-base lg:text-lg text-slate-300 leading-relaxed font-medium mb-0 max-w-2xl">
+                Students who give their time, vision, and craftsmanship to make ACM-VNIT exceptional. Chapter leaders,
+                project leads, domain heads, and community architects.
               </p>
             </div>
           </div>
@@ -100,7 +142,8 @@
 
       <!-- Bottom Action Bar -->
       <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
-        <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up" style="animation-delay: 0.3s;">
+        <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up"
+          style="animation-delay: 0.3s;">
           <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16">
             <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Leadership</span>
             <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Architects</span>
@@ -108,10 +151,12 @@
           </div>
 
           <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
-            <a href="#exec-board" class="inline-block bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-all duration-200 shadow-lg shadow-[--color-blue]/10 hover:shadow-xl hover:shadow-[--color-blue]/25">
+            <a href="#exec-board"
+              class="inline-block bg-[#a855f7] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-200 shadow-lg shadow-[#a855f7]/20 hover:shadow-xl hover:shadow-[#a855f7]/40">
               Meet the Team ↓
             </a>
-            <button class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+            <button
+              class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
               Get in Touch
             </button>
           </div>
@@ -126,49 +171,71 @@
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOMAIN HEADS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PROJECT LEADS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">STUDENT MENTORS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMMUNITY ARCHITECTS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMMUNITY ARCHITECTS
+          ·</span>
         <!-- Loop repeat -->
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">EXECUTIVE BOARD ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOMAIN HEADS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PROJECT LEADS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">STUDENT MENTORS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMMUNITY ARCHITECTS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMMUNITY ARCHITECTS
+          ·</span>
       </div>
     </div>
 
     <!-- EXECUTIVE BOARD -->
-    <section id="exec-board" class="border-t border-[--color-border] py-10 bg-[--color-ground-alt]" style="font-family: var(--font-display)">
+    <section id="exec-board" class="border-t border-[--color-border] py-10 bg-[--color-ground-alt]"
+      style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="reveal">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-16">
-            Executive Board
+          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-16">
+            EXECUTIVE BOARD
           </p>
         </div>
 
         <div class="flex flex-col gap-0">
-          
+
           <!-- Member 1: Ankur Kumar (Even) -->
           <div class="reveal">
-            <div class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
+            <div
+              class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
               <!-- Photo -->
               <div class="lg:col-span-4 lg:col-start-1 overflow-hidden">
                 <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
-                  <img src="images/team-cards/Ankur Kumar.png" alt="Ankur Kumar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                  <div class="absolute inset-0 bg-[--color-blue]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+                  <img src="images/team-cards/Ankur Kumar.png" alt="Ankur Kumar"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div
+                    class="absolute inset-0 bg-[#a855f7]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                  </div>
                 </div>
               </div>
               <!-- Info -->
               <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-6">
-                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">President</p>
-                <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 1rem 0; -webkit-text-fill-color: #ffffff;">
+                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-4">President</p>
+                <p style="
+                  font-size: clamp(2.6rem, 7.5vw, 4.5rem);
+                  line-height: 1.15;
+                  letter-spacing: -0.025em;
+                  word-spacing: 0.15em;
+                  font-weight: 800;
+                  color: #ffffff;
+                  font-family: 'Sora', sans-serif;
+                  text-transform: uppercase;
+                  margin: 0;
+                  padding: 0;
+                  -webkit-text-fill-color: #ffffff;
+                ">
                   ANKUR KUMAR
-                </h2>
+                </p>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
-                  President of ACM-VNIT, leading chapter initiatives, managing cross-functional technical domains, and driving campus development initiatives. Visvesvaraya National Institute of Technology.
+                  President of ACM-VNIT, leading chapter initiatives, managing cross-functional technical domains, and
+                  driving campus development initiatives. Visvesvaraya National Institute of Technology.
                 </p>
                 <div class="flex gap-4">
-                  <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
-                  <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
+                  <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">LinkedIn</a>
+                  <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">GitHub</a>
                 </div>
               </div>
             </div>
@@ -176,26 +243,46 @@
 
           <!-- Member 2: Chinmay Sabharwal (Odd) -->
           <div class="reveal" style="transition-delay: 0.1s;">
-            <div class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
+            <div
+              class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
               <!-- Photo (Placed second on desktop, first on mobile, using row-start configuration) -->
               <div class="lg:col-span-4 lg:col-start-9 overflow-hidden">
                 <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
-                  <img src="images/team-cards/Chinmay.png" alt="Chinmay Sabharwal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                  <div class="absolute inset-0 bg-[--color-blue]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+                  <img src="images/team-cards/Chinmay.png" alt="Chinmay Sabharwal"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div
+                    class="absolute inset-0 bg-[#a855f7]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                  </div>
                 </div>
               </div>
               <!-- Info -->
               <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-1 lg:row-start-1">
-                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Vice President</p>
-                <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 1rem 0; -webkit-text-fill-color: #ffffff;">
+                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-4">Vice President</p>
+                <p style="
+                  font-size: clamp(2.6rem, 7.5vw, 4.5rem);
+                  line-height: 1.15;
+                  letter-spacing: -0.025em;
+                  word-spacing: 0.15em;
+                  font-weight: 800;
+                  color: #ffffff;
+                  font-family: 'Sora', sans-serif;
+                  text-transform: uppercase;
+                  margin: 0;
+                  padding: 0;
+                  -webkit-text-fill-color: #ffffff;
+                ">
                   CHINMAY SABHARWAL
-                </h2>
+                </p>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
-                  "Engineering the impossible into reality." Coordinating event execution, chapter operations, and managing resources for technical sessions.
+                  "Engineering the impossible into reality." Coordinating event execution, chapter operations, and
+                  managing resources for technical sessions.
                 </p>
                 <div class="flex gap-4">
-                  <a href="https://www.linkedin.com/in/chinmay-sabharwal-b29980313" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
-                  <a href="mailto:chinmaysabharwal123@gmail.com" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Email</a>
+                  <a href="https://www.linkedin.com/in/chinmay-sabharwal-b29980313" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">LinkedIn</a>
+                  <a href="mailto:chinmaysabharwal123@gmail.com"
+                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">Email</a>
                 </div>
               </div>
             </div>
@@ -203,26 +290,45 @@
 
           <!-- Member 3: Manjeet Singh (Even) -->
           <div class="reveal" style="transition-delay: 0.2s;">
-            <div class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
+            <div
+              class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
               <!-- Photo -->
               <div class="lg:col-span-4 lg:col-start-1 overflow-hidden">
                 <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
-                  <img src="images/team-cards/Manjeet.png" alt="Manjeet Singh" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                  <div class="absolute inset-0 bg-[--color-blue]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100"></div>
+                  <img src="images/team-cards/Manjeet.png" alt="Manjeet Singh"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div
+                    class="absolute inset-0 bg-[#a855f7]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                  </div>
                 </div>
               </div>
               <!-- Info -->
               <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-6">
-                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-4">Senior Advisor</p>
-                <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0 0 1rem 0; -webkit-text-fill-color: #ffffff;">
+                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-4">Senior Advisor</p>
+                <p style="
+                  font-size: clamp(2.6rem, 7.5vw, 4.5rem);
+                  line-height: 1.15;
+                  letter-spacing: -0.025em;
+                  word-spacing: 0.15em;
+                  font-weight: 800;
+                  color: #ffffff;
+                  font-family: 'Sora', sans-serif;
+                  text-transform: uppercase;
+                  margin: 0;
+                  padding: 0;
+                  -webkit-text-fill-color: #ffffff;
+                ">
                   MANJEET SINGH
-                </h2>
+                </p>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
-                  "If you can't code without AI, you shouldn't use it." Mentoring the competitive programming track, and guiding the chapter in algorithmic and technical strategy.
+                  "If you can't code without AI, you shouldn't use it." Mentoring the competitive programming track, and
+                  guiding the chapter in algorithmic and technical strategy.
                 </p>
                 <div class="flex gap-4">
-                  <a href="https://www.linkedin.com/in/manjeetvnit/" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
-                  <a href="mailto:manjeetsinghmmiv@gmail.com" class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Email</a>
+                  <a href="https://www.linkedin.com/in/manjeetvnit/" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">LinkedIn</a>
+                  <a href="mailto:manjeetsinghmmiv@gmail.com"
+                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">Email</a>
                 </div>
               </div>
             </div>
@@ -233,10 +339,11 @@
     </section>
 
     <!-- CORE TEAM -->
-    <section class="border-t border-[--color-border] py-10 bg-[--color-ground]" style="font-family: var(--font-display)">
+    <section class="border-t border-[--color-border] py-10 bg-[--color-ground]"
+      style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="reveal">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[--color-blue] mb-16">
+          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-16">
             Core Team
           </p>
         </div>
@@ -245,7 +352,8 @@
           <!-- Core Member 1: Sanvi Y -->
           <div class="reveal border-b lg:border-r border-[--color-border] overflow-hidden group">
             <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Sanvi.png" alt="Sanvi Y" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="images/team-cards/Sanvi.png" alt="Sanvi Y"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div class="absolute bottom-0 left-0 p-6">
                 <p class="text-white font-black text-xl leading-tight">Sanvi Y</p>
@@ -254,19 +362,27 @@
             </div>
             <div class="p-6">
               <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Passionate about building and learning." Leading frontend design systems and collaborative code projects for the chapter.
+                "Passionate about building and learning." Leading frontend design systems and collaborative code
+                projects for the chapter.
               </p>
               <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/sanvi-yanagandula-b054a5296/" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
-                <a href="mailto:yanagsanvi@gmail.com" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">Email ↗</a>
+                <a href="https://www.linkedin.com/in/sanvi-yanagandula-b054a5296/" target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:yanagsanvi@gmail.com"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">Email
+                  ↗</a>
               </div>
             </div>
           </div>
 
           <!-- Core Member 2: Prince Kumar -->
-          <div class="reveal border-b lg:border-r border-[--color-border] overflow-hidden group" style="transition-delay: 0.05s;">
+          <div class="reveal border-b lg:border-r border-[--color-border] overflow-hidden group"
+            style="transition-delay: 0.05s;">
             <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Prince.png" alt="Prince Kumar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="images/team-cards/Prince.png" alt="Prince Kumar"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div class="absolute bottom-0 left-0 p-6">
                 <p class="text-white font-black text-xl leading-tight">Prince Kumar</p>
@@ -275,11 +391,16 @@
             </div>
             <div class="p-6">
               <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "The purpose of AI is to amplify human ingenuity, not replace it." Coordinating model training sessions and RAG system architectures.
+                "The purpose of AI is to amplify human ingenuity, not replace it." Coordinating model training sessions
+                and RAG system architectures.
               </p>
               <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/prince-kumar-364252332" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
-                <a href="mailto:prince307339@gmail.com" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">Email ↗</a>
+                <a href="https://www.linkedin.com/in/prince-kumar-364252332" target="_blank" rel="noopener noreferrer"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:prince307339@gmail.com"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">Email
+                  ↗</a>
               </div>
             </div>
           </div>
@@ -287,7 +408,8 @@
           <!-- Core Member 3: Ayush Vairagade -->
           <div class="reveal border-b border-[--color-border] overflow-hidden group" style="transition-delay: 0.1s;">
             <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Ayush.png" alt="Ayush Vairagade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="images/team-cards/Ayush.png" alt="Ayush Vairagade"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div class="absolute bottom-0 left-0 p-6">
                 <p class="text-white font-black text-xl leading-tight">Ayush Vairagade</p>
@@ -296,19 +418,27 @@
             </div>
             <div class="p-6">
               <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Creating technology that thinks, with people at its core." Facilitating computer vision coding sprints and ML workshops.
+                "Creating technology that thinks, with people at its core." Facilitating computer vision coding sprints
+                and ML workshops.
               </p>
               <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/ayush-vivekanand-vairagade-8626022bb" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
-                <a href="mailto:vairagadeayush01@gmail.com" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">Email ↗</a>
+                <a href="https://www.linkedin.com/in/ayush-vivekanand-vairagade-8626022bb" target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:vairagadeayush01@gmail.com"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">Email
+                  ↗</a>
               </div>
             </div>
           </div>
 
           <!-- Core Member 4: Divyansh Chaurasia -->
-          <div class="reveal border-b md:border-b-0 lg:border-r border-[--color-border] overflow-hidden group" style="transition-delay: 0.15s;">
+          <div class="reveal border-b md:border-b-0 lg:border-r border-[--color-border] overflow-hidden group"
+            style="transition-delay: 0.15s;">
             <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Divyansh.png" alt="Divyansh Chaurasia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="images/team-cards/Divyansh.png" alt="Divyansh Chaurasia"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div class="absolute bottom-0 left-0 p-6">
                 <p class="text-white font-black text-xl leading-tight">Divyansh Chaurasia</p>
@@ -317,19 +447,26 @@
             </div>
             <div class="p-6">
               <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Making memories until life throws an MLE." Coordinating regular contests, editorial sessions, and ICPC regional preparation.
+                "Making memories until life throws an MLE." Coordinating regular contests, editorial sessions, and ICPC
+                regional preparation.
               </p>
               <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/divyansh006chaurasia" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
-                <a href="mailto:divyansh006@gmail.com" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">Email ↗</a>
+                <a href="https://www.linkedin.com/in/divyansh006chaurasia" target="_blank" rel="noopener noreferrer"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:divyansh006@gmail.com"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">Email
+                  ↗</a>
               </div>
             </div>
           </div>
 
           <!-- Core Member 5: Vishvesh Singh -->
-          <div class="reveal md:border-r lg:border-r-0 border-[--color-border] overflow-hidden group" style="transition-delay: 0.2s;">
+          <div class="reveal md:border-r lg:border-r-0 border-[--color-border] overflow-hidden group"
+            style="transition-delay: 0.2s;">
             <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Vishvesh.png" alt="Vishvesh Singh" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="images/team-cards/Vishvesh.png" alt="Vishvesh Singh"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div class="absolute bottom-0 left-0 p-6">
                 <p class="text-white font-black text-xl leading-tight">Vishvesh Singh</p>
@@ -338,11 +475,16 @@
             </div>
             <div class="p-6">
               <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Driven by curiosity, powered by logic, and inspired by innovation." Managing the chapter budget, sponsor relations, and event finances.
+                "Driven by curiosity, powered by logic, and inspired by innovation." Managing the chapter budget,
+                sponsor relations, and event finances.
               </p>
               <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/vishvesh-singh-16909233a" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">LinkedIn ↗</a>
-                <a href="mailto:connectvishvesh@gmail.com" class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[--color-blue] transition-colors">Email ↗</a>
+                <a href="https://www.linkedin.com/in/vishvesh-singh-16909233a" target="_blank" rel="noopener noreferrer"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:connectvishvesh@gmail.com"
+                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#a855f7] transition-colors">Email
+                  ↗</a>
               </div>
             </div>
           </div>
@@ -361,13 +503,31 @@
     </section>
 
     <!-- JOIN -->
-    <section class="py-10 border-t border-[--color-border] bg-[--color-ground-alt]" style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+    <section class="py-10 border-t border-[--color-border] bg-[--color-ground-alt]"
+      style="font-family: var(--font-display)">
+      <div
+        class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
         <div>
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.15em] uppercase text-[--color-blue] mb-3">Open positions</p>
-          <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 1.15; letter-spacing: -0.025em; word-spacing: 0.15em; font-weight: 800; color: #ffffff; font-family: 'Sora', sans-serif; text-transform: uppercase; margin: 0; -webkit-text-fill-color: #ffffff;">JOIN THE TEAM FOR 2025–26.</h2>
+          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#a855f7] mb-3">OPEN
+            POSITIONS</p>
+          <p style="
+            font-size: clamp(2.6rem, 7.5vw, 4.5rem);
+            line-height: 1.15;
+            letter-spacing: -0.025em;
+            word-spacing: 0.15em;
+            font-weight: 800;
+            color: #ffffff;
+            font-family: 'Sora', sans-serif;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            -webkit-text-fill-color: #ffffff;
+          ">
+            JOIN THE TEAM FOR 2025–26.
+          </p>
         </div>
-        <a href="mailto:acm@vnit.ac.in" class="shrink-0 bg-[--color-blue] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+        <a href="mailto:acm@vnit.ac.in"
+          class="shrink-0 bg-[#a855f7] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-colors">
           Express interest →
         </a>
       </div>
@@ -383,12 +543,14 @@
           <div class="sm:w-[38%] shrink-0">
             <p class="text-xl font-bold tracking-tight text-[--color-ink] mb-3">ACM·VNIT</p>
             <p class="text-sm text-[--color-ink-muted] leading-relaxed">
-              The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of Technology, Nagpur.
+              The student chapter of the Association for Computing Machinery at Visvesvaraya National Institute of
+              Technology, Nagpur.
             </p>
             <div class="mt-6 pt-4 border-t border-[--color-border]/60">
               <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">About VNIT</p>
               <p class="text-xs text-[--color-ink-muted] leading-relaxed">
-                Established in 1960 as an Institute of National Importance, VNIT Nagpur is a premier technological institution driving research, technical innovation, and computing excellence in Central India.
+                Established in 1960 as an Institute of National Importance, VNIT Nagpur is a premier technological
+                institution driving research, technical innovation, and computing excellence in Central India.
               </p>
             </div>
           </div>
@@ -398,12 +560,18 @@
             <div>
               <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Navigate</p>
               <ul class="flex flex-col gap-3">
-                <li><a href="about.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">About</a></li>
-                <li><a href="domains.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Domains</a></li>
-                <li><a href="impact.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Impact</a></li>
-                <li><a href="events.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Events</a></li>
-                <li><a href="projects.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Projects</a></li>
-                <li><a href="team.html" class="text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">Team</a></li>
+                <li><a href="about.html"
+                    class="text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">About</a></li>
+                <li><a href="domains.html"
+                    class="text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">Domains</a></li>
+                <li><a href="impact.html"
+                    class="text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">Impact</a></li>
+                <li><a href="events.html"
+                    class="text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">Events</a></li>
+                <li><a href="projects.html"
+                    class="text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">Projects</a></li>
+                <li><a href="team.html"
+                    class="text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">Team</a></li>
               </ul>
             </div>
 
@@ -411,26 +579,42 @@
               <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Connect</p>
               <ul class="flex flex-col gap-3">
                 <li>
-                  <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[#0a66c2] shrink-0 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                  <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">
+                    <svg class="w-4 h-4 text-[#0a66c2] shrink-0 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z" />
+                    </svg>
                     <span>LinkedIn</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[--color-ink] shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                  <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">
+                    <svg class="w-4 h-4 text-[--color-ink] shrink-0 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                    </svg>
                     <span>GitHub</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[#e1306c] shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">
+                    <svg class="w-4 h-4 text-[#e1306c] shrink-0 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
                     <span>Instagram</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[--color-blue] transition-colors">
-                    <svg class="w-4 h-4 text-[--color-ink] shrink-0 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  <a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm text-[--color-ink-soft] hover:text-[#a855f7] transition-colors">
+                    <svg class="w-4 h-4 text-[--color-ink] shrink-0 fill-current" viewBox="0 0 24 24">
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
                     <span>Twitter/X</span>
                   </a>
                 </li>
@@ -444,32 +628,40 @@
           <div>
             <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
             <div class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-[--color-blue] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <svg class="w-4 h-4 text-[#a855f7] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
               <p class="text-sm text-[--color-ink-soft] leading-relaxed">
                 Visvesvaraya National Institute of Technology, Nagpur<br>Maharashtra 440010, India
               </p>
             </div>
-            <a href="mailto:acm@vnit.ac.in" class="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[--color-blue] hover:underline">
-              <svg class="w-4 h-4 text-[--color-blue] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:acm@vnit.ac.in"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[#a855f7] hover:underline">
+              <svg class="w-4 h-4 text-[#a855f7] shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
               <span>acm@vnit.ac.in</span>
             </a>
           </div>
 
-          <div class="mt-4 w-full h-72 sm:h-80 lg:h-[290px] rounded-xl overflow-hidden border border-[--color-border] shadow-sm">
+          <div
+            class="mt-4 w-full h-72 sm:h-80 lg:h-[290px] rounded-xl overflow-hidden border border-[--color-border] shadow-sm">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5038753239247!2d79.04945417594921!3d21.127364183533688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3453b3f27f0d046f%3A0x93309a47ff78e1b!2sVisvesvaraya%20National%20Institute%20of%20Technology%20(VNIT)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
         </div>
       </div>
 
-      <div class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div
+        class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <p class="text-xs font-mono text-[--color-ink-muted]">
           © 2026 ACM Student Chapter | VNIT Nagpur
         </p>
@@ -481,10 +673,14 @@
   </footer>
 
   <!-- Contact Drawer Backdrop -->
-  <div class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <div
+    class="contact-backdrop fixed inset-0 z-50 bg-black/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+  </div>
 
   <!-- Contact Drawer Panel -->
-  <aside class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-[#0d1424] w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" style="font-family: var(--font-display)" aria-hidden="true">
+  <aside
+    class="contact-panel fixed right-0 top-0 bottom-0 z-[60] bg-[#0d1424] w-full max-w-xl flex flex-col translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+    style="font-family: var(--font-display)" aria-hidden="true">
     <!-- Header -->
     <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-[--color-border]">
       <div>
@@ -493,7 +689,9 @@
         </p>
         <h2 class="text-2xl font-bold text-white uppercase">GET IN TOUCH</h2>
       </div>
-      <button class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors" aria-label="Close">
+      <button
+        class="contact-close w-10 h-10 flex items-center justify-center text-[--color-ink-muted] hover:text-[--color-ink] border border-[--color-border] hover:border-[--color-ink] transition-colors"
+        aria-label="Close">
         ✕
       </button>
     </div>
@@ -501,14 +699,14 @@
     <!-- Body / Form -->
     <div class="flex-1 overflow-y-auto px-8 py-8">
       <div id="contact-success-state" class="hidden flex flex-col items-center justify-center h-full gap-4 text-center">
-        <div class="w-16 h-16 bg-[--color-blue-dim] flex items-center justify-center text-[--color-blue] text-2xl">
+        <div class="w-16 h-16 bg-[#a855f7]/10 flex items-center justify-center text-[#a855f7] text-2xl">
           ✓
         </div>
         <p class="text-xl font-bold">Message received.</p>
         <p class="text-sm text-[--color-ink-muted] max-w-xs">
           We'll get back to you within 48 hours. Thanks for reaching out to ACM-VNIT.
         </p>
-        <button class="contact-close mt-4 text-xs uppercase tracking-widest text-[--color-blue] font-medium hover:underline">
+        <button class="contact-close mt-4 text-xs uppercase tracking-widest text-[#a855f7] font-medium hover:underline">
           Close panel
         </button>
       </div>
@@ -516,22 +714,31 @@
       <div id="contact-form-state">
         <form class="contact-form flex flex-col gap-5 mb-10">
           <div>
-            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
-            <input type="text" required placeholder="Your full name" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+            <label
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Name</label>
+            <input type="text" required placeholder="Your full name"
+              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[#a855f7] transition-colors bg-transparent">
           </div>
           <div>
-            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
-            <input type="email" required placeholder="you@example.com" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+            <label
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</label>
+            <input type="email" required placeholder="you@example.com"
+              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[#a855f7] transition-colors bg-transparent">
           </div>
           <div>
-            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
-            <input type="text" required placeholder="What's this about?" class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent">
+            <label
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Subject</label>
+            <input type="text" required placeholder="What's this about?"
+              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[#a855f7] transition-colors bg-transparent">
           </div>
           <div>
-            <label class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
-            <textarea required rows="5" placeholder="Your message..." class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[--color-blue] transition-colors bg-transparent resize-none"></textarea>
+            <label
+              class="block text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Message</label>
+            <textarea required rows="5" placeholder="Your message..."
+              class="w-full border border-[--color-border] px-4 py-3 text-sm text-[--color-ink] placeholder:text-[--color-ink-muted] focus:outline-none focus:border-[#a855f7] transition-colors bg-transparent resize-none"></textarea>
           </div>
-          <button type="submit" class="bg-[--color-blue] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[--color-blue-light] transition-colors">
+          <button type="submit"
+            class="bg-[#a855f7] text-white px-6 py-3.5 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-colors">
             Send Message →
           </button>
         </form>
@@ -540,15 +747,21 @@
         <div class="border-t border-[--color-border] pt-8 flex flex-col gap-6">
           <div>
             <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-2">Email</p>
-            <a href="mailto:acm@vnit.ac.in" class="text-sm font-medium text-[--color-ink] hover:text-[--color-blue] transition-colors">acm@vnit.ac.in</a>
+            <a href="mailto:acm@vnit.ac.in"
+              class="text-sm font-medium text-[--color-ink] hover:text-[#a855f7] transition-colors">acm@vnit.ac.in</a>
           </div>
           <div>
-            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online</p>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">Find us online
+            </p>
             <div class="flex flex-wrap gap-3">
-              <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">LinkedIn</a>
-              <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">GitHub</a>
-              <a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Instagram</a>
-              <a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[--color-blue] hover:text-[--color-blue] transition-colors">Twitter/X</a>
+              <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer"
+                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">LinkedIn</a>
+              <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer"
+                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">GitHub</a>
+              <a href="https://instagram.com/acmvnit" target="_blank" rel="noopener noreferrer"
+                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">Instagram</a>
+              <a href="https://twitter.com/acmvnit" target="_blank" rel="noopener noreferrer"
+                class="text-xs font-medium text-[--color-ink] border border-[--color-border] px-3 py-1.5 hover:border-[#a855f7] hover:text-[#a855f7] transition-colors">Twitter/X</a>
             </div>
           </div>
           <div>
@@ -564,4 +777,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
