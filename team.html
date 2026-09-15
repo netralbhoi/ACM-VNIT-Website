@@ -12,15 +12,14 @@
 <body class="bg-[#080d1a] text-[--color-ink]">
   <!-- Header -->
   <header id="site-header" style="font-family: var(--font-display)"
-    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-[#1e293b]">
+    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/90 backdrop-blur-md border-b border-[#1e293b]">
     <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[#a855f7] transition-colors">
-        <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
+      <a href="index.html" class="flex items-center gap-3 text-white hover:text-[#a855f7] transition-colors">
+        <img src="acm-logo.png" alt="ACM Logo" class="w-8 h-8">
         <div class="flex flex-col text-left">
-          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight text-white">Association for Computing
             Machinery</span>
-          <span
-            class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT
+          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-slate-400">VNIT
             Student Chapter</span>
         </div>
       </a>
@@ -28,33 +27,33 @@
       <!-- Desktop Links -->
       <div class="hidden lg:flex items-center gap-8">
         <a href="index.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Home</a>
         <a href="about.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
-        <a href="domains.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">About</a>
         <a href="impact.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Impact</a>
+        <a href="domains.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Domains</a>
         <a href="events.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Events</a>
         <a href="projects.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Projects</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Projects</a>
         <a href="team.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[#a855f7]">Team</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[#a855f7] font-bold">Team</a>
       </div>
 
       <div class="hidden lg:flex items-center gap-4">
         <button
-          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[#a855f7] border border-[#a855f7] px-4 py-2 hover:bg-[#a855f7] hover:text-white transition-colors duration-200">
+          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[#a855f7] border border-[#a855f7] px-4 py-2 hover:bg-[#a855f7] hover:text-white transition-colors duration-200 rounded-lg shadow-sm shadow-[#a855f7]/20">
           Contact →
         </button>
       </div>
 
       <!-- Hamburger Menu Button -->
       <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300 origin-center"></span>
       </button>
     </nav>
   </header>
@@ -63,18 +62,13 @@
   <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none"
     style="font-family: var(--font-display)">
     <div class="flex flex-col justify-center h-full px-8 gap-8">
-      <a href="index.html" class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Home</a>
-      <a href="about.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">About</a>
-      <a href="domains.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Domains</a>
-      <a href="impact.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Impact</a>
-      <a href="events.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Events</a>
-      <a href="projects.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Projects</a>
-      <a href="team.html" class="text-4xl font-bold text-[#a855f7] transition-colors">Team</a>
+      <a href="index.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Home</a>
+      <a href="about.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">About</a>
+      <a href="impact.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Impact</a>
+      <a href="domains.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Domains</a>
+      <a href="events.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Events</a>
+      <a href="projects.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Projects</a>
+      <a href="team.html" class="text-4xl font-bold text-[#a855f7]">Team</a>
       <button class="contact-trigger text-4xl font-bold text-[#a855f7] hover:opacity-70 transition-opacity text-left">
         Contact →
       </button>
@@ -86,24 +80,34 @@
     <section id="hero-section"
       class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
       style="font-family: var(--font-display)">
+      <!-- Team Group Photo Background -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('images/team-bg.jpg'); background-attachment: scroll; background-size: cover; background-position: center 65%; opacity: 0.60;">
+      </div>
+      <!-- Left-to-right dark overlay for text legibility -->
+      <div
+        class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/88 via-[#080d1a]/55 to-[#080d1a]/25">
+      </div>
+      <!-- Subtle bottom fade for button bar readability -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background: linear-gradient(to bottom, transparent 72%, rgba(8,13,26,0.82) 100%);"></div>
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
-        style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
+        style="background-image: linear-gradient(rgba(56,189,248,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(168,85,247,0.08) 1px, transparent 1px); background-size: 80px 80px;">
       </div>
 
       <!-- Coordinates & Meta Badges -->
       <div class="absolute top-24 right-12 hidden lg:block text-right z-20">
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">21°8′N 79°4′E</p>
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.15em]">NAGPUR, INDIA</p>
+        <p class="text-[10px] font-mono text-slate-400 tracking-[0.15em]">21°8′N 79°4′E</p>
+        <p class="text-[10px] font-mono text-slate-400 tracking-[0.15em]">NAGPUR, INDIA</p>
       </div>
       <div class="absolute top-24 left-6 lg:left-12 z-20">
-        <p class="text-[10px] font-mono text-[--color-ink-muted] tracking-[0.2em] uppercase">06 / Team</p>
-        <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[#a855f7]">Chapter Leadership</p>
+        <p class="text-[10px] font-mono text-slate-400 tracking-[0.2em] uppercase">06 / Team</p>
       </div>
 
       <!-- Main content container -->
-      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-center">
-        <div class="max-w-4xl w-full mt-8 lg:mt-0">
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-20 flex-grow flex items-start pt-6">
+        <div class="max-w-4xl w-full">
           <div class="flex flex-col justify-center text-left">
             <div class="mb-4 flex items-center gap-2.5">
               <span
@@ -141,22 +145,22 @@
       </div>
 
       <!-- Bottom Action Bar -->
-      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 bot-bar">
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-20 bot-bar">
         <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-6 animate-fade-up"
-          style="animation-delay: 0.3s;">
-          <div class="pt-6 border-t border-[--color-border] flex flex-wrap gap-8 lg:gap-16">
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Leadership</span>
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Architects</span>
-            <span class="text-xs font-mono tracking-[0.25em] uppercase text-[--color-ink-muted]">Community</span>
+          style="animation-delay: 0.5s;">
+          <div class="pt-6 border-t border-[#1e293b] flex flex-wrap gap-8 lg:gap-16">
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-slate-400">Leadership</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-slate-400">Architects</span>
+            <span class="text-xs font-mono tracking-[0.25em] uppercase text-slate-400">Community</span>
           </div>
 
           <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
             <a href="#exec-board"
-              class="inline-block bg-[#a855f7] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-200 shadow-lg shadow-[#a855f7]/20 hover:shadow-xl hover:shadow-[#a855f7]/40">
+              class="inline-block bg-[#a855f7] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-all duration-200 shadow-lg shadow-[#a855f7]/25 hover:shadow-xl hover:shadow-[#a855f7]/40 rounded-lg border border-[#a855f7]/40">
               Meet the Team ↓
             </a>
             <button
-              class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              class="contact-trigger inline-block border-2 border-[#a855f7] text-[#a855f7] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#a855f7] hover:text-white transition-all duration-200 shadow-lg shadow-[#a855f7]/20 rounded-lg">
               Get in Touch
             </button>
           </div>
@@ -225,7 +229,7 @@
                   padding: 0;
                   -webkit-text-fill-color: #ffffff;
                 ">
-                  ANKUR KUMAR
+                  DEVENDRA KHATKE
                 </p>
                 <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
                   President of ACM-VNIT, leading chapter initiatives, managing cross-functional technical domains, and
@@ -527,7 +531,7 @@
           </p>
         </div>
         <a href="mailto:acm@vnit.ac.in"
-          class="shrink-0 bg-[#a855f7] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-colors">
+          class="shrink-0 bg-[#a855f7] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#9333ea] transition-colors rounded-lg border border-[#a855f7]/40 shadow-lg shadow-[#a855f7]/25 hover:shadow-xl hover:shadow-[#a855f7]/40">
           Express interest →
         </a>
       </div>

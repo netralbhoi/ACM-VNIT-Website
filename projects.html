@@ -12,15 +12,14 @@
 <body class="bg-[#080d1a] text-[--color-ink]">
   <!-- Header -->
   <header id="site-header" style="font-family: var(--font-display)"
-    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-[#1e293b]">
+    class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/90 backdrop-blur-md border-b border-[#1e293b]">
     <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 text-[--color-ink] hover:text-[#a855f7] transition-colors">
-        <img src="acm-logo.svg" alt="ACM Logo" class="w-8 h-8">
+      <a href="index.html" class="flex items-center gap-3 text-white hover:text-[#a855f7] transition-colors">
+        <img src="acm-logo.png" alt="ACM Logo" class="w-8 h-8">
         <div class="flex flex-col text-left">
-          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight">Association for Computing
+          <span class="text-xs font-bold tracking-[0.02em] uppercase leading-tight text-white">Association for Computing
             Machinery</span>
-          <span
-            class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-[--color-ink-muted]">VNIT
+          <span class="text-[10px] font-semibold tracking-[0.04em] uppercase leading-tight text-slate-400">VNIT
             Student Chapter</span>
         </div>
       </a>
@@ -28,33 +27,33 @@
       <!-- Desktop Links -->
       <div class="hidden lg:flex items-center gap-8">
         <a href="index.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Home</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Home</a>
         <a href="about.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">About</a>
-        <a href="domains.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Domains</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">About</a>
         <a href="impact.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Impact</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Impact</a>
+        <a href="domains.html"
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Domains</a>
         <a href="events.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Events</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Events</a>
         <a href="projects.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[#a855f7]">Projects</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[#a855f7] font-bold">Projects</a>
         <a href="team.html"
-          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-[--color-ink-muted] hover:text-[--color-ink]">Team</a>
+          class="text-xs font-medium tracking-[0.1em] uppercase transition-colors text-slate-400 hover:text-white">Team</a>
       </div>
 
       <div class="hidden lg:flex items-center gap-4">
         <button
-          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[#a855f7] border border-[#a855f7] px-4 py-2 hover:bg-[#a855f7] hover:text-white transition-colors duration-200">
+          class="contact-trigger text-xs font-semibold tracking-[0.12em] uppercase text-[#a855f7] border border-[#a855f7] px-4 py-2 hover:bg-[#a855f7] hover:text-white transition-colors duration-200 rounded-lg shadow-sm shadow-[#a855f7]/20">
           Contact →
         </button>
       </div>
 
       <!-- Hamburger Menu Button -->
       <button class="mobile-menu-button lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300"></span>
-        <span class="hamburger-line block w-6 h-px bg-[--color-ink] transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300 origin-center"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-px bg-slate-200 transition-all duration-300 origin-center"></span>
       </button>
     </nav>
   </header>
@@ -63,17 +62,13 @@
   <div class="mobile-menu fixed inset-0 z-40 bg-[#080d1a] transition-all duration-500 opacity-0 pointer-events-none"
     style="font-family: var(--font-display)">
     <div class="flex flex-col justify-center h-full px-8 gap-8">
-      <a href="index.html" class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Home</a>
-      <a href="about.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">About</a>
-      <a href="domains.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Domains</a>
-      <a href="impact.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Impact</a>
-      <a href="events.html"
-        class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Events</a>
-      <a href="projects.html" class="text-4xl font-bold text-[#a855f7] transition-colors">Projects</a>
-      <a href="team.html" class="text-4xl font-bold text-[--color-ink] hover:text-[#a855f7] transition-colors">Team</a>
+      <a href="index.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Home</a>
+      <a href="about.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">About</a>
+      <a href="domains.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Domains</a>
+      <a href="impact.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Impact</a>
+      <a href="events.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Events</a>
+      <a href="projects.html" class="text-4xl font-bold text-[#a855f7]">Projects</a>
+      <a href="team.html" class="text-4xl font-bold text-slate-300 hover:text-white transition-colors">Team</a>
       <button class="contact-trigger text-4xl font-bold text-[#a855f7] hover:opacity-70 transition-opacity text-left">
         Contact →
       </button>
