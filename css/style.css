@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Sora:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --font-display: 'Sora', sans-serif;
   --font-body: 'Sora', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --font-serif: 'Newsreader', serif;
+  --font-mono: 'Outfit', sans-serif;
+  --font-serif: 'Manrope', sans-serif;
 
   --color-ink: #f8fafc;
   --color-ink-soft: #cbd5e1;
   --color-ink-muted: #94a3b8;
-  --color-blue: #a855f7;
-  --color-blue-light: #9333ea;
-  --color-blue-dim: rgba(168, 85, 247, 0.15);
-  --color-purple: #a855f7;
-  --color-purple-light: #c084fc;
-  --color-purple-dim: rgba(168, 85, 247, 0.2);
-  --color-accent: #a855f7;
-  --color-accent-light: #c084fc;
+  --color-blue: #0ea5e9;
+  --color-blue-light: #7dd3fc;
+  --color-blue-dim: rgba(14, 165, 233, 0.15);
+  --color-purple: #0ea5e9;
+  --color-purple-light: #7dd3fc;
+  --color-purple-dim: rgba(14, 165, 233, 0.2);
+  --color-accent: #0ea5e9;
+  --color-accent-light: #7dd3fc;
   --color-cyan: #38bdf8;
-  --color-indigo: #818cf8;
-  --color-purple: #c084fc;
+  --color-indigo: #38bdf8;
+  --color-purple: #0ea5e9;
   --color-emerald: #34d399;
   --color-amber: #fbbf24;
   --color-rose: #fb7185;
@@ -43,7 +43,7 @@
 .tracking-\[0\.25em\],
 .tracking-\[0\.15em\],
 .tracking-widest {
-  letter-spacing: 0.08em !important;
+  letter-spacing: normal !important;
   font-family: var(--font-mono) !important;
 }
 
@@ -55,8 +55,8 @@
 
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -0.025em;
-  word-spacing: 0.15em;
+  letter-spacing: normal;
+  word-spacing: normal;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
   font-variant: normal !important;
@@ -91,7 +91,7 @@ h2.font-black,
 .font-black.leading-tight,
 h2.leading-tight {
   line-height: 1.15 !important;
-  letter-spacing: -0.025em !important;
+  letter-spacing: normal !important;
   word-spacing: 0.15em !important;
 }
 
@@ -432,7 +432,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
