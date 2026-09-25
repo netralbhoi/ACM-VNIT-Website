@@ -90,7 +90,8 @@
       </div>
       <!-- Top + bottom fade for seamless blending into dark background -->
       <div class="absolute inset-0 pointer-events-none z-0"
-        style="background: linear-gradient(to bottom, rgba(8,13,26,0.85) 0%, transparent 22%, transparent 72%, rgba(8,13,26,0.90) 100%);"></div>
+        style="background: linear-gradient(to bottom, rgba(8,13,26,0.85) 0%, transparent 22%, transparent 72%, rgba(8,13,26,0.90) 100%);">
+      </div>
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
         style="background-image: linear-gradient(rgba(56,189,248,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.08) 1px, transparent 1px); background-size: 80px 80px;">
@@ -170,372 +171,1004 @@
 
     <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
     <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
-      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
+      <div class="flex gap-16 whitespace-nowrap shrink-0 min-w-max" style="animation: marquee 22s linear infinite;">
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">EXECUTIVE BOARD ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOMAIN HEADS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PROJECT LEADS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">STUDENT MENTORS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMMUNITY ARCHITECTS
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">WEB DEVELOPMENT ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMPETITIVE PROGRAMMING
           ·</span>
-        <!-- Loop repeat -->
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">AI & MACHINE LEARNING
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">THE DIGITAL VOICE ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">EXECUTIVE BOARD ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOMAIN HEADS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PROJECT LEADS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">STUDENT MENTORS ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMMUNITY ARCHITECTS
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">WEB DEVELOPMENT ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMPETITIVE PROGRAMMING
           ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">AI & MACHINE LEARNING
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">THE DIGITAL VOICE ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">EXECUTIVE BOARD ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">WEB DEVELOPMENT ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">COMPETITIVE PROGRAMMING
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">AI & MACHINE LEARNING
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">THE DIGITAL VOICE ·</span>
       </div>
     </div>
 
-    <!-- EXECUTIVE BOARD -->
-    <section id="exec-board" class="border-t border-[--color-border] py-10 bg-[--color-ground-alt]"
-      style="font-family: var(--font-display)">
+    <!-- ═══════════════════════════════════════════ INTERACTIVE TEAM SHOWCASE -->
+    <section id="team-showcase" class="py-16 lg:py-24 bg-[#080d1a] relative" style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="reveal">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-16">
-            EXECUTIVE BOARD
-          </p>
+
+        <!-- Header & Category Filter Controls -->
+        <div class="reveal mb-12 flex flex-col gap-6">
+          <div>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#0ea5e9] bg-[#0ea5e9]/10 border border-[#0ea5e9]/30 uppercase mb-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] animate-pulse"></span>
+              THE BRAINS BEHIND THE CODE
+            </span>
+            <p class="whitespace-nowrap" style="
+              font-size: clamp(2.1rem, 4.8vw, 3.4rem);
+              line-height: 1.15;
+              letter-spacing: normal;
+              word-spacing: normal;
+              font-weight: 800;
+              color: #ffffff;
+              font-family: 'Manrope', sans-serif;
+              text-transform: uppercase;
+              margin: 0;
+              padding: 0;
+              -webkit-text-fill-color: #ffffff;
+            ">
+              MEET OUR TEAM.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs (Single line below heading) -->
+          <div class="w-full overflow-x-auto pb-2 scrollbar-none">
+            <div
+              class="inline-flex flex-nowrap gap-2 bg-[#0d1424] p-2 rounded-2xl border border-slate-800 shrink-0 min-w-max">
+              <button
+                class="team-tab-btn active px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-all bg-[#0ea5e9] text-white shadow-md shadow-[#0ea5e9]/20 shrink-0 whitespace-nowrap"
+                data-filter="all">
+                All <span class="ml-1 opacity-70">(15)</span>
+              </button>
+              <button
+                class="team-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 shrink-0 whitespace-nowrap"
+                data-filter="exec">
+                Executive Board
+              </button>
+              <button
+                class="team-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 shrink-0 whitespace-nowrap"
+                data-filter="web">
+                Web Development
+              </button>
+              <button
+                class="team-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 shrink-0 whitespace-nowrap"
+                data-filter="cp">
+                Competitive Programming
+              </button>
+              <button
+                class="team-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 shrink-0 whitespace-nowrap"
+                data-filter="aiml">
+                AI & Machine Learning
+              </button>
+              <button
+                class="team-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-slate-800/60 shrink-0 whitespace-nowrap"
+                data-filter="media">
+                The Digital Voice
+              </button>
+            </div>
+          </div>
         </div>
 
-        <div class="flex flex-col gap-0">
+        <!-- Interactive Person Cards Grid -->
+        <div id="team-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <!-- Member 1: Ankur Kumar (Even) -->
-          <div class="reveal">
+          <!-- 01: DEVENDRA KHATKE -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#0ea5e9] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="exec">
+            <!-- Top Gradient Accent Line -->
             <div
-              class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
-              <!-- Photo -->
-              <div class="lg:col-span-4 lg:col-start-1 overflow-hidden">
-                <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
-                  <img src="images/team-cards/Ankur Kumar.png" alt="Ankur Kumar"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                  <div
-                    class="absolute inset-0 bg-[#0ea5e9]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                  </div>
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <!-- Top Right Gradient Glow Only -->
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <!-- Boxy Photo Container -->
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#0ea5e9]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Devendra.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'"
+                  alt="Devendra Khatke"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#0ea5e9] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  01 · CHAPTER LEAD
                 </div>
               </div>
-              <!-- Info -->
-              <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-6">
-                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">President</p>
-                <p style="
-                  font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                  line-height: 1.15;
-                  letter-spacing: normal;
-                  word-spacing: normal;
-                  font-weight: 800;
-                  color: #ffffff;
-                  font-family: 'Manrope', sans-serif;
-                  text-transform: uppercase;
-                  margin: 0;
-                  padding: 0;
-                  -webkit-text-fill-color: #ffffff;
-                ">
-                  DEVENDRA KHATKE
+
+              <!-- Name & Role -->
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#0ea5e9] transition-colors mb-2">
+                  DEVENDRA KHATKE</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 text-[#0ea5e9] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// PRESIDENT ///
+                </span>
+              </div>
+
+              <!-- Boxy Quote Box -->
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#0ea5e9] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Leading with vision, building with purpose. ”
                 </p>
-                <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
-                  President of ACM-VNIT, leading chapter initiatives, managing cross-functional technical domains, and
-                  driving campus development initiatives. Visvesvaraya National Institute of Technology.
-                </p>
-                <div class="flex gap-4">
-                  <a href="https://linkedin.com/company/acm-vnit" target="_blank" rel="noopener noreferrer"
-                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#0ea5e9] hover:text-[#0ea5e9] transition-colors">LinkedIn</a>
-                  <a href="https://github.com/acm-vnit" target="_blank" rel="noopener noreferrer"
-                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#0ea5e9] hover:text-[#0ea5e9] transition-colors">GitHub</a>
-                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/devendra-khatke-812a74319/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
               </div>
             </div>
           </div>
 
-          <!-- Member 2: Chinmay Sabharwal (Odd) -->
-          <div class="reveal" style="transition-delay: 0.1s;">
+          <!-- 02: CHINMAY SABHARWAL -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#0ea5e9] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="exec">
             <div
-              class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
-              <!-- Photo (Placed second on desktop, first on mobile, using row-start configuration) -->
-              <div class="lg:col-span-4 lg:col-start-9 overflow-hidden">
-                <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
-                  <img src="images/team-cards/Chinmay.png" alt="Chinmay Sabharwal"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                  <div
-                    class="absolute inset-0 bg-[#0ea5e9]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                  </div>
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#0ea5e9]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Chinmay.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80'"
+                  alt="Chinmay Sabharwal"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#0ea5e9] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  02 · CHAPTER LEAD
                 </div>
               </div>
-              <!-- Info -->
-              <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-1 lg:row-start-1">
-                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">Vice President</p>
-                <p style="
-                  font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                  line-height: 1.15;
-                  letter-spacing: normal;
-                  word-spacing: normal;
-                  font-weight: 800;
-                  color: #ffffff;
-                  font-family: 'Manrope', sans-serif;
-                  text-transform: uppercase;
-                  margin: 0;
-                  padding: 0;
-                  -webkit-text-fill-color: #ffffff;
-                ">
-                  CHINMAY SABHARWAL
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#0ea5e9] transition-colors mb-2">
+                  CHINMAY SABHARWAL</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 text-[#0ea5e9] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// VICE PRESIDENT ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#0ea5e9] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Engineering the impossible into reality ”
                 </p>
-                <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
-                  "Engineering the impossible into reality." Coordinating event execution, chapter operations, and
-                  managing resources for technical sessions.
-                </p>
-                <div class="flex gap-4">
-                  <a href="https://www.linkedin.com/in/chinmay-sabharwal-b29980313" target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#0ea5e9] hover:text-[#0ea5e9] transition-colors">LinkedIn</a>
-                  <a href="mailto:chinmaysabharwal123@gmail.com"
-                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#0ea5e9] hover:text-[#0ea5e9] transition-colors">Email</a>
-                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/chinmay-sabharwal-b29980313/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:chinmaysabharwal123@gmail.com"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
               </div>
             </div>
           </div>
 
-          <!-- Member 3: Manjeet Singh (Even) -->
-          <div class="reveal" style="transition-delay: 0.2s;">
+          <!-- 03: ANSHUL JAIN -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#34d399] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="web">
             <div
-              class="grid lg:grid-cols-12 gap-0 border-b border-[--color-border] group transition-colors hover:bg-[--color-ground]">
-              <!-- Photo -->
-              <div class="lg:col-span-4 lg:col-start-1 overflow-hidden">
-                <div class="relative aspect-[3/4] bg-[--color-ground-subtle] overflow-hidden">
-                  <img src="images/team-cards/Manjeet.png" alt="Manjeet Singh"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                  <div
-                    class="absolute inset-0 bg-[#0ea5e9]/10 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                  </div>
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#34d399] via-[#6ee7b7] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#34d399]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#34d399]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#34d399]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Anshul.png" alt="Anshul Jain"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#34d399] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  03 · WEB DEV TRACK
                 </div>
               </div>
-              <!-- Info -->
-              <div class="lg:col-span-7 flex flex-col justify-center p-4 lg:p-7 lg:col-start-6">
-                <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">Senior Advisor</p>
-                <p style="
-                  font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                  line-height: 1.15;
-                  letter-spacing: normal;
-                  word-spacing: normal;
-                  font-weight: 800;
-                  color: #ffffff;
-                  font-family: 'Manrope', sans-serif;
-                  text-transform: uppercase;
-                  margin: 0;
-                  padding: 0;
-                  -webkit-text-fill-color: #ffffff;
-                ">
-                  MANJEET SINGH
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#34d399] transition-colors mb-2">
+                  ANSHUL JAIN</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#34d399]/15 border border-[#34d399]/40 text-[#34d399] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// WEB LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#34d399] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Freelance developer. Full-time obsessed with clean code ”
                 </p>
-                <p class="text-base text-[--color-ink-soft] leading-relaxed mb-8 max-w-md">
-                  "If you can't code without AI, you shouldn't use it." Mentoring the competitive programming track, and
-                  guiding the chapter in algorithmic and technical strategy.
-                </p>
-                <div class="flex gap-4">
-                  <a href="https://www.linkedin.com/in/manjeetvnit/" target="_blank" rel="noopener noreferrer"
-                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#0ea5e9] hover:text-[#0ea5e9] transition-colors">LinkedIn</a>
-                  <a href="mailto:manjeetsinghmmiv@gmail.com"
-                    class="text-xs font-mono uppercase tracking-[0.12em] text-[--color-ink-muted] border border-[--color-border] px-3 py-1.5 hover:border-[#0ea5e9] hover:text-[#0ea5e9] transition-colors">Email</a>
-                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/anshul-jain-8634b8324/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#34d399] hover:bg-[#34d399]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
+          <!-- 04: SANVI Y. -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#34d399] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="web">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#34d399] via-[#6ee7b7] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#34d399]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#34d399]/25 transition-all duration-500">
+            </div>
 
-    <!-- CORE TEAM -->
-    <section class="border-t border-[--color-border] py-10 bg-[--color-ground]"
-      style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="reveal">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-16">
-            Core Team
-          </p>
-        </div>
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#34d399]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Sanvi.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'"
+                  alt="Sanvi Y."
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#34d399] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  04 · WEB DEV TRACK
+                </div>
+              </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border border-[--color-border]">
-          <!-- Core Member 1: Sanvi Y -->
-          <div class="reveal border-b lg:border-r border-[--color-border] overflow-hidden group">
-            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Sanvi.png" alt="Sanvi Y"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div class="absolute bottom-0 left-0 p-6">
-                <p class="text-white font-black text-xl leading-tight">Sanvi Y</p>
-                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Web Lead</p>
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#34d399] transition-colors mb-2">
+                  SANVI Y.</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#34d399]/15 border border-[#34d399]/40 text-[#34d399] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// WEB LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#34d399] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Passionate about building and learning. ”
+                </p>
               </div>
             </div>
-            <div class="p-6">
-              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Passionate about building and learning." Leading frontend design systems and collaborative code
-                projects for the chapter.
-              </p>
-              <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/sanvi-yanagandula-b054a5296/" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">LinkedIn
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/sanvi-yanagandula-b054a5296/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#34d399] hover:bg-[#34d399]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
                   ↗</a>
                 <a href="mailto:yanagsanvi@gmail.com"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">Email
-                  ↗</a>
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#34d399] hover:bg-[#34d399]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
               </div>
             </div>
           </div>
 
-          <!-- Core Member 2: Prince Kumar -->
-          <div class="reveal border-b lg:border-r border-[--color-border] overflow-hidden group"
-            style="transition-delay: 0.05s;">
-            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Prince.png" alt="Prince Kumar"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div class="absolute bottom-0 left-0 p-6">
-                <p class="text-white font-black text-xl leading-tight">Prince Kumar</p>
-                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">AI/ML Lead</p>
+          <!-- 05: MANSI GATTANI -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#34d399] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="web">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#34d399] via-[#6ee7b7] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#34d399]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#34d399]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#34d399]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Mansi.png" alt="Mansi Gattani"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#34d399] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  05 · WEB DEV TRACK
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#34d399] transition-colors mb-2">
+                  MANSI GATTANI</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#34d399]/15 border border-[#34d399]/40 text-[#34d399] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// WEB LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#34d399] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Architecting the digital frontier ”
+                </p>
               </div>
             </div>
-            <div class="p-6">
-              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "The purpose of AI is to amplify human ingenuity, not replace it." Coordinating model training sessions
-                and RAG system architectures.
-              </p>
-              <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/prince-kumar-364252332" target="_blank" rel="noopener noreferrer"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">LinkedIn
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/mansi-gattani27/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#34d399] hover:bg-[#34d399]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:mansigattani27@gmail.com"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#34d399] hover:bg-[#34d399]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06: AADITYA GOYAL -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#fbbf24] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="cp">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#fbbf24] via-[#fde047] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#fbbf24]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#fbbf24]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#fbbf24]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Aaditya.png" alt="Aaditya Goyal"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#fbbf24] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  06 · CP TRACK
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#fbbf24] transition-colors mb-2">
+                  AADITYA GOYAL</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fbbf24]/15 border border-[#fbbf24]/40 text-[#fbbf24] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// CP LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#fbbf24] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Stay curious. Keep solving ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/aaditya-goyal-ab54b5329/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fbbf24] hover:bg-[#fbbf24]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:aadityapgoyal@gmail.com"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fbbf24] hover:bg-[#fbbf24]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 07: DIVYANSH CHAURASIA -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#fbbf24] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="cp">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#fbbf24] via-[#fde047] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#fbbf24]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#fbbf24]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#fbbf24]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Divyansh.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=80'"
+                  alt="Divyansh Chaurasia"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#fbbf24] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  07 · CP TRACK
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#fbbf24] transition-colors mb-2">
+                  DIVYANSH CHAURASIA</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fbbf24]/15 border border-[#fbbf24]/40 text-[#fbbf24] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// CP LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#fbbf24] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Making memories until life throws an MLE ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/divyansh006/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fbbf24] hover:bg-[#fbbf24]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:chaurasiadivyansh006@gmail.com"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fbbf24] hover:bg-[#fbbf24]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08: PRINCE KUMAR -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#a78bfa] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="aiml">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#a78bfa] via-[#c4b5fd] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#a78bfa]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#a78bfa]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#a78bfa]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Prince.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=80'"
+                  alt="Prince Kumar"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#a78bfa] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  08 · AI/ML TRACK
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#a78bfa] transition-colors mb-2">
+                  PRINCE KUMAR</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#a78bfa]/15 border border-[#a78bfa]/40 text-[#a78bfa] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// AI/ML LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#a78bfa] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ The purpose of AI is to amplify human ingenuity, not replace it. ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/prince-kumar-364252332/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#a78bfa] hover:bg-[#a78bfa]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
                   ↗</a>
                 <a href="mailto:prince307339@gmail.com"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">Email
-                  ↗</a>
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#a78bfa] hover:bg-[#a78bfa]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
               </div>
             </div>
           </div>
 
-          <!-- Core Member 3: Ayush Vairagade -->
-          <div class="reveal border-b border-[--color-border] overflow-hidden group" style="transition-delay: 0.1s;">
-            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Ayush.png" alt="Ayush Vairagade"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div class="absolute bottom-0 left-0 p-6">
-                <p class="text-white font-black text-xl leading-tight">Ayush Vairagade</p>
-                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">AI/ML Lead</p>
+          <!-- 09: AYUSH VAIRAGADE -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#a78bfa] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="aiml">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#a78bfa] via-[#c4b5fd] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#a78bfa]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#a78bfa]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#a78bfa]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Ayush.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=80'"
+                  alt="Ayush Vairagade"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#a78bfa] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  09 · AI/ML TRACK
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#a78bfa] transition-colors mb-2">
+                  AYUSH VAIRAGADE</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#a78bfa]/15 border border-[#a78bfa]/40 text-[#a78bfa] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// AI/ML LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#a78bfa] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Creating technology that thinks, with people at its core ”
+                </p>
               </div>
             </div>
-            <div class="p-6">
-              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Creating technology that thinks, with people at its core." Facilitating computer vision coding sprints
-                and ML workshops.
-              </p>
-              <div class="flex gap-3">
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
                 <a href="https://www.linkedin.com/in/ayush-vivekanand-vairagade-8626022bb" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">LinkedIn
+                  rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#a78bfa] hover:bg-[#a78bfa]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
                   ↗</a>
                 <a href="mailto:vairagadeayush01@gmail.com"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">Email
-                  ↗</a>
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#a78bfa] hover:bg-[#a78bfa]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
               </div>
             </div>
           </div>
 
-          <!-- Core Member 4: Divyansh Chaurasia -->
-          <div class="reveal border-b md:border-b-0 lg:border-r border-[--color-border] overflow-hidden group"
-            style="transition-delay: 0.15s;">
-            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Divyansh.png" alt="Divyansh Chaurasia"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div class="absolute bottom-0 left-0 p-6">
-                <p class="text-white font-black text-xl leading-tight">Divyansh Chaurasia</p>
-                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">CP Lead</p>
+          <!-- 10: MANJEET SINGH -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#0ea5e9] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="exec">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#0ea5e9]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Manjeet.jpeg"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80'"
+                  alt="Manjeet Singh"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#0ea5e9] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  10 · ADVISORY
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#0ea5e9] transition-colors mb-2">
+                  MANJEET SINGH</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 text-[#0ea5e9] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// SENIOR ADVISOR ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#0ea5e9] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ If you can't code without AI, you shouldn't use it. ”
+                </p>
               </div>
             </div>
-            <div class="p-6">
-              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Making memories until life throws an MLE." Coordinating regular contests, editorial sessions, and ICPC
-                regional preparation.
-              </p>
-              <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/divyansh006chaurasia" target="_blank" rel="noopener noreferrer"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">LinkedIn
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/manjeetvnit/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
                   ↗</a>
-                <a href="mailto:divyansh006@gmail.com"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">Email
-                  ↗</a>
+                <a href="mailto:manjeetsinghmmiv@gmail.com"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
               </div>
             </div>
           </div>
 
-          <!-- Core Member 5: Vishvesh Singh -->
-          <div class="reveal md:border-r lg:border-r-0 border-[--color-border] overflow-hidden group"
-            style="transition-delay: 0.2s;">
-            <div class="relative overflow-hidden aspect-[4/3] bg-[--color-ground-subtle]">
-              <img src="images/team-cards/Vishvesh.png" alt="Vishvesh Singh"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div class="absolute bottom-0 left-0 p-6">
-                <p class="text-white font-black text-xl leading-tight">Vishvesh Singh</p>
-                <p class="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Treasurer</p>
+          <!-- 11: ROHIT SINGH NARUKA -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#0ea5e9] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="exec">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#0ea5e9]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Rohit.jpg"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80'"
+                  alt="Rohit Singh Naruka"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#0ea5e9] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  11 · ADVISORY
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#0ea5e9] transition-colors mb-2">
+                  ROHIT SINGH NARUKA</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 text-[#0ea5e9] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// SENIOR ADVISOR ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#0ea5e9] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Guiding innovation through leadership and technical excellence. ”
+                </p>
               </div>
             </div>
-            <div class="p-6">
-              <p class="text-sm text-[--color-ink-muted] leading-relaxed mb-4">
-                "Driven by curiosity, powered by logic, and inspired by innovation." Managing the chapter budget,
-                sponsor relations, and event finances.
-              </p>
-              <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/vishvesh-singh-16909233a" target="_blank" rel="noopener noreferrer"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">LinkedIn
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+                <a href="mailto:rohitnaruka6852@gmail.com"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12: VISHVESH SINGH -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#0ea5e9] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="exec">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#0ea5e9]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Vishvesh.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=80'"
+                  alt="Vishvesh Singh"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#0ea5e9] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  12 · FINANCE
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#0ea5e9] transition-colors mb-2">
+                  VISHVESH SINGH</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 text-[#0ea5e9] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// TREASURER ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#0ea5e9] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Driven by curiosity, powered by logic, and inspired by innovation. ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/vishvesh-singh-16909233a/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
                   ↗</a>
                 <a href="mailto:connectvishvesh@gmail.com"
-                  class="text-[10px] font-mono uppercase tracking-[0.1em] text-[--color-ink-muted] hover:text-[#0ea5e9] transition-colors">Email
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#0ea5e9] hover:bg-[#0ea5e9]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">Email
+                  ✉</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13: ANKUR KUMAR -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#fb7185] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="media">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#fb7185] via-[#fda4af] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#fb7185]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#fb7185]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#fb7185]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Ankur.png"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80'"
+                  alt="Ankur Kumar"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#fb7185] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  13 · DIGITAL MEDIA
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#fb7185] transition-colors mb-2">
+                  ANKUR KUMAR</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fb7185]/15 border border-[#fb7185]/40 text-[#fb7185] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// DIGITAL MEDIA LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#fb7185] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Building ideas that don't just work - they think. ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/honestly-ankur/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fb7185] hover:bg-[#fb7185]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
                   ↗</a>
               </div>
             </div>
           </div>
 
-          <!-- Empty placeholder / balance card (Desktop only) -->
-          <div class="hidden lg:block bg-[--color-ground-alt] overflow-hidden">
-            <div class="p-12 flex flex-col justify-center h-full text-center items-center">
-              <p class="text-xs font-mono text-[--color-ink-muted] uppercase tracking-widest mb-3">// Active Chapter</p>
-              <p class="text-sm text-[--color-ink-soft] max-w-xs leading-relaxed">
-                Connect with our team to collaborate on research, propose workshops, or sponsor upcoming events.
-              </p>
+          <!-- 14: GAURIKA RAKHESH REO -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#fb7185] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="media">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#fb7185] via-[#fda4af] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#fb7185]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#fb7185]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#fb7185]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Gaurika.png" alt="Gaurika Rakhesh Reo"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#fb7185] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  14 · DIGITAL MEDIA
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#fb7185] transition-colors mb-2">
+                  GAURIKA RAKHESH REO</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fb7185]/15 border border-[#fb7185]/40 text-[#fb7185] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// DIGITAL MEDIA LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#fb7185] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary
+                  man. ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/gaurika-rakhesh-reo-803919372/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fb7185] hover:bg-[#fb7185]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+              </div>
             </div>
           </div>
+
+          <!-- 15: PRAVALLIKA PHANI KUMAR -->
+          <div
+            class="team-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 flex flex-col justify-between group hover:border-[#fb7185] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            data-category="media">
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#fb7185] via-[#fda4af] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
+            </div>
+            <div
+              class="absolute -top-20 -right-20 w-56 h-56 bg-[#fb7185]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#fb7185]/25 transition-all duration-500">
+            </div>
+
+            <div>
+              <div
+                class="relative mb-5 overflow-hidden rounded-xl bg-[#080d1a] border border-slate-800 aspect-square group-hover:border-[#fb7185]/40 transition-colors shadow-inner">
+                <img src="images/team-cards/Pravallika.png" alt="Pravallika Phani Kumar"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div
+                  class="absolute top-2.5 right-2.5 bg-[#fb7185] text-slate-950 px-2.5 py-1 rounded-md text-[11px] font-mono font-black shadow-lg">
+                  &lt;/&gt;
+                </div>
+                <div
+                  class="absolute bottom-2.5 left-2.5 bg-[#080d1a]/90 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-slate-300 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  15 · DIGITAL MEDIA
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#fb7185] transition-colors mb-2">
+                  PRAVALLIKA PHANI KUMAR</h3>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fb7185]/15 border border-[#fb7185]/40 text-[#fb7185] text-[11px] font-mono font-bold tracking-widest uppercase">
+                  /// DIGITAL MEDIA LEAD ///
+                </span>
+              </div>
+
+              <div
+                class="bg-[#080d1a]/90 border-l-2 border-[#fb7185] p-3.5 rounded-r-xl border-y border-r border-slate-800/80 mb-5">
+                <p class="text-xs text-slate-300 leading-relaxed font-medium italic">
+                  “ Technology is best when it brings people together ”
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest">VNIT NAGPUR</span>
+              <div class="flex gap-2">
+                <a href="https://www.linkedin.com/in/pravallika-phani-kumar-2b095a36a/" target="_blank" rel="noopener"
+                  class="px-3 py-1.5 rounded-lg border border-slate-800 bg-[#080d1a]/80 hover:border-[#fb7185] hover:bg-[#fb7185]/10 text-slate-300 hover:text-white text-xs font-mono transition-colors">LinkedIn
+                  ↗</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- JOIN -->
-    <section class="py-10 border-t border-[--color-border] bg-[--color-ground-alt]"
-      style="font-family: var(--font-display)">
-      <div
-        class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-        <div>
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-3">OPEN
-            POSITIONS</p>
-          <p style="
-            font-size: clamp(2.1rem, 4.8vw, 3.4rem);
-            line-height: 1.15;
-            letter-spacing: normal;
-            word-spacing: normal;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Manrope', sans-serif;
-            text-transform: uppercase;
-            margin: 0;
-            padding: 0;
-            -webkit-text-fill-color: #ffffff;
-          ">
-            JOIN THE TEAM FOR 2025–26.
-          </p>
-        </div>
-        <a href="mailto:acm@vnit.ac.in"
-          class="shrink-0 bg-[#0ea5e9] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#0284c7] transition-colors rounded-lg border border-[#0ea5e9]/40 shadow-lg shadow-[#0ea5e9]/25 hover:shadow-xl hover:shadow-[#0ea5e9]/40">
-          Express interest →
-        </a>
-      </div>
-    </section>
+    <!-- Script for Interactive Category Filter Tabs -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const tabBtns = document.querySelectorAll('.team-tab-btn');
+        const teamCards = document.querySelectorAll('.team-card');
+
+        tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            tabBtns.forEach(b => {
+              b.classList.remove('active', 'bg-[#0ea5e9]', 'text-white', 'shadow-md', 'shadow-[#0ea5e9]/20');
+              b.classList.add('text-slate-400', 'hover:text-white', 'hover:bg-slate-800/60');
+            });
+            btn.classList.add('active', 'bg-[#0ea5e9]', 'text-white', 'shadow-md', 'shadow-[#0ea5e9]/20');
+            btn.classList.remove('text-slate-400', 'hover:text-white', 'hover:bg-slate-800/60');
+
+            const filter = btn.getAttribute('data-filter');
+
+            teamCards.forEach(card => {
+              if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                card.style.display = 'flex';
+                setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+              } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(15px)';
+                setTimeout(() => { card.style.display = 'none'; }, 200);
+              }
+            });
+          });
+        });
+      });
+    </script>
   </main>
 
   <!-- Footer -->

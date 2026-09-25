@@ -77,6 +77,14 @@
     <section id="hero-section"
       class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
       style="font-family: var(--font-display)">
+      <!-- Translucent Background Image (Insomnia.jpeg with lower opacity like domains hero) -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('Insomnia.jpeg'); background-size: cover; background-position: right center; background-repeat: no-repeat; opacity: 0.55;">
+      </div>
+      <!-- Subtle Dark Overlay -->
+      <div
+        class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/90 via-[#080d1a]/65 to-[#080d1a]/40">
+      </div>
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
         style="background-image: linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px); background-size: 80px 80px;">
@@ -92,9 +100,9 @@
         <p class="text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-[#0ea5e9]">2009 – Present</p>
       </div>
 
-      <!-- Main content container -->
-      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-start pt-10 lg:pt-14">
-        <div class="max-w-4xl w-full">
+      <!-- Main content container (Starts below top badge) -->
+      <div class="max-w-[1400px] mx-auto w-full px-6 lg:px-12 z-10 flex-grow flex items-start pt-16 lg:pt-20">
+        <div class="max-w-2xl w-full">
           <div class="flex flex-col justify-center text-left">
             <div class="mb-4 flex items-center gap-2.5">
               <span
@@ -117,12 +125,12 @@
                 padding: 0;
                 -webkit-text-fill-color: #ffffff;
               ">
-                NUMBERS THAT MATTER.
+                NUMBERS THAT<br>MATTER.
               </p>
             </div>
 
             <div class="animate-fade-up" style="animation-delay: 0.2s;">
-              <p class="text-base lg:text-lg text-slate-300 leading-relaxed font-medium mb-0 max-w-2xl">
+              <p class="text-base lg:text-lg text-slate-300 leading-relaxed font-medium mb-0 max-w-xl">
                 Fifteen years of continuous impact, measured in student career transformations, open-source code
                 contributions, and technical events that shape VNIT's engineering culture.
               </p>
@@ -157,24 +165,31 @@
 
     <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
     <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
-      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">5,000+ STUDENTS REACHED
+      <div class="flex gap-16 whitespace-nowrap shrink-0 min-w-max" style="animation: marquee 22s linear infinite;">
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">1,000+ STUDENTS REACHED
           ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">50+ EVENTS HOSTED ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">45+ PROJECTS SHIPPED
-          ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">3× ICPC ASIA REGIONALS
-          ·</span>
-        <!-- Loop repeat -->
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">5,000+ STUDENTS REACHED
-          ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">50+ EVENTS HOSTED ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">45+ PROJECTS SHIPPED
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">40+ EVENTS HOSTED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">20+ PROJECTS SHIPPED
           ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
-        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">3× ICPC ASIA REGIONALS
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">1,000+ STUDENTS REACHED
           ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">40+ EVENTS HOSTED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">20+ PROJECTS SHIPPED
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">1,000+ STUDENTS REACHED
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">40+ EVENTS HOSTED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">20+ PROJECTS SHIPPED
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">1,000+ STUDENTS REACHED
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">40+ EVENTS HOSTED ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">20+ PROJECTS SHIPPED
+          ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">15+ YEARS ACTIVE ·</span>
       </div>
     </div>
 
@@ -210,7 +225,7 @@
             </p>
             <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[#0ea5e9] transition-colors"
               style="font-size: clamp(3rem, 5vw, 5.5rem);">
-              <span class="stat-counter" data-target="5000">0</span>+
+              <span class="stat-counter" data-target="1000">0</span>+
             </p>
             <p class="text-xs text-[--color-ink-soft] leading-relaxed">Impacted through technical events, bootcamps,
               talks, and mentorship.</p>
@@ -223,7 +238,7 @@
             <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#0ea5e9] mb-6 font-bold">Events</p>
             <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[#0ea5e9] transition-colors"
               style="font-size: clamp(3rem, 5vw, 5.5rem);">
-              <span class="stat-counter" data-target="50">0</span>+
+              <span class="stat-counter" data-target="40">0</span>+
             </p>
             <p class="text-xs text-[--color-ink-soft] leading-relaxed">Workshops, hackathons, summits, and technical
               competitions.</p>
@@ -236,7 +251,7 @@
             <p class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#0ea5e9] mb-6 font-bold">Projects</p>
             <p class="font-black text-[--color-ink] leading-none mb-4 group-hover:text-[#0ea5e9] transition-colors"
               style="font-size: clamp(3rem, 5vw, 5.5rem);">
-              <span class="stat-counter" data-target="45">0</span>+
+              <span class="stat-counter" data-target="20">0</span>+
             </p>
             <p class="text-xs text-[--color-ink-soft] leading-relaxed">Real production software built, maintained, and
               shipped.</p>
@@ -254,65 +269,6 @@
               2009.</p>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ KEY METRICS | dark band -->
-    <section class="border-t border-[--color-border] py-12 bg-[--color-ground]"
-      style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="reveal mb-14">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">Competition
-            &amp; achievement</p>
-          <p style="
-            font-size: clamp(2.1rem, 4.8vw, 3.4rem);
-            line-height: 1.15;
-            letter-spacing: normal;
-            word-spacing: normal;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Manrope', sans-serif;
-            text-transform: uppercase;
-            margin: 0;
-            padding: 0;
-            -webkit-text-fill-color: #ffffff;
-          ">
-            BEYOND THE MEMBERSHIP NUMBERS.
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-0 border border-[--color-border]">
-          <!-- Metric 1 -->
-          <div
-            class="reveal p-5 lg:p-7 border-b lg:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors">
-            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: clamp(3rem, 4vw, 4.5rem);">3×
-            </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mb-3 font-bold">ICPC Asia Regionals
-            </p>
-            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Teams that have represented VNIT at ICPC Asia
-              Regionals, the most prestigious competitive programming event in the region.</p>
-          </div>
-          <!-- Metric 2 -->
-          <div
-            class="reveal p-5 lg:p-7 border-b lg:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.1s;">
-            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: clamp(3rem, 4vw, 4.5rem);">₹2L+
-            </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mb-3 font-bold">Prize money won</p>
-            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Total prizes won by ACM-VNIT members at national
-              hackathons, competitions, and open-source programmes.</p>
-          </div>
-          <!-- Metric 3 -->
-          <div class="reveal p-5 lg:p-7 border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.2s;">
-            <p class="font-black text-[--color-ink] leading-none mb-4" style="font-size: clamp(3rem, 4vw, 4.5rem);">12+
-            </p>
-            <p class="text-xs font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mb-3 font-bold">Workshops per year
-            </p>
-            <p class="text-sm text-[--color-ink-muted] leading-relaxed">Technical sessions delivered annually across all
-              six domains, run entirely by student leads.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -536,7 +492,7 @@
             <div class="flex gap-6 items-start">
               <span class="text-[10px] font-mono text-[#0ea5e9] tracking-widest pt-1 shrink-0 font-bold">→</span>
               <p class="text-sm text-[--color-ink-soft] leading-relaxed">Targeting 600 active members by end of the
-                2025–26 academic year.</p>
+                2026–27 academic year.</p>
             </div>
           </div>
         </div>

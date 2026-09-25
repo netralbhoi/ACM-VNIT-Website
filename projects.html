@@ -80,9 +80,19 @@
     <section id="hero-section"
       class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
       style="font-family: var(--font-display)">
+      <!-- Project Section Background Image with Minimal Blur -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: url('ProjectSectionBG.png'); background-attachment: scroll; background-size: cover; background-position: center; opacity: 0.70; filter: blur(3px);">
+      </div>
+      <!-- Gradient overlay for text legibility and smooth blending -->
+      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/60 via-[#080d1a]/30 to-transparent">
+      </div>
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background: linear-gradient(to bottom, rgba(8,13,26,0.85) 0%, transparent 25%, transparent 70%, rgba(8,13,26,0.95) 100%);">
+      </div>
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
-        style="background-image: linear-gradient(rgba(29,78,216,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(29,78,216,0.04) 1px, transparent 1px); background-size: 80px 80px;">
+        style="background-image: linear-gradient(rgba(56,189,248,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.08) 1px, transparent 1px); background-size: 80px 80px;">
       </div>
 
       <!-- Coordinates & Meta Badges -->
@@ -147,11 +157,11 @@
 
           <div class="flex flex-wrap gap-4 md:justify-end shrink-0 pb-1">
             <a href="#projects-grid"
-              class="inline-block bg-[#0ea5e9] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#0284c7] transition-all duration-200 shadow-lg shadow-[#0ea5e9]/20 hover:shadow-xl hover:shadow-[#0ea5e9]/40">
+              class="inline-block bg-[#0ea5e9] text-white px-8 py-4 text-xs font-mono font-bold tracking-[0.15em] uppercase hover:bg-[#0284c7] transition-all duration-200 shadow-lg shadow-[#0ea5e9]/25 hover:shadow-xl hover:shadow-[#0ea5e9]/40 rounded-xl border border-[#0ea5e9]/40 hover:-translate-y-0.5">
               View Projects ↓
             </a>
             <button
-              class="contact-trigger inline-block border-2 border-[--color-ink] text-[--color-ink] px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[--color-ink] hover:text-white transition-all duration-200">
+              class="contact-trigger inline-block border-2 border-[#0ea5e9] text-[#0ea5e9] px-8 py-4 text-xs font-mono font-bold tracking-[0.15em] uppercase hover:bg-[#0ea5e9] hover:text-white transition-all duration-200 shadow-lg shadow-[#0ea5e9]/20 rounded-xl hover:-translate-y-0.5">
               Get in Touch
             </button>
           </div>
@@ -161,7 +171,7 @@
 
     <!-- ═══════════════════════════════════════════ MARQUEE TICKER -->
     <div class="border-y border-[--color-border] overflow-hidden py-4 bg-[--color-ground-alt]">
-      <div class="flex gap-16 whitespace-nowrap" style="animation: marquee 22s linear infinite;">
+      <div class="flex gap-16 whitespace-nowrap shrink-0 min-w-max" style="animation: marquee 22s linear infinite;">
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">NEXT.JS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">FLUTTER ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PYTORCH ·</span>
@@ -170,7 +180,22 @@
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOCKER ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">KUBERNETES ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DISCORD.JS ·</span>
-        <!-- Loop repeat -->
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">NEXT.JS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">FLUTTER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PYTORCH ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">LANGCHAIN ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">GOLANG ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOCKER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">KUBERNETES ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DISCORD.JS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">NEXT.JS ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">FLUTTER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PYTORCH ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">LANGCHAIN ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">GOLANG ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DOCKER ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">KUBERNETES ·</span>
+        <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">DISCORD.JS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">NEXT.JS ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">FLUTTER ·</span>
         <span class="text-xs font-mono uppercase tracking-[0.2em] text-[--color-ink-muted]">PYTORCH ·</span>
@@ -182,427 +207,438 @@
       </div>
     </div>
 
-    <!-- PROJECTS GRID -->
-    <section id="projects-grid" class="border-t border-[--color-border] bg-[--color-ground-alt]"
-      style="font-family: var(--font-display)">
-
-      <!-- Project 01 (Even) -->
-      <div class="border-b border-[--color-border]">
-        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-10 lg:py-14">
-          <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-            <!-- Text side -->
-            <div class="reveal lg:col-span-5 lg:col-start-1">
-              <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">
-                Project 01
-              </p>
-              <p style="
-                font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                line-height: 1.15;
-                letter-spacing: normal;
-                word-spacing: normal;
-                font-weight: 800;
-                color: #ffffff;
-                font-family: 'Manrope', sans-serif;
-                text-transform: uppercase;
-                margin: 0;
-                padding: 0;
-                -webkit-text-fill-color: #ffffff;
-              ">
-                ACM WEB PLATFORM
-              </p>
-              <p class="text-base font-medium text-[--color-ink-muted] mb-6 italic">
-                The chapter's digital gateway and archive
-              </p>
-              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-8">
-                Visually striking and highly optimized web platform showcasing events, projects, and member directories.
-                Built using a modern design system with a focus on web performance, accessibility, and clean aesthetics.
-              </p>
-
-              <div class="mb-8">
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">
-                  Technologies
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">HTML5</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">CSS3</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">JavaScript</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">TailwindCSS</span>
-                </div>
-              </div>
-
-              <div class="mb-8">
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">
-                  Contributors
-                </p>
-                <p class="text-sm text-[--color-ink-soft]">
-                  Ankit Kumar, Deepika Rao, Siddharth Joshi
-                </p>
-              </div>
-
-              <button
-                class="text-xs font-bold tracking-[0.15em] uppercase text-[#0ea5e9] border-b border-[#0ea5e9] pb-0.5 hover:opacity-70 transition-opacity">
-                Explore project →
-              </button>
-            </div>
-            <!-- Image side -->
-            <div class="reveal lg:col-span-6 lg:col-start-7" style="transition-delay: 0.08s;">
-              <div class="relative overflow-hidden bg-[--color-ground-subtle] aspect-[4/3] group">
-                <img src="images/card-web-dev.jpg" alt="ACM Web Platform"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute top-4 left-4">
-                  <span class="text-xs font-mono text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1.5">
-                    01 / 09
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 02 (Odd) -->
-      <div class="border-b border-[--color-border]">
-        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-10 lg:py-14">
-          <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-            <!-- Text side -->
-            <div class="reveal lg:col-span-5 lg:col-start-8">
-              <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">
-                Project 02
-              </p>
-              <p style="
-                font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                line-height: 1.15;
-                letter-spacing: normal;
-                word-spacing: normal;
-                font-weight: 800;
-                color: #ffffff;
-                font-family: 'Manrope', sans-serif;
-                text-transform: uppercase;
-                margin: 0;
-                padding: 0;
-                -webkit-text-fill-color: #ffffff;
-              ">
-                ACM MOBILE APP
-              </p>
-              <p class="text-base font-medium text-[--color-ink-muted] mb-6 italic">
-                Cross-platform companion for members
-              </p>
-              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-8">
-                A mobile application designed to keep members connected with real-time push notifications for workshops,
-                custom calendars for event registration, and an offline-first directory of chapter resources.
-              </p>
-
-              <div class="mb-8">
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">
-                  Technologies
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">Flutter</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">Dart</span>
-                  <span class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">Firebase
-                    FCM</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">SQLite</span>
-                </div>
-              </div>
-
-              <div class="mb-8">
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">
-                  Contributors
-                </p>
-                <p class="text-sm text-[--color-ink-soft]">
-                  Vikram Patil, Priya Nair, Rahul Sharma
-                </p>
-              </div>
-
-              <button
-                class="text-xs font-bold tracking-[0.15em] uppercase text-[#0ea5e9] border-b border-[#0ea5e9] pb-0.5 hover:opacity-70 transition-opacity">
-                Explore project →
-              </button>
-            </div>
-            <!-- Image side (Placed first in HTML order on mobile, but on desktop we align it lg:col-start-1 using grid layout row-start) -->
-            <div class="reveal lg:col-span-6 lg:col-start-1 lg:row-start-1" style="transition-delay: 0.08s;">
-              <div class="relative overflow-hidden bg-[--color-ground-subtle] aspect-[4/3] group">
-                <img src="images/card-app-dev.jpg" alt="ACM Mobile App"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute top-4 left-4">
-                  <span class="text-xs font-mono text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1.5">
-                    02 / 09
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 03 (Even) -->
-      <div class="border-b border-[--color-border]">
-        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-10 lg:py-14">
-          <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-            <!-- Text side -->
-            <div class="reveal lg:col-span-5 lg:col-start-1">
-              <p class="text-xs font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">
-                Project 03
-              </p>
-              <p style="
-                font-size: clamp(2.6rem, 7.5vw, 4.5rem);
-                line-height: 1.15;
-                letter-spacing: normal;
-                word-spacing: normal;
-                font-weight: 800;
-                color: #ffffff;
-                font-family: 'Manrope', sans-serif;
-                text-transform: uppercase;
-                margin: 0;
-                padding: 0;
-                -webkit-text-fill-color: #ffffff;
-              ">
-                CAMPUS AI ASSISTANT
-              </p>
-              <p class="text-base font-medium text-[--color-ink-muted] mb-6 italic">
-                LLM-powered institutional knowledge graph
-              </p>
-              <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-8">
-                An intelligent campus helper that uses retrieval-augmented generation (RAG) to answer questions about
-                academic schedules, VNIT course syllabi, faculty directories, and campus locations.
-              </p>
-
-              <div class="mb-8">
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">
-                  Technologies
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">LangChain</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">Python</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">FastAPI</span>
-                  <span
-                    class="text-xs font-mono text-[--color-ink] border border-[--color-border] px-3 py-1">Qdrant</span>
-                </div>
-              </div>
-
-              <div class="mb-8">
-                <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-3">
-                  Contributors
-                </p>
-                <p class="text-sm text-[--color-ink-soft]">
-                  Sneha Gupta, Vikram Patil, Rahul Sharma
-                </p>
-              </div>
-
-              <button
-                class="text-xs font-bold tracking-[0.15em] uppercase text-[#0ea5e9] border-b border-[#0ea5e9] pb-0.5 hover:opacity-70 transition-opacity">
-                Explore project →
-              </button>
-            </div>
-            <!-- Image side -->
-            <div class="reveal lg:col-span-6 lg:col-start-7" style="transition-delay: 0.08s;">
-              <div class="relative overflow-hidden bg-[--color-ground-subtle] aspect-[4/3] group">
-                <img src="images/card-aiml.jpg" alt="Campus AI Assistant"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute top-4 left-4">
-                  <span class="text-xs font-mono text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1.5">
-                    03 / 09
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- MORE ACTIVE PROJECTS -->
-    <section class="border-t border-[--color-border] py-10 bg-[--color-ground]"
-      style="font-family: var(--font-display)">
+    <!-- ═══════════════════════════════════════════ FEATURED PROJECTS SHOWCASE -->
+    <section id="projects-grid" class="py-16 lg:py-24 bg-[#080d1a] relative" style="font-family: var(--font-display)">
       <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div class="reveal mb-14 border-b border-[--color-border] pb-6">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-3">OTHER ACTIVE
-            INITIATIVES</p>
-          <p style="
-            font-size: clamp(2.1rem, 4.8vw, 3.4rem);
-            line-height: 1.15;
-            letter-spacing: normal;
-            word-spacing: normal;
-            font-weight: 800;
-            color: #ffffff;
-            font-family: 'Manrope', sans-serif;
-            text-transform: uppercase;
-            margin: 0;
-            padding: 0;
-            -webkit-text-fill-color: #ffffff;
-          ">
-            MORE FROM OUR BUILD QUEUE.
-          </p>
+
+        <!-- Header & Category Title -->
+        <div class="reveal mb-14 flex flex-col gap-3">
+          <div>
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold tracking-widest text-[#0ea5e9] bg-[#0ea5e9]/10 border border-[#0ea5e9]/30 uppercase mb-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] animate-pulse"></span>
+              PRODUCTION WEB PLATFORMS
+            </span>
+            <p style="
+              font-size: clamp(2.1rem, 4.8vw, 3.4rem);
+              line-height: 1.15;
+              letter-spacing: normal;
+              word-spacing: normal;
+              font-weight: 800;
+              color: #ffffff;
+              font-family: 'Manrope', sans-serif;
+              text-transform: uppercase;
+              margin: 0;
+              padding: 0;
+              -webkit-text-fill-color: #ffffff;
+            ">
+              FEATURED PROJECTS.
+            </p>
+          </div>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 border border-[--color-border]">
-          <!-- Project 04: Event Management System -->
+        <!-- Project Card Stack (Styled matching team.html / domains.html boxes) -->
+        <div class="flex flex-col gap-10">
+
+          <!-- PROJECT 01: 180 Degrees Consulting — VNIT Nagpur -->
           <div
-            class="reveal p-5 border-b md:border-r border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors">
-            <div class="flex justify-between items-start mb-6">
-              <span class="text-xs font-mono text-[#0ea5e9] tracking-widest">04 / Web Dev</span>
+            class="project-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 lg:p-10 flex flex-col justify-between group hover:border-[#10b981] transition-all duration-300 shadow-2xl hover:-translate-y-1">
+            <!-- Top Gradient Accent Line -->
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#10b981] via-[#34d399] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
             </div>
-            <h3 class="text-xl font-black text-[--color-ink] mb-3 group-hover:text-[#0ea5e9] transition-colors">Event
-              Management System</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
-              Full-stack platform for managing event registrations, participant data, and post-event analytics.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">Next.js</span>
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">PostgreSQL</span>
+            <!-- Top Right Ambient Glow -->
+            <div
+              class="absolute -top-20 -right-20 w-64 h-64 bg-[#10b981]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#10b981]/25 transition-all duration-500">
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              <!-- Text Info -->
+              <div class="lg:col-span-6 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span
+                      class="px-2.5 py-1 rounded-md bg-[#10b981]/15 border border-[#10b981]/40 text-[#10b981] text-[11px] font-mono font-bold tracking-widest uppercase">
+                      01 / 04
+                    </span>
+                    <span class="text-xs font-mono text-slate-400 tracking-wider uppercase">VNIT NAGPUR</span>
+                  </div>
+
+                  <h2
+                    class="text-2xl lg:text-3xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#10b981] transition-colors mb-2">
+                    180 DEGREES CONSULTING
+                  </h2>
+
+                  <p class="text-xs font-mono text-emerald-400/90 mb-4 tracking-wider uppercase font-semibold">
+                    Consulting · Social Impact · Web Development
+                  </p>
+
+                  <p class="text-sm text-slate-300 leading-relaxed mb-6 font-medium">
+                    "A modern web platform built for 180 Degrees Consulting VNIT Nagpur to showcase its consulting services, social impact initiatives, clients, and student-led consulting ecosystem."
+                  </p>
+
+                  <!-- Services & Focus Areas Box -->
+                  <div
+                    class="bg-[#080d1a]/90 border-l-2 border-[#10b981] p-4 rounded-r-xl border-y border-r border-slate-800/80 mb-6">
+                    <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2.5 font-bold">
+                      Services &amp; Focus Areas
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs font-mono text-slate-300 bg-emerald-950/40 border border-emerald-800/50 px-2.5 py-1 rounded-md">Market Research</span>
+                      <span class="text-xs font-mono text-slate-300 bg-emerald-950/40 border border-emerald-800/50 px-2.5 py-1 rounded-md">Fundraising Strategy</span>
+                      <span class="text-xs font-mono text-slate-300 bg-emerald-950/40 border border-emerald-800/50 px-2.5 py-1 rounded-md">Marketing Strategy</span>
+                      <span class="text-xs font-mono text-slate-300 bg-emerald-950/40 border border-emerald-800/50 px-2.5 py-1 rounded-md">Business Strategy</span>
+                      <span class="text-xs font-mono text-slate-300 bg-emerald-950/40 border border-emerald-800/50 px-2.5 py-1 rounded-md">Operational Efficiency</span>
+                      <span class="text-xs font-mono text-slate-300 bg-emerald-950/40 border border-emerald-800/50 px-2.5 py-1 rounded-md">Revenue Generation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <a href="https://www.180dcvnit.in/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-[#10b981]/40 bg-[#10b981]/10 text-[#10b981] hover:bg-[#10b981] hover:text-white text-xs font-mono font-bold tracking-wider uppercase transition-all duration-300 shadow-md shadow-[#10b981]/10 group/btn">
+                    <span>View Project Website</span>
+                    <span class="transition-transform duration-200 group-hover/btn:translate-x-1">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image Frame -->
+              <div class="lg:col-span-6">
+                <a href="https://www.180dcvnit.in/" target="_blank" rel="noopener noreferrer"
+                  class="block relative overflow-hidden rounded-xl border border-slate-800 bg-[#080d1a] aspect-[1906/1067] group/img shadow-2xl hover:border-[#10b981]/50 transition-colors">
+                  <img src="images/project-180dc.png" alt="180 Degrees Consulting VNIT Nagpur Website Preview"
+                    class="w-full h-full object-contain transition-transform duration-700 group-hover/img:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#080d1a]/80 via-transparent to-transparent opacity-60 group-hover/img:opacity-40 transition-opacity"></div>
+                  <div class="absolute top-3 left-3">
+                    <span class="text-[10px] font-mono font-bold text-white/90 bg-[#080d1a]/90 backdrop-blur-md border border-slate-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                      01 · 180DC VNIT
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3 right-3 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <span class="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/90 backdrop-blur-md border border-emerald-800/80 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                      Visit 180dcvnit.in ↗
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Project 05: ML Research Toolkit -->
+          <!-- PROJECT 02: SPIC MACAY — VNIT Nagpur -->
           <div
-            class="reveal p-5 border-b lg:border-r border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.05s;">
-            <div class="flex justify-between items-start mb-6">
-              <span class="text-xs font-mono text-[#0ea5e9] tracking-widest">05 / AI / ML</span>
+            class="project-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 lg:p-10 flex flex-col justify-between group hover:border-[#f59e0b] transition-all duration-300 shadow-2xl hover:-translate-y-1">
+            <!-- Top Gradient Accent Line -->
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#f59e0b] via-[#fbbf24] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
             </div>
-            <h3 class="text-xl font-black text-[--color-ink] mb-3 group-hover:text-[#0ea5e9] transition-colors">ML
-              Research Toolkit</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
-              Modular computer vision and NLP pipelines used for research projects and competition submissions.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">PyTorch</span>
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">Python</span>
+            <!-- Top Right Ambient Glow -->
+            <div
+              class="absolute -top-20 -right-20 w-64 h-64 bg-[#f59e0b]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#f59e0b]/25 transition-all duration-500">
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              <!-- Text Info -->
+              <div class="lg:col-span-6 flex flex-col justify-between lg:order-2">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span
+                      class="px-2.5 py-1 rounded-md bg-[#f59e0b]/15 border border-[#f59e0b]/40 text-[#f59e0b] text-[11px] font-mono font-bold tracking-widest uppercase">
+                      02 / 04
+                    </span>
+                    <span class="text-xs font-mono text-slate-400 tracking-wider uppercase">VNIT NAGPUR</span>
+                  </div>
+
+                  <h2
+                    class="text-2xl lg:text-3xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#f59e0b] transition-colors mb-2">
+                    SPIC MACAY
+                  </h2>
+
+                  <p class="text-xs font-mono text-amber-400/90 mb-4 tracking-wider uppercase font-semibold">
+                    Culture · Events · Web Development
+                  </p>
+
+                  <p class="text-sm text-slate-300 leading-relaxed mb-6 font-medium">
+                    "A cultural event platform developed for SPIC MACAY VNIT Nagpur, bringing together artists, students and audiences through events, workshops and immersive cultural experiences."
+                  </p>
+
+                  <!-- Cultural Offerings & Highlights Box -->
+                  <div
+                    class="bg-[#080d1a]/90 border-l-2 border-[#f59e0b] p-4 rounded-r-xl border-y border-r border-slate-800/80 mb-6">
+                    <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2.5 font-bold">
+                      Cultural Offerings &amp; Highlights
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs font-mono text-slate-300 bg-amber-950/40 border border-amber-800/50 px-2.5 py-1 rounded-md">Virasat Experience</span>
+                      <span class="text-xs font-mono text-slate-300 bg-amber-950/40 border border-amber-800/50 px-2.5 py-1 rounded-md">Artist Profiles</span>
+                      <span class="text-xs font-mono text-slate-300 bg-amber-950/40 border border-amber-800/50 px-2.5 py-1 rounded-md">Event Discovery &amp; Registration</span>
+                      <span class="text-xs font-mono text-slate-300 bg-amber-950/40 border border-amber-800/50 px-2.5 py-1 rounded-md">Indian Classical Music &amp; Dance</span>
+                      <span class="text-xs font-mono text-slate-300 bg-amber-950/40 border border-amber-800/50 px-2.5 py-1 rounded-md">Heritage Walks</span>
+                      <span class="text-xs font-mono text-slate-300 bg-amber-950/40 border border-amber-800/50 px-2.5 py-1 rounded-md">Folk Arts &amp; Craft Workshops</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <a href="https://www.spicmacayvnit.com/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-[#f59e0b]/40 bg-[#f59e0b]/10 text-[#f59e0b] hover:bg-[#f59e0b] hover:text-white text-xs font-mono font-bold tracking-wider uppercase transition-all duration-300 shadow-md shadow-[#f59e0b]/10 group/btn">
+                    <span>View Project Website</span>
+                    <span class="transition-transform duration-200 group-hover/btn:translate-x-1">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image Frame -->
+              <div class="lg:col-span-6 lg:order-1">
+                <a href="https://www.spicmacayvnit.com/" target="_blank" rel="noopener noreferrer"
+                  class="block relative overflow-hidden rounded-xl border border-slate-800 bg-[#080d1a] aspect-[1906/1067] group/img shadow-2xl hover:border-[#f59e0b]/50 transition-colors">
+                  <img src="images/project-spicmacay.png" alt="SPIC MACAY VNIT Nagpur Website Preview"
+                    class="w-full h-full object-contain transition-transform duration-700 group-hover/img:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#080d1a]/80 via-transparent to-transparent opacity-60 group-hover/img:opacity-40 transition-opacity"></div>
+                  <div class="absolute top-3 left-3">
+                    <span class="text-[10px] font-mono font-bold text-white/90 bg-[#080d1a]/90 backdrop-blur-md border border-slate-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                      02 · SPIC MACAY
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3 right-3 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <span class="text-xs font-mono font-bold text-amber-400 bg-amber-950/90 backdrop-blur-md border border-amber-800/80 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                      Visit spicmacayvnit.com ↗
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Project 06: CTF Practice Platform -->
-          <div class="reveal p-5 border-b border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.1s;">
-            <div class="flex justify-between items-start mb-6">
-              <span class="text-xs font-mono text-[#0ea5e9] tracking-widest">06 / Cybersec</span>
-            </div>
-            <h3 class="text-xl font-black text-[--color-ink] mb-3 group-hover:text-[#0ea5e9] transition-colors">CTF
-              Practice Platform</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
-              Internal CTF challenge platform with progressive difficulty to train members for national cybersecurity
-              competitions.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">Docker</span>
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">Node.js</span>
-            </div>
-          </div>
-
-          <!-- Project 07: Community Discord Bot -->
+          <!-- PROJECT 03: V3F — VNIT Incubation Centre -->
           <div
-            class="reveal p-5 border-b md:border-b-0 md:border-r border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.15s;">
-            <div class="flex justify-between items-start mb-6">
-              <span class="text-xs font-mono text-[#0ea5e9] tracking-widest">07 / Web Dev</span>
+            class="project-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 lg:p-10 flex flex-col justify-between group hover:border-[#0ea5e9] transition-all duration-300 shadow-2xl hover:-translate-y-1">
+            <!-- Top Gradient Accent Line -->
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
             </div>
-            <h3 class="text-xl font-black text-[--color-ink] mb-3 group-hover:text-[#0ea5e9] transition-colors">
-              Community Discord Bot</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
-              Automated chapter management bot for Discord, featuring event announcements, member onboarding, and Q&A.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">Python</span>
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">discord.py</span>
+            <!-- Top Right Ambient Glow -->
+            <div
+              class="absolute -top-20 -right-20 w-64 h-64 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/25 transition-all duration-500">
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              <!-- Text Info -->
+              <div class="lg:col-span-6 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span
+                      class="px-2.5 py-1 rounded-md bg-[#0ea5e9]/15 border border-[#0ea5e9]/40 text-[#0ea5e9] text-[11px] font-mono font-bold tracking-widest uppercase">
+                      03 / 04
+                    </span>
+                    <span class="text-xs font-mono text-slate-400 tracking-wider uppercase">VNIT INCUBATION CENTRE</span>
+                  </div>
+
+                  <h2
+                    class="text-2xl lg:text-3xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#0ea5e9] transition-colors mb-2">
+                    V3F INCUBATION CENTRE
+                  </h2>
+
+                  <p class="text-xs font-mono text-cyan-400/90 mb-4 tracking-wider uppercase font-semibold">
+                    Entrepreneurship · Innovation · Web Development
+                  </p>
+
+                  <p class="text-sm text-slate-300 leading-relaxed mb-6 font-medium">
+                    "A full-scale web platform developed for V3F, VNIT's incubation centre, providing startups with information about incubation programs, mentorship, infrastructure, funding, research facilities and the VNIT innovation ecosystem."
+                  </p>
+
+                  <!-- Programs & Focus Sectors Box -->
+                  <div
+                    class="bg-[#080d1a]/90 border-l-2 border-[#0ea5e9] p-4 rounded-r-xl border-y border-r border-slate-800/80 mb-6">
+                    <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2.5 font-bold">
+                      Programs &amp; Focus Sectors
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs font-mono text-slate-300 bg-sky-950/40 border border-sky-800/50 px-2.5 py-1 rounded-md">Pre-Incubation &amp; Incubation</span>
+                      <span class="text-xs font-mono text-slate-300 bg-sky-950/40 border border-sky-800/50 px-2.5 py-1 rounded-md">Mentorship &amp; Funding</span>
+                      <span class="text-xs font-mono text-slate-300 bg-sky-950/40 border border-sky-800/50 px-2.5 py-1 rounded-md">Deep Technology</span>
+                      <span class="text-xs font-mono text-slate-300 bg-sky-950/40 border border-sky-800/50 px-2.5 py-1 rounded-md">AI &amp; Digital</span>
+                      <span class="text-xs font-mono text-slate-300 bg-sky-950/40 border border-sky-800/50 px-2.5 py-1 rounded-md">Manufacturing &amp; Clean Energy</span>
+                      <span class="text-xs font-mono text-slate-300 bg-sky-950/40 border border-sky-800/50 px-2.5 py-1 rounded-md">Centres of Excellence</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <a href="https://v3foundation.in/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-[#0ea5e9]/40 bg-[#0ea5e9]/10 text-[#0ea5e9] hover:bg-[#0ea5e9] hover:text-white text-xs font-mono font-bold tracking-wider uppercase transition-all duration-300 shadow-md shadow-[#0ea5e9]/10 group/btn">
+                    <span>View Project Website</span>
+                    <span class="transition-transform duration-200 group-hover/btn:translate-x-1">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image Frame -->
+              <div class="lg:col-span-6">
+                <a href="https://v3foundation.in/" target="_blank" rel="noopener noreferrer"
+                  class="block relative overflow-hidden rounded-xl border border-slate-800 bg-[#080d1a] aspect-[1906/1067] group/img shadow-2xl hover:border-[#0ea5e9]/50 transition-colors">
+                  <img src="images/project-v3f.png" alt="V3F VNIT Incubation Centre Website Preview"
+                    class="w-full h-full object-contain transition-transform duration-700 group-hover/img:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#080d1a]/80 via-transparent to-transparent opacity-60 group-hover/img:opacity-40 transition-opacity"></div>
+                  <div class="absolute top-3 left-3">
+                    <span class="text-[10px] font-mono font-bold text-white/90 bg-[#080d1a]/90 backdrop-blur-md border border-slate-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                      03 · V3F INCUBATOR
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3 right-3 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <span class="text-xs font-mono font-bold text-cyan-400 bg-sky-950/90 backdrop-blur-md border border-sky-800/80 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                      Visit v3foundation.in ↗
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Project 08: Open Source Contributions -->
+          <!-- PROJECT 04: Ramanujan Conjectures -->
           <div
-            class="reveal p-5 border-b md:border-b-0 lg:border-r border-[--color-border] group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.2s;">
-            <div class="flex justify-between items-start mb-6">
-              <span class="text-xs font-mono text-[#0ea5e9] tracking-widest">08 / Open Source</span>
+            class="project-card reveal relative overflow-hidden bg-[#0d1424]/95 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 lg:p-10 flex flex-col justify-between group hover:border-[#a855f7] transition-all duration-300 shadow-2xl hover:-translate-y-1">
+            <!-- Top Gradient Accent Line -->
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#a855f7] via-[#c084fc] to-transparent opacity-70 group-hover:opacity-100 transition-opacity">
             </div>
-            <h3 class="text-xl font-black text-[--color-ink] mb-3 group-hover:text-[#0ea5e9] transition-colors">Open
-              Source Contributions</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
-              Members contributing to global OSS projects including GSoC participations, Hacktoberfest PRs, and
-              ecosystem patches.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">GSoC</span>
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">GitHub</span>
+            <!-- Top Right Ambient Glow -->
+            <div
+              class="absolute -top-20 -right-20 w-64 h-64 bg-[#a855f7]/15 rounded-full blur-3xl pointer-events-none group-hover:bg-[#a855f7]/25 transition-all duration-500">
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              <!-- Text Info -->
+              <div class="lg:col-span-6 flex flex-col justify-between lg:order-2">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span
+                      class="px-2.5 py-1 rounded-md bg-[#a855f7]/15 border border-[#a855f7]/40 text-[#a855f7] text-[11px] font-mono font-bold tracking-widest uppercase">
+                      04 / 04
+                    </span>
+                    <span class="text-xs font-mono text-slate-400 tracking-wider uppercase">MATHEMATICS &amp; RESEARCH</span>
+                  </div>
+
+                  <h2
+                    class="text-2xl lg:text-3xl font-black text-white tracking-wide uppercase font-display group-hover:text-[#a855f7] transition-colors mb-2">
+                    RAMANUJAN CONJECTURES
+                  </h2>
+
+                  <p class="text-xs font-mono text-purple-400/90 mb-4 tracking-wider uppercase font-semibold">
+                    Mathematics · Education · Interactive Web
+                  </p>
+
+                  <p class="text-sm text-slate-300 leading-relaxed mb-6 font-medium">
+                    "An interactive web platform for exploring mathematical conjectures inspired by Srinivasa Ramanujan, combining historical context with an organized collection of mathematical problems and conjectures."
+                  </p>
+
+                  <!-- Platform Features & Modules Box -->
+                  <div
+                    class="bg-[#080d1a]/90 border-l-2 border-[#a855f7] p-4 rounded-r-xl border-y border-r border-slate-800/80 mb-6">
+                    <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-slate-400 mb-2.5 font-bold">
+                      Platform Features &amp; Modules
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs font-mono text-slate-300 bg-purple-950/40 border border-purple-800/50 px-2.5 py-1 rounded-md">Srinivasa Ramanujan Legacy</span>
+                      <span class="text-xs font-mono text-slate-300 bg-purple-950/40 border border-purple-800/50 px-2.5 py-1 rounded-md">Individual Conjecture Pages</span>
+                      <span class="text-xs font-mono text-slate-300 bg-purple-950/40 border border-purple-800/50 px-2.5 py-1 rounded-md">Unsolved Status Tracker</span>
+                      <span class="text-xs font-mono text-slate-300 bg-purple-950/40 border border-purple-800/50 px-2.5 py-1 rounded-md">Historical &amp; Math Context</span>
+                      <span class="text-xs font-mono text-slate-300 bg-purple-950/40 border border-purple-800/50 px-2.5 py-1 rounded-md">Interactive Problem Explorer</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <a href="https://ramanujan-conjectures.web.app/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-[#a855f7]/40 bg-[#a855f7]/10 text-[#a855f7] hover:bg-[#a855f7] hover:text-white text-xs font-mono font-bold tracking-wider uppercase transition-all duration-300 shadow-md shadow-[#a855f7]/10 group/btn">
+                    <span>View Project Website</span>
+                    <span class="transition-transform duration-200 group-hover/btn:translate-x-1">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image Frame -->
+              <div class="lg:col-span-6 lg:order-1">
+                <a href="https://ramanujan-conjectures.web.app/" target="_blank" rel="noopener noreferrer"
+                  class="block relative overflow-hidden rounded-xl border border-slate-800 bg-[#080d1a] aspect-[1906/1067] group/img shadow-2xl hover:border-[#a855f7]/50 transition-colors">
+                  <img src="images/project-ramanujan.png" alt="Ramanujan Conjectures Website Preview"
+                    class="w-full h-full object-contain transition-transform duration-700 group-hover/img:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#080d1a]/80 via-transparent to-transparent opacity-60 group-hover/img:opacity-40 transition-opacity"></div>
+                  <div class="absolute top-3 left-3">
+                    <span class="text-[10px] font-mono font-bold text-white/90 bg-[#080d1a]/90 backdrop-blur-md border border-slate-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                      04 · RAMANUJAN MATH
+                    </span>
+                  </div>
+                  <div class="absolute bottom-3 right-3 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <span class="text-xs font-mono font-bold text-purple-400 bg-purple-950/90 backdrop-blur-md border border-purple-800/80 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                      Visit ramanujan-conjectures.web.app ↗
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Project 09: DevOps Pipeline Template -->
-          <div class="reveal p-5 group hover:bg-[--color-ground-alt] transition-colors"
-            style="transition-delay: 0.25s;">
-            <div class="flex justify-between items-start mb-6">
-              <span class="text-xs font-mono text-[#0ea5e9] tracking-widest">09 / Cloud</span>
-            </div>
-            <h3 class="text-xl font-black text-[--color-ink] mb-3 group-hover:text-[#0ea5e9] transition-colors">DevOps
-              Pipeline Template</h3>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed mb-6">
-              Reusable CI/CD pipeline templates and Docker configs standardizing deployments across all ACM member
-              projects.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">Docker</span>
-              <span class="text-[10px] font-mono text-[--color-ink-muted] border border-[--color-border] px-2 py-0.5">GH
-                Actions</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    </section>
-
-    <!-- CTA -->
-    <section class="border-t border-[--color-border] py-14 bg-[--color-ground-alt]"
+    <!-- ═══════════════════════════════════════════ DYNAMIC LIVE CTA SECTION -->
+    <section class="border-t border-slate-800/80 py-20 lg:py-28 bg-[#080d1a] relative overflow-hidden"
       style="font-family: var(--font-display)">
-      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-        <div class="reveal">
-          <p class="text-xs md:text-sm font-bold font-mono tracking-[0.2em] uppercase text-[#0ea5e9] mb-4">
+      <!-- Ambient Glow & Grid Accents -->
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: radial-gradient(circle at 50% 50%, rgba(14,165,233,0.15) 0%, transparent 60%);">
+      </div>
+      <div class="absolute inset-0 pointer-events-none z-0"
+        style="background-image: linear-gradient(rgba(56,189,248,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.06) 1px, transparent 1px); background-size: 60px 60px;">
+      </div>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10 text-center">
+        <div class="reveal max-w-4xl mx-auto bg-[#0d1424]/90 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-10 lg:p-16 shadow-2xl relative overflow-hidden group">
+          <!-- Top Accent Gradient Line -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-transparent opacity-80 group-hover:opacity-100 transition-opacity">
+          </div>
+          <!-- Ambient Glow Corner -->
+          <div class="absolute -top-24 -right-24 w-72 h-72 bg-[#0ea5e9]/20 rounded-full blur-3xl pointer-events-none group-hover:bg-[#0ea5e9]/30 transition-all duration-500">
+          </div>
+
+          <div class="mb-5 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold tracking-widest text-[#0ea5e9] bg-[#0ea5e9]/10 border border-[#0ea5e9]/30 uppercase">
+            <span class="w-2 h-2 rounded-full bg-[#0ea5e9] animate-pulse"></span>
             OPEN TO CONTRIBUTORS
-          </p>
+          </div>
+
           <p style="
-            font-size: clamp(2.1rem, 4.8vw, 3.4rem);
-            line-height: 1.15;
+            font-size: clamp(2.3rem, 5.5vw, 4rem);
+            line-height: 1.12;
             letter-spacing: normal;
             word-spacing: normal;
             font-weight: 800;
             color: #ffffff;
             font-family: 'Manrope', sans-serif;
             text-transform: uppercase;
-            margin: 0;
+            margin: 0 0 1.5rem 0;
             padding: 0;
             -webkit-text-fill-color: #ffffff;
           ">
             HAVE AN IDEA?<br>BUILD IT WITH US.
           </p>
-          <p class="text-base text-[--color-ink-muted] max-w-lg mx-auto mb-10 leading-relaxed">
-            ACM-VNIT members have access to mentorship, infrastructure, and a community of builders. Pitch your project
-            and we'll help you ship it.
+
+          <p class="text-base lg:text-lg text-slate-300 max-w-xl mx-auto mb-10 leading-relaxed font-medium">
+            ACM-VNIT members have access to mentorship, infrastructure, and a community of builders. Pitch your project and we'll help you ship it.
           </p>
-          <a href="mailto:acm@vnit.ac.in"
-            class="inline-block bg-[#0ea5e9] text-white px-8 py-4 text-xs font-bold tracking-[0.15em] uppercase hover:bg-[#0284c7] transition-colors">
-            Pitch a project →
-          </a>
+
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:acm@vnit.ac.in"
+              class="inline-flex items-center gap-2.5 bg-[#0ea5e9] text-white px-8 py-4 text-xs font-mono font-bold tracking-[0.15em] uppercase hover:bg-[#0284c7] transition-all duration-300 shadow-xl shadow-[#0ea5e9]/30 hover:shadow-2xl hover:shadow-[#0ea5e9]/50 rounded-xl border border-[#0ea5e9]/50 hover:-translate-y-0.5 group/pitch">
+              <span>Pitch a Project</span>
+              <span class="transition-transform duration-200 group-hover/pitch:translate-x-1">→</span>
+            </a>
+            <button
+              class="contact-trigger inline-flex items-center gap-2.5 border-2 border-[#0ea5e9] text-[#0ea5e9] px-8 py-4 text-xs font-mono font-bold tracking-[0.15em] uppercase hover:bg-[#0ea5e9] hover:text-white transition-all duration-300 shadow-lg shadow-[#0ea5e9]/20 rounded-xl hover:-translate-y-0.5">
+              Get in Touch
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -683,55 +719,54 @@
               </ul>
             </div>
           </div>
-        </div>div>
-      </div>
+        </div>
 
-      <!-- Right Side: LOCATION (45% width on right) with Google Maps -->
-      <div class="w-full lg:w-[45%] flex flex-col justify-between">
-        <div>
-          <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
-          <div class="flex items-start gap-2.5">
-            <svg class="w-4 h-4 text-[#0ea5e9] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <p class="text-sm text-[--color-ink-soft] leading-relaxed">
-              Visvesvaraya National Institute of Technology, Nagpur<br>Maharashtra 440010, India
-            </p>
+        <!-- Right Side: LOCATION (45% width on right) with Google Maps -->
+        <div class="w-full lg:w-[45%] flex flex-col justify-between">
+          <div>
+            <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[--color-ink-muted] mb-4">Location</p>
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[#0ea5e9] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <p class="text-sm text-[--color-ink-soft] leading-relaxed">
+                Visvesvaraya National Institute of Technology, Nagpur<br>Maharashtra 440010, India
+              </p>
+            </div>
+            <a href="mailto:acm@vnit.ac.in"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[#0ea5e9] hover:underline">
+              <svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>acm@vnit.ac.in</span>
+            </a>
           </div>
-          <a href="mailto:acm@vnit.ac.in"
-            class="inline-flex items-center gap-2 mt-3 text-sm font-medium text-[#0ea5e9] hover:underline">
-            <svg class="w-4 h-4 text-[#0ea5e9] shrink-0" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span>acm@vnit.ac.in</span>
-          </a>
-        </div>
 
-        <div
-          class="mt-4 w-full h-72 sm:h-80 lg:h-[290px] rounded-xl overflow-hidden border border-[--color-border] shadow-sm">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5038753239247!2d79.04945417594921!3d21.127364183533688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3453b3f27f0d046f%3A0x93309a47ff78e1b!2sVisvesvaraya%20National%20Institute%20of%20Technology%20(VNIT)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <div
+            class="mt-4 w-full h-72 sm:h-80 lg:h-[290px] rounded-xl overflow-hidden border border-[--color-border] shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5038753239247!2d79.04945417594921!3d21.127364183533688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3453b3f27f0d046f%3A0x93309a47ff78e1b!2sVisvesvaraya%20National%20Institute%20of%20Technology%20(VNIT)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-      <p class="text-xs font-mono text-[--color-ink-muted]">
-        © 2026 ACM Student Chapter | VNIT Nagpur
-      </p>
-      <p class="text-xs font-mono text-[--color-ink-muted]">
-        Association for Computing Machinery
-      </p>
-    </div>
+      <div
+        class="mt-16 pt-8 border-t border-[--color-border] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <p class="text-xs font-mono text-[--color-ink-muted]">
+          © 2026 ACM Student Chapter | VNIT Nagpur
+        </p>
+        <p class="text-xs font-mono text-[--color-ink-muted]">
+          Association for Computing Machinery
+        </p>
+      </div>
     </div>
   </footer>
 
