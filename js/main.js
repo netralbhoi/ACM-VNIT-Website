@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Click triggers (for touch screens / mobile fallback)
       item.addEventListener("click", (e) => {
         const isCurrentlyActive = item.classList.contains("bg-[#a855f7]/10");
-        
+
         // Reset all first
         domainItems.forEach(i => {
           i.classList.remove("bg-[#a855f7]/10");
@@ -334,8 +334,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Skip headings inside dark containers or with explicit white text
       if (heading.closest(".text-white, [class*='bg-gradient'], [class*='from-slate'], [class*='from-blue-600']") ||
-          heading.classList.contains("text-white") ||
-          heading.style.color === "white") return;
+        heading.classList.contains("text-white") ||
+        heading.style.color === "white") return;
 
       // Skip headings that contain child element nodes (spans, links, etc.)
       // Note: these are already specially structured
@@ -470,11 +470,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ==========================================
-  // 10. OFFICIAL BULLETIN BOARD INTERACTIVITY
+  // 10. OFFICIAL BULLETIN BOARD INTERACTIVITY & SUPABASE INTEGRATION
   // ==========================================
+  const SUPABASE_URL = 'https://wntzbdhdjdyixvxzpdgf.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndudHpiZGhkamR5aXh2eHpwZGdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA4NjkwNzUsImV4cCI6MjEwNjQ0NTA3NX0.eDaDYSUndKFTy2GuVMKv3GoJWgsf2947bNnfi0LtFt8';
+
+  let db = null;
+  if (typeof supabase !== 'undefined' && supabase.createClient) {
+    try {
+      db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    } catch (e) {
+      console.warn('Supabase initialization:', e);
+    }
+  }
+
   const bulletinFilterBtns = document.querySelectorAll(".bulletin-filter-btn");
   const bulletinCards = document.querySelectorAll(".bulletin-card");
-  const bulletinPointItems = document.querySelectorAll(".bulletin-point-item");
+  let bulletinPointItems = document.querySelectorAll(".bulletin-point-item");
   const bulletinSearchInput = document.getElementById("bulletin-search-input");
   const bulletinViewBtns = document.querySelectorAll(".bulletin-view-btn");
   const pointwiseContainer = document.getElementById("bulletin-pointwise-container");
@@ -505,7 +517,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function filterBulletinItems() {
-    const allItems = [...bulletinCards, ...bulletinPointItems];
+    const currentPointItems = document.querySelectorAll(".bulletin-point-item");
+    const allItems = [...bulletinCards, ...currentPointItems];
     allItems.forEach(item => {
       const cat = item.getAttribute("data-category") || "";
       const title = (item.getAttribute("data-title") || "").toLowerCase();
@@ -778,6 +791,97 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.target === noticeModal) closeNoticeModal();
     });
   }
+
+  // Supabase Fetch & Dynamic Bulletin Board Rendering
+  async function loadBulletin() {
+    if (!db) return;
+    try {
+      let res = await db
+        .from('bulletin_posts')
+        .select('*')
+        .order('is_pinned', { ascending: false })
+        .order('created_at', { ascending: false });
+
+      if (res.error) {
+        console.warn('Primary query order failed, trying simple select:', res.error.message);
+        res = await db.from('bulletin_posts').select('*');
+      }
+
+      if (res.error) {
+        console.error('Error loading posts from Supabase:', res.error);
+        return;
+      }
+
+      console.log('Bulletin posts from Supabase:', res.data);
+      if (res.data && res.data.length > 0) {
+        renderSupabasePosts(res.data);
+      }
+    } catch (err) {
+      console.error('Supabase fetch exception:', err);
+    }
+  }
+
+  function renderSupabasePosts(posts) {
+    if (!pointwiseContainer) return;
+
+    pointwiseContainer.innerHTML = '';
+
+    posts.forEach((post, index) => {
+      const dispatchId = post.slug || post.dispatch_id || `supabase-notice-${post.id || index}`;
+      const titleText = post.title || post.headline || 'OFFICIAL BULLETIN ANNOUNCEMENT';
+      const bodyText = post.body || post.content || post.description || post.details || `<p class="text-white">${post.summary || titleText}</p>`;
+      const refText = post.ref || post.reference || `VNIT/ACM/2026/NOTICE-${post.id || index + 1}`;
+      const categoryText = post.category || post.type || 'NOTICE';
+      
+      noticeModalData[dispatchId] = {
+        ref: refText,
+        title: titleText,
+        body: typeof bodyText === 'string' && bodyText.includes('<') ? bodyText : `<div class="space-y-4 font-mono text-sm text-white leading-relaxed"><p>${bodyText}</p></div>`
+      };
+
+      let dateStr = post.date_text || post.date || post.event_date;
+      if (!dateStr && post.created_at) {
+        try {
+          dateStr = new Date(post.created_at).toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }).toUpperCase();
+        } catch(e) {
+          dateStr = 'RECENT';
+        }
+      }
+      if (!dateStr) dateStr = 'RECENT';
+
+      const itemEl = document.createElement('div');
+      itemEl.className = 'bulletin-point-item visible group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md';
+      itemEl.setAttribute('data-category', categoryText.toUpperCase());
+      itemEl.setAttribute('data-title', titleText.toUpperCase());
+      itemEl.setAttribute('data-dispatch-id', dispatchId);
+
+      itemEl.innerHTML = `
+        <div class="flex items-center gap-3.5 min-w-0">
+          <span class="text-white text-xl leading-none font-bold select-none">•</span>
+          <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+            ${titleText}
+          </h3>
+        </div>
+        <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+          <span>${dateStr}</span>
+          <span class="opacity-40">|</span>
+          <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
+        </div>
+      `;
+
+      itemEl.addEventListener('click', (e) => {
+        e.preventDefault();
+        openNoticeModal(dispatchId);
+      });
+
+      pointwiseContainer.appendChild(itemEl);
+    });
+
+    filterBulletinItems();
+  }
+
+  loadBulletin();
+
 
   // Registration Modal Triggers & Logic
   const regModal = document.getElementById("bulletin-registration-modal");

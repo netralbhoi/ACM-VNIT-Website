@@ -74,14 +74,16 @@
   <main>
 
     <!-- ═══════════════════════════════════════════ HERO SECTION -->
-    <section id="hero-section" class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
+    <section id="hero-section"
+      class="relative min-h-screen flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-[#080d1a]"
       style="font-family: var(--font-display)">
       <!-- Translucent Hero Background Image (webdworkshop.jpeg) -->
       <div class="absolute inset-0 pointer-events-none z-0"
         style="background-image: url('webdworkshop.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.55;">
       </div>
       <!-- Subtle Dark Overlay -->
-      <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/90 via-[#080d1a]/65 to-[#080d1a]/40">
+      <div
+        class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#080d1a]/90 via-[#080d1a]/65 to-[#080d1a]/40">
       </div>
       <!-- Fine grid background -->
       <div class="absolute inset-0 pointer-events-none z-0"
@@ -141,15 +143,18 @@
               <div class="grid grid-cols-3 gap-6 pt-6 border-t border-[#1e293b] max-w-lg">
                 <div>
                   <p class="font-black text-white text-2xl lg:text-3xl leading-none">40+</p>
-                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mt-2 font-bold">Total Events</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mt-2 font-bold">Total
+                    Events</p>
                 </div>
                 <div>
                   <p class="font-black text-white text-2xl lg:text-3xl leading-none">200+</p>
-                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mt-2 font-bold">Peak Attendance</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mt-2 font-bold">Peak
+                    Attendance</p>
                 </div>
                 <div>
                   <p class="font-black text-white text-2xl lg:text-3xl leading-none">5</p>
-                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mt-2 font-bold">Domains Covered</p>
+                  <p class="text-[10px] font-mono uppercase tracking-[0.15em] text-[#0ea5e9] mt-2 font-bold">Domains
+                    Covered</p>
                 </div>
               </div>
             </div>
@@ -183,20 +188,23 @@
     </section>
 
     <!-- ═══════════════════════════════════════════ OFFICIAL BULLETIN PAGE (UPCOMING EVENTS) -->
-    <section id="official-bulletin" class="relative py-20 bg-[#080d1a] border-t border-b border-[#1e293b] overflow-hidden"
+    <section id="official-bulletin"
+      class="relative py-20 bg-[#080d1a] border-t border-b border-[#1e293b] overflow-hidden"
       style="font-family: var(--font-display)">
-      
+
       <!-- Background Ambient Glow & Grid -->
       <div class="absolute inset-0 pointer-events-none z-0"
         style="background-image: radial-gradient(circle at 50% 0%, rgba(14,165,233,0.12) 0%, transparent 75%), linear-gradient(rgba(14,165,233,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.03) 1px, transparent 1px); background-size: 100% 100%, 60px 60px, 60px 60px;">
       </div>
-      
+
       <div class="max-w-[1200px] mx-auto px-6 lg:px-12 relative z-10">
 
         <!-- Page Heading: Bulletin Board -->
-        <div class="reveal mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#1e293b] pb-6">
+        <div
+          class="reveal mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#1e293b] pb-6">
           <div>
-            <h2 class="text-3xl lg:text-4xl font-extrabold uppercase text-white tracking-tight leading-none mb-2" style="font-family: 'Manrope', sans-serif;">
+            <h2 class="text-3xl lg:text-4xl font-extrabold uppercase text-white tracking-tight leading-none mb-2"
+              style="font-family: 'Manrope', sans-serif;">
               Bulletin Board
             </h2>
             <p class="text-xs lg:text-sm text-white font-mono">
@@ -206,25 +214,33 @@
 
           <!-- Instant Search Input -->
           <div class="relative min-w-[260px]">
-            <input type="text" id="bulletin-search-input" placeholder="Search notices..." 
+            <input type="text" id="bulletin-search-input" placeholder="Search notices..."
               class="w-full bg-[#0d1424] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white placeholder-slate-400 px-4 py-2.5 rounded-lg outline-none transition-colors">
-            <svg class="w-4 h-4 text-white absolute right-3 top-3 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <svg class="w-4 h-4 text-white absolute right-3 top-3 pointer-events-none" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
           </div>
         </div>
 
         <!-- Clean Text-Only Clickable Bulletin List -->
         <div id="bulletin-pointwise-container" class="space-y-3">
-          
+
           <!-- Bulletin Point 1 -->
-          <div class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
-            data-category="HACKATHON" data-title="INSOMNIA 2026 36-HOUR NATIONAL HACKATHON" data-dispatch-id="insomnia-2026">
+          <div
+            class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
+            data-category="HACKATHON" data-title="INSOMNIA 2026 36-HOUR NATIONAL HACKATHON"
+            data-dispatch-id="insomnia-2026">
             <div class="flex items-center gap-3.5 min-w-0">
               <span class="text-white text-xl leading-none font-bold select-none">•</span>
-              <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+              <h3
+                class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
                 INSOMNIA 2026 — 36-Hour National Hackathon
               </h3>
             </div>
-            <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+            <div
+              class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
               <span>OCT 24–26, 2026</span>
               <span class="opacity-40">|</span>
               <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
@@ -232,15 +248,19 @@
           </div>
 
           <!-- Bulletin Point 2 -->
-          <div class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
-            data-category="WORKSHOP" data-title="BUILDING SCALABLE LLMS AND AI AGENTS BOOTCAMP" data-dispatch-id="llm-bootcamp-2026">
+          <div
+            class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
+            data-category="WORKSHOP" data-title="BUILDING SCALABLE LLMS AND AI AGENTS BOOTCAMP"
+            data-dispatch-id="llm-bootcamp-2026">
             <div class="flex items-center gap-3.5 min-w-0">
               <span class="text-white text-xl leading-none font-bold select-none">•</span>
-              <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+              <h3
+                class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
                 Building Scalable LLM Agents Bootcamp
               </h3>
             </div>
-            <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+            <div
+              class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
               <span>NOV 08, 2026</span>
               <span class="opacity-40">|</span>
               <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
@@ -248,15 +268,19 @@
           </div>
 
           <!-- Bulletin Point 3 -->
-          <div class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
-            data-category="COMPETITION" data-title="ALGOSTRIKE V4.0 INTER-COLLEGE CP CONTEST" data-dispatch-id="algostrike-2026">
+          <div
+            class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
+            data-category="COMPETITION" data-title="ALGOSTRIKE V4.0 INTER-COLLEGE CP CONTEST"
+            data-dispatch-id="algostrike-2026">
             <div class="flex items-center gap-3.5 min-w-0">
               <span class="text-white text-xl leading-none font-bold select-none">•</span>
-              <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+              <h3
+                class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
                 AlgoStrike v4.0 — Inter-College CP Contest
               </h3>
             </div>
-            <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+            <div
+              class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
               <span>NOV 22, 2026</span>
               <span class="opacity-40">|</span>
               <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
@@ -264,15 +288,19 @@
           </div>
 
           <!-- Bulletin Point 4 -->
-          <div class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
-            data-category="MENTORSHIP" data-title="ACM OPEN SOURCE MENTORSHIP PROGRAM 2026" data-dispatch-id="ossmop-2026">
+          <div
+            class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
+            data-category="MENTORSHIP" data-title="ACM OPEN SOURCE MENTORSHIP PROGRAM 2026"
+            data-dispatch-id="ossmop-2026">
             <div class="flex items-center gap-3.5 min-w-0">
               <span class="text-white text-xl leading-none font-bold select-none">•</span>
-              <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+              <h3
+                class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
                 ACM Open Source Mentorship Program (OSMoP)
               </h3>
             </div>
-            <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+            <div
+              class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
               <span>DEC 01, 2026</span>
               <span class="opacity-40">|</span>
               <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
@@ -280,15 +308,19 @@
           </div>
 
           <!-- Bulletin Point 5 -->
-          <div class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
-            data-category="SYMPOSIUM" data-title="CYBERSECURITY AND ZERO TRUST ARCHITECTURE SYMPOSIUM" data-dispatch-id="cybersec-2026">
+          <div
+            class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
+            data-category="SYMPOSIUM" data-title="CYBERSECURITY AND ZERO TRUST ARCHITECTURE SYMPOSIUM"
+            data-dispatch-id="cybersec-2026">
             <div class="flex items-center gap-3.5 min-w-0">
               <span class="text-white text-xl leading-none font-bold select-none">•</span>
-              <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+              <h3
+                class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
                 Cybersecurity & Zero-Trust Architecture Symposium
               </h3>
             </div>
-            <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+            <div
+              class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
               <span>DEC 15, 2026</span>
               <span class="opacity-40">|</span>
               <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
@@ -296,15 +328,19 @@
           </div>
 
           <!-- Bulletin Point 6 -->
-          <div class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
-            data-category="WORKSHOP" data-title="CLOUD DEVOPS AND KUBERNETES HANDS-ON BOOTCAMP" data-dispatch-id="cloud-devops-2027">
+          <div
+            class="reveal bulletin-point-item group bg-[#0d1424]/70 hover:bg-[#0d1424] border border-[#1e293b] hover:border-[#0ea5e9]/50 rounded-xl px-6 py-4 transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer bulletin-modal-trigger shadow-md"
+            data-category="WORKSHOP" data-title="CLOUD DEVOPS AND KUBERNETES HANDS-ON BOOTCAMP"
+            data-dispatch-id="cloud-devops-2027">
             <div class="flex items-center gap-3.5 min-w-0">
               <span class="text-white text-xl leading-none font-bold select-none">•</span>
-              <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
+              <h3
+                class="text-base sm:text-lg font-medium text-white group-hover:text-[#0ea5e9] group-hover:underline transition-colors truncate">
                 Cloud DevOps & Kubernetes Hands-On Bootcamp
               </h3>
             </div>
-            <div class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
+            <div
+              class="shrink-0 text-xs sm:text-sm font-mono text-white group-hover:text-[#0ea5e9] flex items-center gap-2 transition-colors">
               <span>JAN 10, 2027</span>
               <span class="opacity-40">|</span>
               <span class="group-hover:translate-x-0.5 transition-transform">View Details →</span>
@@ -1065,13 +1101,16 @@
   <div id="bulletin-notice-modal"
     class="fixed inset-0 z-[100] bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6"
     aria-hidden="true">
-    <div class="bg-[#0b1222] border border-[#1e293b] rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative"
+    <div
+      class="bg-[#0b1222] border border-[#1e293b] rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative"
       style="font-family: var(--font-display)">
-      
+
       <!-- Official Header Letterhead -->
-      <div class="bg-gradient-to-r from-[#0f182e] to-[#0a0f1d] px-6 py-5 border-b border-[#1e293b] flex items-center justify-between relative">
+      <div
+        class="bg-gradient-to-r from-[#0f182e] to-[#0a0f1d] px-6 py-5 border-b border-[#1e293b] flex items-center justify-between relative">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full border border-[#0ea5e9]/50 bg-[#0ea5e9]/10 flex items-center justify-center text-[#0ea5e9] font-mono font-bold text-xs">
+          <div
+            class="w-10 h-10 rounded-full border border-[#0ea5e9]/50 bg-[#0ea5e9]/10 flex items-center justify-center text-[#0ea5e9] font-mono font-bold text-xs">
             ACM
           </div>
           <div>
@@ -1085,7 +1124,8 @@
             </h3>
           </div>
         </div>
-        <button id="notice-modal-close" class="text-slate-400 hover:text-white text-sm font-mono p-2 rounded-lg hover:bg-slate-800 transition-colors">
+        <button id="notice-modal-close"
+          class="text-slate-400 hover:text-white text-sm font-mono p-2 rounded-lg hover:bg-slate-800 transition-colors">
           ✕
         </button>
       </div>
@@ -1099,10 +1139,12 @@
       <div class="px-6 py-4 bg-[#080d1a] border-t border-[#1e293b] flex items-center justify-between gap-4">
         <span class="text-xs font-mono text-slate-400" id="notice-modal-ref">REF: ACM-VNIT/2026</span>
         <div class="flex items-center gap-3">
-          <button id="notice-modal-close-btn" class="px-4 py-2 text-xs font-mono uppercase text-slate-400 hover:text-white border border-[#1e293b] rounded">
+          <button id="notice-modal-close-btn"
+            class="px-4 py-2 text-xs font-mono uppercase text-slate-400 hover:text-white border border-[#1e293b] rounded">
             Close
           </button>
-          <button id="notice-modal-proceed-btn" class="bg-[#0ea5e9] text-white px-5 py-2 text-xs font-mono font-bold uppercase rounded hover:bg-[#0284c7] transition-all shadow-md shadow-[#0ea5e9]/20">
+          <button id="notice-modal-proceed-btn"
+            class="bg-[#0ea5e9] text-white px-5 py-2 text-xs font-mono font-bold uppercase rounded hover:bg-[#0284c7] transition-all shadow-md shadow-[#0ea5e9]/20">
             Proceed to Registration →
           </button>
         </div>
@@ -1114,21 +1156,25 @@
   <div id="bulletin-registration-modal"
     class="fixed inset-0 z-[100] bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6"
     aria-hidden="true">
-    <div class="bg-[#0b1222] border border-[#1e293b] rounded-2xl max-w-xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative"
+    <div
+      class="bg-[#0b1222] border border-[#1e293b] rounded-2xl max-w-xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative"
       style="font-family: var(--font-display)">
-      
+
       <!-- Registration Header -->
-      <div class="bg-gradient-to-r from-[#0f182e] to-[#0a0f1d] px-6 py-5 border-b border-[#1e293b] flex items-center justify-between">
+      <div
+        class="bg-gradient-to-r from-[#0f182e] to-[#0a0f1d] px-6 py-5 border-b border-[#1e293b] flex items-center justify-between">
         <div class="flex items-center gap-3">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
           <div>
-            <span class="text-[10px] font-mono text-[#0ea5e9] uppercase tracking-widest block font-bold">OFFICIAL REGISTRATION PORTAL</span>
+            <span class="text-[10px] font-mono text-[#0ea5e9] uppercase tracking-widest block font-bold">OFFICIAL
+              REGISTRATION PORTAL</span>
             <h3 id="reg-modal-event-title" class="text-base font-bold text-white uppercase tracking-tight font-mono">
               EVENT REGISTRATION
             </h3>
           </div>
         </div>
-        <button id="reg-modal-close" class="text-slate-400 hover:text-white text-sm font-mono p-2 rounded-lg hover:bg-slate-800 transition-colors">
+        <button id="reg-modal-close"
+          class="text-slate-400 hover:text-white text-sm font-mono p-2 rounded-lg hover:bg-slate-800 transition-colors">
           ✕
         </button>
       </div>
@@ -1136,31 +1182,42 @@
       <!-- Registration Form State -->
       <div id="reg-modal-form-state" class="p-6 lg:p-8 overflow-y-auto">
         <p class="text-xs font-mono text-slate-400 mb-6 bg-[#080d1a] p-3 rounded border border-[#1e293b]">
-          ℹ️ Please provide your official college credentials. Verified participants will receive entry passes on their institutional email.
+          ℹ️ Please provide your official college credentials. Verified participants will receive entry passes on their
+          institutional email.
         </p>
         <form id="bulletin-reg-form" class="space-y-4">
           <div>
-            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Target Event</label>
-            <input type="text" id="reg-event-name" readonly class="w-full bg-[#080d1a] border border-[#1e293b] text-xs font-mono text-[#0ea5e9] px-4 py-2.5 rounded font-bold outline-none cursor-not-allowed">
+            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Target
+              Event</label>
+            <input type="text" id="reg-event-name" readonly
+              class="w-full bg-[#080d1a] border border-[#1e293b] text-xs font-mono text-[#0ea5e9] px-4 py-2.5 rounded font-bold outline-none cursor-not-allowed">
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Full Name *</label>
-              <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
+              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Full Name
+                *</label>
+              <input type="text" required placeholder="e.g. Rahul Sharma"
+                class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
             </div>
             <div>
-              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Student ID / Roll No *</label>
-              <input type="text" required placeholder="e.g. BT23CSE042" class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
+              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Student ID / Roll
+                No *</label>
+              <input type="text" required placeholder="e.g. BT23CSE042"
+                class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Email Address *</label>
-              <input type="email" required placeholder="name@vnit.ac.in" class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
+              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Email Address
+                *</label>
+              <input type="email" required placeholder="name@vnit.ac.in"
+                class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
             </div>
             <div>
-              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Branch & Year *</label>
-              <select required class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
+              <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Branch & Year
+                *</label>
+              <select required
+                class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
                 <option value="">Select Branch</option>
                 <option value="CSE">Computer Science & Engg</option>
                 <option value="ECE">Electronics & Comm Engg</option>
@@ -1171,11 +1228,14 @@
             </div>
           </div>
           <div>
-            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Track / Team Name (Optional)</label>
-            <input type="text" placeholder="e.g. Team NeuralHack" class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
+            <label class="block text-[10px] font-mono uppercase text-slate-400 mb-1.5 font-semibold">Track / Team Name
+              (Optional)</label>
+            <input type="text" placeholder="e.g. Team NeuralHack"
+              class="w-full bg-[#080d1a] border border-[#1e293b] focus:border-[#0ea5e9] text-xs font-mono text-white px-4 py-2.5 rounded outline-none transition-colors">
           </div>
           <div class="pt-4">
-            <button type="submit" class="w-full bg-[#0ea5e9] text-white py-3 text-xs font-mono font-bold uppercase rounded-lg hover:bg-[#0284c7] transition-all shadow-lg shadow-[#0ea5e9]/25 flex items-center justify-center gap-2">
+            <button type="submit"
+              class="w-full bg-[#0ea5e9] text-white py-3 text-xs font-mono font-bold uppercase rounded-lg hover:bg-[#0284c7] transition-all shadow-lg shadow-[#0ea5e9]/25 flex items-center justify-center gap-2">
               Submit Official Registration →
             </button>
           </div>
@@ -1184,11 +1244,13 @@
 
       <!-- Registration Success Confirmation State -->
       <div id="reg-modal-success-state" class="p-8 hidden text-center space-y-5">
-        <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto text-2xl font-bold">
+        <div
+          class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto text-2xl font-bold">
           ✓
         </div>
         <div>
-          <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest block font-bold">VERIFIED REGISTRATION PASS</span>
+          <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest block font-bold">VERIFIED
+            REGISTRATION PASS</span>
           <h4 class="text-xl font-bold text-white uppercase font-mono mt-1">REGISTRATION SUCCESSFUL</h4>
           <p class="text-xs text-slate-300 mt-2 font-mono">
             Your official slot has been registered in the ACM VNIT database.
@@ -1208,7 +1270,8 @@
             <span class="text-white">VNIT Campus, Nagpur</span>
           </div>
         </div>
-        <button id="reg-success-close-btn" class="w-full bg-[#1e293b] text-white py-2.5 text-xs font-mono font-bold uppercase rounded hover:bg-slate-700 transition-colors">
+        <button id="reg-success-close-btn"
+          class="w-full bg-[#1e293b] text-white py-2.5 text-xs font-mono font-bold uppercase rounded hover:bg-slate-700 transition-colors">
           Close Ticket Window
         </button>
       </div>
@@ -1238,7 +1301,10 @@
     </div>
   </div>
 
+  <!-- Supabase SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
