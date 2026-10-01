@@ -469,5 +469,391 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ==========================================
+  // 10. OFFICIAL BULLETIN BOARD INTERACTIVITY
+  // ==========================================
+  const bulletinFilterBtns = document.querySelectorAll(".bulletin-filter-btn");
+  const bulletinCards = document.querySelectorAll(".bulletin-card");
+  const bulletinPointItems = document.querySelectorAll(".bulletin-point-item");
+  const bulletinSearchInput = document.getElementById("bulletin-search-input");
+  const bulletinViewBtns = document.querySelectorAll(".bulletin-view-btn");
+  const pointwiseContainer = document.getElementById("bulletin-pointwise-container");
+  const cardsContainer = document.getElementById("bulletin-cards-container");
+
+  let activeCategory = "ALL";
+  let searchQuery = "";
+
+  // View Switcher (Point-Wise Headlines vs Cards)
+  bulletinViewBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      bulletinViewBtns.forEach(b => {
+        b.classList.remove("active", "bg-[#0ea5e9]", "text-white");
+        b.classList.add("text-slate-400", "border-[#1e293b]");
+      });
+      btn.classList.add("active", "bg-[#0ea5e9]", "text-white");
+      btn.classList.remove("text-slate-400", "border-[#1e293b]");
+
+      const viewMode = btn.getAttribute("data-view");
+      if (viewMode === "pointwise") {
+        if (pointwiseContainer) pointwiseContainer.classList.remove("hidden");
+        if (cardsContainer) cardsContainer.classList.add("hidden");
+      } else {
+        if (pointwiseContainer) pointwiseContainer.classList.add("hidden");
+        if (cardsContainer) cardsContainer.classList.remove("hidden");
+      }
+    });
+  });
+
+  function filterBulletinItems() {
+    const allItems = [...bulletinCards, ...bulletinPointItems];
+    allItems.forEach(item => {
+      const cat = item.getAttribute("data-category") || "";
+      const title = (item.getAttribute("data-title") || "").toLowerCase();
+      const text = item.textContent.toLowerCase();
+
+      const matchesCat = (activeCategory === "ALL" || cat === activeCategory);
+      const matchesSearch = !searchQuery || title.includes(searchQuery) || text.includes(searchQuery);
+
+      if (matchesCat && matchesSearch) {
+        item.style.display = "flex";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  bulletinFilterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      bulletinFilterBtns.forEach(b => {
+        b.classList.remove("active", "bg-[#1e293b]", "text-white", "border-[#0ea5e9]/40");
+        b.classList.add("text-slate-400", "border-[#1e293b]");
+      });
+      btn.classList.add("active", "bg-[#1e293b]", "text-white", "border-[#0ea5e9]/40");
+      btn.classList.remove("text-slate-400", "border-[#1e293b]");
+
+      activeCategory = btn.getAttribute("data-bulletin-cat") || "ALL";
+      filterBulletinItems();
+    });
+  });
+
+  if (bulletinSearchInput) {
+    bulletinSearchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      filterBulletinItems();
+    });
+  }
+
+  // Bulletin Notice Modal & Full Detail Dispatch Data
+  const noticeModalData = {
+    "insomnia-2026": {
+      ref: "VNIT/ACM/2026/DISPATCH-001",
+      title: "INSOMNIA 2026 — 36-HOUR NATIONAL HACKATHON",
+      body: `
+        <div class="space-y-5">
+          <div class="p-4 rounded-xl bg-[#080d1a] border border-[#1e293b] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">DATES & SCHEDULE</span>
+              <span class="text-white font-bold">October 24–26, 2026</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">CAMPUS VENUE</span>
+              <span class="text-white font-bold">Department of CSE, VNIT Campus</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">PRIZE POOL</span>
+              <span class="text-emerald-400 font-bold">₹1,50,000 INR + Swag Kits</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">FULL DISPATCH OVERVIEW</h4>
+            <p class="text-slate-300 leading-relaxed text-sm font-medium">
+              Insomnia 2026 is the premier annual flagship 36-hour hackathon organized by the ACM VNIT Student Chapter. Designed to foster breakthrough innovation across Artificial Intelligence, Web3, Distributed Systems, and Open Hardware, participants will work non-stop to build and deploy production-ready applications evaluated by industry engineers and venture investors.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">SCHEDULE & TIMELINE BREAKDOWN</h4>
+            <ul class="space-y-2 text-xs font-mono text-slate-300 border-l-2 border-[#0ea5e9] pl-4">
+              <li><strong class="text-white">Day 1 • 09:00 AM:</strong> Registration Desk Check-In & Kit Distribution</li>
+              <li><strong class="text-white">Day 1 • 11:00 AM:</strong> Hackathon Commences (36-Hour Countdown Begins)</li>
+              <li><strong class="text-white">Day 2 • 02:00 PM:</strong> Mandatory Technical Code Review & Mentorship Session</li>
+              <li><strong class="text-white">Day 3 • 11:00 AM:</strong> Project Freeze & Final Pitch Presentation to Jury</li>
+            </ul>
+          </div>
+          <div class="bg-[#080d1a] p-4 rounded-xl border border-amber-500/30 text-amber-300 text-xs font-mono">
+            ⚠️ <strong>Campus Access Requirement:</strong> Pre-registration is mandatory. All team members must bring physical college photo ID cards.
+          </div>
+        </div>
+      `
+    },
+    "llm-bootcamp-2026": {
+      ref: "VNIT/ACM/2026/DISPATCH-002",
+      title: "BUILDING SCALABLE LLM AGENTS BOOTCAMP",
+      body: `
+        <div class="space-y-5">
+          <div class="p-4 rounded-xl bg-[#080d1a] border border-[#1e293b] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">DATE & TIMINGS</span>
+              <span class="text-white font-bold">November 08, 2026 • 10:00 AM - 05:00 PM</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">LOCATION</span>
+              <span class="text-white font-bold">Assembly Hall 2, VNIT</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">AVAILABILITY</span>
+              <span class="text-amber-400 font-bold">45 Seats Remaining</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">FULL DISPATCH OVERVIEW & SYLLABUS</h4>
+            <p class="text-slate-300 leading-relaxed text-sm font-medium mb-3">
+              An intensive full-day masterclass delivered by the ACM AI Research Wing. Attendees will learn how to design, build, and deploy enterprise-grade Autonomous Agentic Systems using Retrieval-Augmented Generation (RAG).
+            </p>
+            <ul class="space-y-2 text-xs font-mono text-slate-300 bg-[#080d1a] p-4 rounded-xl border border-[#1e293b]">
+              <li>• <strong>Module 1:</strong> Transformer Architectures & Context Window Optimization</li>
+              <li>• <strong>Module 2:</strong> Vector DB Embeddings (ChromaDB & Qdrant)</li>
+              <li>• <strong>Module 3:</strong> Multi-Agent Delegation with LangChain, LangGraph & CrewAI</li>
+              <li>• <strong>Module 4:</strong> Fine-tuning Quantized Llama-3 & GPU Edge Deployment</li>
+            </ul>
+          </div>
+          <div class="bg-[#080d1a] p-4 rounded-xl border border-[#0ea5e9]/40 text-slate-300 text-xs font-mono">
+            💡 <strong>Prerequisites:</strong> Basic Python programming. Participants receive GPU Cloud compute credits during the workshop.
+          </div>
+        </div>
+      `
+    },
+    "algostrike-2026": {
+      ref: "VNIT/ACM/2026/DISPATCH-003",
+      title: "ALGOSTRIKE V4.0 — INTER-COLLEGE CP CONTEST",
+      body: `
+        <div class="space-y-5">
+          <div class="p-4 rounded-xl bg-[#080d1a] border border-[#1e293b] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">CONTEST DATE</span>
+              <span class="text-white font-bold">November 22, 2026 • 06:00 PM - 09:00 PM</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">PLATFORM</span>
+              <span class="text-white font-bold">ACM Online Judge Hub</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">CONTEST TYPE</span>
+              <span class="text-cyan-400 font-bold">ICPC Rated Individual</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">FULL CONTEST DETAILS</h4>
+            <p class="text-slate-300 leading-relaxed text-sm font-medium">
+              AlgoStrike v4.0 is a 3-hour speed competitive programming league designed for undergraduate engineers. Featuring 6 algorithmically challenging problems covering graph theory, dynamic programming, segment trees, and combinatorics. Trophies, cash vouchers, and certificates awarded to top performers.
+            </p>
+          </div>
+        </div>
+      `
+    },
+    "ossmop-2026": {
+      ref: "VNIT/ACM/2026/DISPATCH-004",
+      title: "ACM OPEN SOURCE MENTORSHIP PROGRAM (OSMoP)",
+      body: `
+        <div class="space-y-5">
+          <div class="p-4 rounded-xl bg-[#080d1a] border border-[#1e293b] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">DURATION</span>
+              <span class="text-white font-bold">December 01, 2026 – January 15, 2027</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">MENTORS</span>
+              <span class="text-purple-400 font-bold">GSoC & LFX Alumni</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">PROGRAM STRUCTURE</h4>
+            <p class="text-slate-300 leading-relaxed text-sm font-medium">
+              A 6-week cohort mentorship program designed to take students from Git fundamentals to submitting pull requests to production open-source codebases. Participants work 1-on-1 with senior maintainers.
+            </p>
+          </div>
+        </div>
+      `
+    },
+    "cybersec-2026": {
+      ref: "VNIT/ACM/2026/DISPATCH-005",
+      title: "CYBERSECURITY & ZERO-TRUST ARCHITECTURE SYMPOSIUM",
+      body: `
+        <div class="space-y-5">
+          <div class="p-4 rounded-xl bg-[#080d1a] border border-[#1e293b] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">DATE & TIME</span>
+              <span class="text-white font-bold">December 15, 2026 • 02:00 PM</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">VENUE</span>
+              <span class="text-white font-bold">Auditorium 1, VNIT Campus</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">SYMPOSIUM AGENDA</h4>
+            <p class="text-slate-300 leading-relaxed text-sm font-medium">
+              Join leading security researchers and industrial ethical hackers for live demonstrations on zero-trust cloud IAM architectures, reverse engineering, and post-quantum encryption standards.
+            </p>
+          </div>
+        </div>
+      `
+    },
+    "cloud-devops-2027": {
+      ref: "VNIT/ACM/2027/DISPATCH-006",
+      title: "CLOUD DEVOPS & KUBERNETES HANDS-ON BOOTCAMP",
+      body: `
+        <div class="space-y-5">
+          <div class="p-4 rounded-xl bg-[#080d1a] border border-[#1e293b] flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">DATE & TIME</span>
+              <span class="text-white font-bold">January 10, 2027 • 10:00 AM</span>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-400 block">VENUE</span>
+              <span class="text-white font-bold">CSE Lab 3, VNIT</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold font-mono text-xs uppercase mb-2">LAB SYLLABUS</h4>
+            <p class="text-slate-300 leading-relaxed text-sm font-medium">
+              Hands-on lab covering Docker containerization, Kubernetes pod management, Helm charts, and building automated GitHub Actions CI/CD deployment pipelines.
+            </p>
+          </div>
+        </div>
+      `
+    }
+  };
+
+  // Notice Modal Triggers
+  const noticeModal = document.getElementById("bulletin-notice-modal");
+  const noticeModalTitle = document.getElementById("notice-modal-title");
+  const noticeModalBody = document.getElementById("notice-modal-body");
+  const noticeModalRef = document.getElementById("notice-modal-ref");
+  const noticeModalClose = document.getElementById("notice-modal-close");
+  const noticeModalCloseBtn = document.getElementById("notice-modal-close-btn");
+  const noticeModalProceedBtn = document.getElementById("notice-modal-proceed-btn");
+  const noticeModalTriggers = document.querySelectorAll(".bulletin-modal-trigger");
+
+  let currentDispatchId = "";
+
+  function openNoticeModal(id) {
+    if (!noticeModal) return;
+    const data = noticeModalData[id] || {
+      ref: "VNIT/ACM/2026/DISPATCH",
+      title: "OFFICIAL NOTICE",
+      body: "<p>Notice content brief preview.</p>"
+    };
+
+    currentDispatchId = id;
+    if (noticeModalTitle) noticeModalTitle.textContent = data.title;
+    if (noticeModalBody) noticeModalBody.innerHTML = data.body;
+    if (noticeModalRef) noticeModalRef.textContent = "REF: " + data.ref;
+
+    noticeModal.classList.remove("opacity-0", "pointer-events-none");
+    noticeModal.classList.add("opacity-100", "pointer-events-auto");
+    noticeModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeNoticeModal() {
+    if (!noticeModal) return;
+    noticeModal.classList.remove("opacity-100", "pointer-events-auto");
+    noticeModal.classList.add("opacity-0", "pointer-events-none");
+    noticeModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  noticeModalTriggers.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const dispatchId = btn.getAttribute("data-dispatch-id");
+      if (dispatchId) openNoticeModal(dispatchId);
+    });
+  });
+
+  if (noticeModalClose) noticeModalClose.addEventListener("click", closeNoticeModal);
+  if (noticeModalCloseBtn) noticeModalCloseBtn.addEventListener("click", closeNoticeModal);
+  if (noticeModal) {
+    noticeModal.addEventListener("click", (e) => {
+      if (e.target === noticeModal) closeNoticeModal();
+    });
+  }
+
+  // Registration Modal Triggers & Logic
+  const regModal = document.getElementById("bulletin-registration-modal");
+  const regModalEventTitle = document.getElementById("reg-modal-event-title");
+  const regEventNameInput = document.getElementById("reg-event-name");
+  const regModalClose = document.getElementById("reg-modal-close");
+  const regSuccessCloseBtn = document.getElementById("reg-success-close-btn");
+  const regForm = document.getElementById("bulletin-reg-form");
+  const regFormState = document.getElementById("reg-modal-form-state");
+  const regSuccessState = document.getElementById("reg-modal-success-state");
+  const regTicketRef = document.getElementById("reg-ticket-ref");
+  const regTriggers = document.querySelectorAll(".bulletin-register-trigger");
+
+  function openRegModal(eventTitle) {
+    if (!regModal) return;
+    if (regModalEventTitle) regModalEventTitle.textContent = eventTitle || "EVENT REGISTRATION";
+    if (regEventNameInput) regEventNameInput.value = eventTitle || "ACM Official Event";
+
+    if (regFormState) regFormState.classList.remove("hidden");
+    if (regSuccessState) regSuccessState.classList.add("hidden");
+
+    regModal.classList.remove("opacity-0", "pointer-events-none");
+    regModal.classList.add("opacity-100", "pointer-events-auto");
+    regModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeRegModal() {
+    if (!regModal) return;
+    regModal.classList.remove("opacity-100", "pointer-events-auto");
+    regModal.classList.add("opacity-0", "pointer-events-none");
+    regModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+
+    setTimeout(() => {
+      if (regForm) regForm.reset();
+    }, 400);
+  }
+
+  regTriggers.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const title = btn.getAttribute("data-event-title") || "ACM Official Event";
+      openRegModal(title);
+    });
+  });
+
+  if (noticeModalProceedBtn) {
+    noticeModalProceedBtn.addEventListener("click", () => {
+      const data = noticeModalData[currentDispatchId];
+      const title = data ? data.title : "ACM Event";
+      closeNoticeModal();
+      setTimeout(() => {
+        openRegModal(title);
+      }, 300);
+    });
+  }
+
+  if (regModalClose) regModalClose.addEventListener("click", closeRegModal);
+  if (regSuccessCloseBtn) regSuccessCloseBtn.addEventListener("click", closeRegModal);
+  if (regModal) {
+    regModal.addEventListener("click", (e) => {
+      if (e.target === regModal) closeRegModal();
+    });
+  }
+
+  if (regForm) {
+    regForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const randomNum = Math.floor(1000 + Math.random() * 9000);
+      if (regTicketRef) regTicketRef.textContent = "#ACM-2026-PASS-" + randomNum;
+
+      if (regFormState) regFormState.classList.add("hidden");
+      if (regSuccessState) regSuccessState.classList.remove("hidden");
+    });
+  }
+
 });
 

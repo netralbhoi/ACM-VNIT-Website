@@ -515,3 +515,19 @@ body {
   transform: translateY(-1px);
 }
 
+/* Official Bulletin Board Pure White Typography Override */
+#official-bulletin,
+#official-bulletin h2,
+#official-bulletin h3,
+#official-bulletin p,
+#official-bulletin span {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+#official-bulletin .bulletin-point-item:hover h3,
+#official-bulletin .bulletin-point-item:hover span {
+  color: #0ea5e9 !important;
+  -webkit-text-fill-color: #0ea5e9 !important;
+}
+
