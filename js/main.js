@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initMainApp() {
+  document.documentElement.classList.add("js-loaded");
   // ==========================================
   // 1. HEADER SCROLL EFFECT (Permanently applied via CSS classes in HTML)
   // ==========================================
@@ -118,22 +119,46 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ==========================================
-  // 4. INTERSECTION OBSERVER FOR REVEALS
+  // 4. INTERSECTION OBSERVER & FALLBACK FOR REVEALS
   // ==========================================
   const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-up, .reveal-scale");
+
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        // Stop observing once animated
         revealObserver.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.08
+    threshold: 0,
+    rootMargin: "100px 0px 100px 0px"
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
+
+  // Immediate check for elements currently in or near viewport
+  function checkRevealViewport() {
+    revealElements.forEach(el => {
+      if (!el.classList.contains("visible")) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 200 && rect.bottom > -200) {
+          el.classList.add("visible");
+        }
+      }
+    });
+  }
+
+  // Trigger on load, scroll, and resize
+  checkRevealViewport();
+  window.addEventListener("scroll", checkRevealViewport, { passive: true });
+  window.addEventListener("resize", checkRevealViewport, { passive: true });
+
+  // Safety fallback: ensure no element remains stuck invisible
+  setTimeout(() => {
+    revealElements.forEach(el => el.classList.add("visible"));
+  }, 1000);
+
 
   // ==========================================
   // 5. ANIMATED STATS COUNTERS
@@ -958,6 +983,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (regSuccessState) regSuccessState.classList.remove("hidden");
     });
   }
+}
 
-});
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initMainApp);
+} else {
+  initMainApp();
+}
 
